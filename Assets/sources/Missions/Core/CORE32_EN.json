@@ -1,0 +1,447 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Wanted",
+    "missionDescription": "",
+    "missionInfo": "{-} Doors are locked.\r\n{-} The neutral mission token is the keycard. After it is dropped, a hero can retrieve the keycard.\r\n{-} A hero carrying the keycard can open the door to the Office.\r\n{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move. \r\n{-} The mission will progress when the door to the Office opens.\r\n{-} The Rebels lose when all heroes are wounded.",
+    "campaignName": "Core Game",
+    "startingObjective": "Open the door to the Office.",
+    "repositionOverride": "Block access to the Office.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "847582d2-7831-4f28-816f-89d06d381e67",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "f8b126a7-e328-4f4f-be59-fb578da38f79",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "ed25c638-9714-4297-896e-76943b285c4a",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "You are walking through the cantina called Ooze, looking for a sign of your elusive contact. A figure who looks very much like a bounty hunter steps out of the shadows with a blaster drawn.\r\n\r\nDoors slam shut. From the looks of things, they're trying to keep you penned in here. You 'll have to find a way out.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} Doors are locked.\r\n{-} The mission will progress when the door to the Office opens.\r\n{-} The Rebels lose when all heroes are wounded.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Breaking through the barricade, you clear a path. Out in the open, you're able to deal with any other hunters trying to claim their share as you get back to your ship.\r\n\r\n{-} The Rebels win the mission!",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "You're very near to breaking free when one of your assailants, whom you thought was incapacitated, pulls out. a thermal detonator. He screams something in an alien tongue as you dive behind whatever cover you can find.\r\n\r\nYou claw your way free of the wreckage, badly hurt, and signal for extraction. Some of you are more hurt than others, but all told you're lucky to be alive.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The threat level of the next mission (and only the next mission) increases by 2. During the Rebel Upgrade stage, the Rebel players can decide to spend 100 credits per hero to prevent this.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Keycard 1",
+      "GUID": "03ef51c1-ee9a-4c89-b98a-bd6d8fe503ba",
+      "eventText": "One of the Trandoshans appears to be the leader.\r\n\r\n{-} Place a neutral mission token under the Trandoshan Hunter on Tile 27B. He is carrying the keycard.\r\n{-} The neutral mission token is the keycard. After it is dropped, a hero can retrieve the keycard.\r\n{-} A hero carrying the keycard can open the door to the Office.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Keycard 2",
+      "GUID": "e20b278f-e899-4ab5-8f9a-4bde3698443d",
+      "eventText": "One of the Trandoshans appears to be the leader.\r\n\r\n{-} Place a neutral mission token under the Trandoshan Hunter on Tile 26B. He is carrying the keycard.\r\n{-} The neutral mission token is the keycard. After it is dropped, a hero can retrieve the keycard.\r\n{-} A hero carrying the keycard can open the door to the Office.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Keycard Trigger",
+      "GUID": "78de7bf0-36b2-4311-a629-db64f524c097",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Store Room Door",
+      "GUID": "17af65e6-4ce8-4027-83c0-70097ccf7ce3",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Store Room Door",
+              "GUID": "31e1bbcd-3a97-4b72-b73c-8399166e6e97",
+              "theText": "This is the door to the store room.\r\n\r\nThe door is locked.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a5f70365-afb4-4dad-99fe-d63a13d59546",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Hunted Down",
+      "GUID": "1689a3e7-a07f-46fa-bbf8-b6281ae213bc",
+      "eventText": "The door opens, only to reveal a frightful sight: The mechanical silhouette of the fearsome droid bounty hunter IG-88, accompanied by a flying combat drone.\r\n\r\n{-} The door to the Store Room is now unlocked.\r\n{-} A hero can interact with the terminal ({I}) to open the door to the exit. At the end of each Round, the door to the exit closes.\r\n{-} Imperial mission tokens are barricades. Barricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Store Room Door",
+              "GUID": "3167b591-549c-4def-b039-4ee0b5e06d09",
+              "theText": "This is the door to the store room.",
+              "buttonList": [
+                {
+                  "GUID": "ebd2ae7b-eb2b-4bb4-a803-47af66ce9209",
+                  "theText": "{A} Open"
+                }
+              ]
+            },
+            {
+              "entityName": "Office Door",
+              "GUID": "49599b33-edc0-402a-994a-3aeca049af3f",
+              "theText": "This is the door to the Office.\r\n\r\nThe door is locked. A hero carrying the keycard can open the door to the Office.",
+              "buttonList": [
+                {
+                  "GUID": "31c55e58-5497-404d-b85f-3f1197ef7c33",
+                  "theText": "{A} Open"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Red",
+              "GUID": "651eba5b-e277-4c57-baa8-42b0b4093d85",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "93ec7dbd-364b-48e6-9a93-a8f795614cc6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "531b39f6-9efd-4617-9625-63d6fe320569",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG071/IG-88"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "708076f8-e610-4d73-9bdb-aaaac4546c79",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG012/Probe Droid"
+        },
+        {
+          "repositionText": "Block access to the exit.",
+          "GUID": "ffbf9260-9a45-4564-9cda-0abd94d7390c",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "theText": "{-} A hero can interact with the terminal ({I}) to open the door to the exit. At the end of each Round, the door to the exit closes.\r\n{-} Imperial mission tokens are barricades. Barricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).\r\n{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move. \r\n{-} The mission will progress when the door to the Exit opens.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "2c5aec6b-0229-4372-ba17-7c28634367ae",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Open the door to the Exit.",
+          "longText": null,
+          "GUID": "9486bd00-99bc-40cc-816a-c4e339e0b416",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Round Close Door",
+      "GUID": "e42221aa-c792-4f4a-807b-dddd9e664b41",
+      "eventText": "The door to the exit slams shut.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Exit Door",
+              "GUID": "8acaf478-0c40-4203-ad43-f9bd2324a0f3",
+              "theText": "This is the door to the exit.\r\n\r\nA hero can interact with the terminal ({I)}) to open the door to the exit. At the end of each Round, the door to the exit closes.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "c3c5f5bf-f9cb-4fb6-a3a4-f08fb5478b02",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Exit Door",
+      "GUID": "e2768ed2-c8f6-46fb-87f2-5a4977f2f8bd",
+      "eventText": "The door to the exit slides open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Exit Door",
+              "GUID": "3d5998d7-598a-42ff-8fdd-5cb1befb3165",
+              "theText": "This is the door to the exit.\r\n\r\nA hero can interact with the terminal ({I)}) to open the door to the exit. At the end of each Round, the door to the exit closes.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "aeff8d5b-d069-4aa1-96f6-38e700aebad3",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Exit Open First Time",
+      "GUID": "ff07d6b9-675b-4d44-89a9-6c18e2c8fa03",
+      "eventText": "Behind the door lies a small back alley. You can see a way to escape from here.\r\n\r\n{-} The Rebel mission token represents the exit. When all heroes are on or adjacent to the exit, the heroes depart, ending the mission.",
+      "eventActions": [
+        {
+          "theText": "{-} A hero can interact with the terminal ({I)}) to open the door to the exit. At the end of each Round, the door to the exit closes.\r\n{-} Imperial mission tokens are barricades. Barricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).\r\n{-} The Rebel mission token represents the exit. When all heroes are on or adjacent to the exit, the heroes depart, ending the mission.\r\n{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move. \r\n{-} The Rebels win the mission when they depart.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "9d481c5f-77cb-46fa-88e5-561a1524f6a5",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Escape!",
+          "longText": null,
+          "GUID": "8f652f0a-7bae-4fb6-b9d4-7235c7ffb79e",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Barricade 1",
+      "GUID": "d53b076f-510d-4139-80d0-a3e7727fa59a",
+      "eventText": "The barricade is reduced to splinters under your attacks.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Barricade 1",
+              "GUID": "4f33ee96-0ae6-4d4b-b32b-73e9b5d6eb1d",
+              "theText": "The door to the exit is barricaded.\r\n\r\nBarricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "a0763cb3-011c-4184-a6f5-ab8315391762",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "78c756f6-fbae-4a3f-8df8-a2cf0c6ebafb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Barricade 2",
+      "GUID": "05dbdcda-d19d-4f64-8ee6-cd21dc548d69",
+      "eventText": "The barricade is reduced to splinters under your attacks.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Barricade 2",
+              "GUID": "91f2aa10-e44b-41ea-991c-3cd92b65b3b0",
+              "theText": "The door to the exit is barricaded.\r\n\r\nBarricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "8a1cd223-eef9-4b3d-8c46-ac7e042fa4ba",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "dda76abe-693c-48b7-adb8-72298fca4d70",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "e8dd9a90-589c-4343-aa29-4f5f8937ecf5",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "40e543f0-78f6-4956-b130-662f52e53b2d",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Store Room Door",
+      "GUID": "9327e697-b67c-4e81-a924-131885ea7944",
+      "mainText": "This is the door to the store room.\r\n\r\nThe door is locked.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Office Door",
+      "GUID": "df4a89e8-fe54-43be-89e1-7c51374451d2",
+      "mainText": "This is the door to the Office.\r\n\r\nThe door is locked. A hero carrying the keycard can open the door to the Office.",
+      "buttonList": [
+        {
+          "GUID": "7b7fa85e-5b18-44a5-b6bf-087d7219d287",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Exit Door",
+      "GUID": "3567293a-f305-4937-89c3-4cc92231d1fc",
+      "mainText": "This is the door to the exit.\r\n\r\nA hero can interact with the terminal ({I)}) to open the door to the exit. At the end of each Round, the door to the exit closes.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Exit",
+      "GUID": "ed4d1f85-5f14-4071-8280-9b291f9f8733",
+      "mainText": "This is the exit.\r\n\r\nWhen all heroes are on or adjacent to the exit, the heroes depart, ending the mission.",
+      "buttonList": [
+        {
+          "GUID": "e05ce562-110b-4a38-bb84-1cfc22d4bc86",
+          "theText": "Depart (End Mission)"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "23a27494-500c-4d9e-a99a-2c24f191845b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "ad2b2088-a892-41e7-8f2c-8bef889959e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "New Terminal",
+      "GUID": "c28acf0e-6c73-4224-9159-04cd5544405f",
+      "mainText": "This terminal controls the exit door, but its security measures make sure it won't stay open for long.\r\n\r\nA hero can interact with the terminal ({I}) to open the door to the exit. At the end of each Round, the door to the exit closes.",
+      "buttonList": [
+        {
+          "GUID": "246e1880-9739-4b68-9042-06835c9f5c61",
+          "theText": "{A} Open Exit Door"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "08927e2c-5ff7-4465-9fe9-db488f63abca",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "3f83acd9-450d-42ff-9128-e857808dc7d7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Barricade 1",
+      "GUID": "6b48fa4b-394b-4229-9ef9-88eb51492f85",
+      "mainText": "The door to the exit is barricaded.\r\n\r\nBarricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "02e594ae-55cb-4384-bfdd-1f85122eef65",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Barricade 2",
+      "GUID": "e5ccaa95-6372-4cf2-a80e-669bbdcd4b38",
+      "mainText": "The door to the exit is barricaded.\r\n\r\nBarricades are blocking terrain and can be attacked (Health: *3*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "37b13d9a-c6d5-4349-be06-9adbb89fd97b",
+          "theText": "Destroy"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Trandoshan Hunter",
+      "customInstructions": ""
+    }
+  ]
+}

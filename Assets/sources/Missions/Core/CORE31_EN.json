@@ -1,0 +1,467 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Means of Production",
+    "missionDescription": "",
+    "missionInfo": "{-} Doors are locked. A Rebel figure can attack a door (Health: *2*, Defense: 1 {G}).\r\n{-} The mission progresses when the facility is breached.\r\n{-} The Rebels lose when all heroes are wounded.",
+    "campaignName": "Core Game",
+    "startingObjective": "Breach the facility to find the data core.",
+    "repositionOverride": "Block access to the data core.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "83aba702-5662-403c-b849-d4d6467726cf",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "eff38c9d-cb91-4204-8979-0bf4b0c0bbca",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "bb3fd9b1-ab77-472a-8131-6343755dce18",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "You arrive at a quiet little test factory. You've been informed that it will significantly increase the efficiency of Imperial efforts if its construction is completed.\r\n\r\nThree other teams have apparently tried and failed to sabotage the factory. Their  reports suggest sorne sort of reactive defense protocols.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} Doors are locked. A Rebel figure can attack a door (Health: *2*, Defense: 1 {G}).\r\n{-} The mission progresses when the facility is breached.\r\n{-} The Rebels lose when all heroes are wounded.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "As the core is destroyed, the defense protocols disengage. The alarms die down, and the lights go black.\r\n\r\nIf the Empire wants to use this facility for something, it'll be quite some time before they can get it up and running.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Each hero receives 1 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "The facility's defenses are too much to  overcome. When you finally breach the door leading to the data core, you see it sliding down into the door to some other section of the facility beyond your reach.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.\r\n{-} The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Guarded",
+      "GUID": "083a7730-cf91-48fa-8da2-9eb073783dc6",
+      "eventText": "As you break through the first door, you're assailed by a deafening mechanical grinding. Ahead, you see heavy shielding slide over the next door.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Facility Entrance",
+              "GUID": "bd17cfa8-4317-4bf3-9474-b4cce6a006d7",
+              "theText": "This door is labeled \"Facility Entrance\".\r\n\r\nThe door is locked. A Rebel figure can attack it (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "34193acb-3156-4562-8d67-f0b48406522f",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Red 1",
+              "GUID": "89d2e7e4-8ca0-4d85-80cb-449e5e4ea950",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "697ed242-b03b-4b83-a223-8d333c41a2fb",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "5318fbd2-9dbd-4d10-9179-632ba3285bd9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "face85e4-58a4-4f79-bf36-ee64ff866c0e",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG007/E-Web Engineer"
+        },
+        {
+          "theText": "{-} Doors are locked. A Rebel figure can attack a door (Health: *2*, Defense: 1 {G}).\r\n{-} The mission progresses when the heroes find the data core.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "fc6cdf7c-481e-44ae-ad5d-c402473bfa72",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Find the data core.",
+          "longText": null,
+          "GUID": "d7697245-90d6-468a-bb74-e6370d7e120d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Side Door",
+      "GUID": "83050119-9254-485c-8652-3b183ef90d40",
+      "eventText": "The side door collapses under your attacks.\r\n\r\nIf there was a neutral mission token next to the door you just opened, click on the token in the control area corresponding to the tokens' colors and click \"Activate\".",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Side Door",
+              "GUID": "5da78a7e-ea32-4dc7-a18f-4d2fbb4d255d",
+              "theText": "This door is labeled \"Side Door\".\r\n\r\nThe door is locked. A Rebel figure can attack it (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "9514ea48-00eb-4211-9339-4121edb9679c",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "d0cff48f-e915-4efa-a576-5eca03364b51",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Core Room",
+      "GUID": "b2f9a62d-c723-4dd4-a050-12097bb27d2b",
+      "eventText": "You reveal a small room with a data core humming, surrounded by red light. Destroying the data core would severely throw back the Empire's efforts.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Core Room Door",
+              "GUID": "caaf0ec0-5aee-43e1-b95e-b9c3d8dcdf45",
+              "theText": "This door is labeled \"Core Room\".\r\n\r\nThe door is locked. A Rebel figure can attack it (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "4e800c00-db98-48ba-ae3c-a96c9e2d9473",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "37a6bf2f-6e75-4f23-a6c0-6e0a0dd5a6a0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} A Rebel figure can interact with the data core to destroy it, ending the mission.",
+          "GUID": "50902ae7-2827-4777-a4d0-5a136fb09b1e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} Doors are locked. A Rebel figure can attack a door (Health: *2*, Defense: 1 {G}).\r\n{-} The Rebels win when the data core is destroyed.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "d4629309-20e0-4670-95a8-4a35c72b1d4e",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Destroy the data core.",
+          "longText": null,
+          "GUID": "e4b9966a-4d24-4608-9b05-3c1fdc83feb6",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "If there was a neutral mission token next to the door you just opened, click on the token in the control area corresponding to the tokens' colors and click \"Activate\".",
+          "GUID": "98e07dc0-2a1b-4506-98d7-09560b669502",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Reveal CA",
+      "GUID": "784267a1-85cb-4e00-8cfd-0f139c46b8c5",
+      "eventText": "",
+      "eventActions": [
+        {
+          "tbText": "The spaces separate from the map are the control room. Each time you open a door with a a blue, red, or yellow neutral mission token next to it, click on the token corresponding to the tokens' color and click \"Activate\".\r\n\r\nEach time you attack a door with a green neutral mission token next to it, the attacker suffers 2 {H} for each green neutral mission token next to the door.",
+          "GUID": "756d77fb-154b-4b65-8d16-adab0a3abc28",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Defenses Blue 1",
+      "GUID": "6293949e-90bb-451c-8a5c-a8a58dcf1772",
+      "eventText": "Place a BLUE neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Blue 2",
+      "GUID": "639fb135-eb67-49da-8644-1273aee2030e",
+      "eventText": "Place a BLUE neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Red 1",
+      "GUID": "5755bcd0-c5cd-4f38-8f56-2b0b7de00b91",
+      "eventText": "Place a RED neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Red 2",
+      "GUID": "faed7616-833b-48d3-b0eb-8fbcf2ecddff",
+      "eventText": "Place a RED neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Green 1",
+      "GUID": "8b4d07e6-e180-4909-82b3-ef99abf77fad",
+      "eventText": "Place a GREEN neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Green 2",
+      "GUID": "f742d3bc-7b8c-4fd3-8b8b-47310817c113",
+      "eventText": "Place a GREEN neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Yellow 1",
+      "GUID": "3cbd986b-6fc0-43fc-8b70-eac5bfea0caf",
+      "eventText": "Place a YELLOW neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses Yellow 2",
+      "GUID": "cfc116c5-66bd-4642-b1a6-89595bd4eb94",
+      "eventText": "Place a YELLOW neutral mission token next do a closed door in the following order. You can click on a door to read its label.\r\n\r\n1. If the Facility Entrance is closed, place it next to it.\r\n2. If the Facility Entrance is open, but no heroes have yet entered Tile 28A, place it next to the Side Door.\r\n3. If heroes have already entered Tile 28A, place it next to the Core Room Door.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defenses End of Round",
+      "GUID": "43574d4c-926f-46dd-b9bb-014f026a4fd2",
+      "eventText": "Imperial security protocols proceed to lock down the facility.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Activate Red",
+      "GUID": "c4f3fd42-dba3-4dc7-bca2-c3e64c727246",
+      "eventText": "Alarms blare through the facility.\r\n\r\nIf there are two red tokens next to this door, click \"Activate Red\" again.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Activate Yellow",
+      "GUID": "7562643c-39d9-4b7b-aec9-37ab559b6b0a",
+      "eventText": "A blinding flash erupts from the door as it collapses.\r\n\r\nEach hero within 5 spaces of the door tests {K}. Each hero who fails is <color=\"red\">Stunned</color>.\r\n\r\nIf there are two yellow mission tokens next to the door, roll twice and pick the worse result.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Reveal CA Event",
+      "GUID": "d560a1a1-1894-4ab4-94c3-116c2e2669e0",
+      "eventText": "",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "77ad1dc6-c81c-4471-8159-48b28f85a518",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "e641bf49-a61b-4f08-91eb-4bdd670fca5a",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "23e2172c-3435-49c4-8a8e-96718f9286fe",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "df14b7ba-feb7-4d24-bb3b-6d086610804c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "1320db38-7dd3-4bd1-913f-fd1fd58e7416",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Facility Entrance",
+      "GUID": "5af07f73-e1fe-4be2-ab15-0a1a6defa440",
+      "mainText": "This door is labeled \"Facility Entrance\".\r\n\r\nThe door is locked. A Rebel figure can attack it (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "7a4fec7a-8f33-4178-a08d-581a54f8dea8",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Side Door",
+      "GUID": "7ff79fd5-4054-4181-a72e-b6303d94d6e5",
+      "mainText": "This door is labeled \"Side Door\".\r\n\r\nThe door is locked. A Rebel figure can attack it (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "9c73df61-4d01-4f57-8078-5e6438af73ce",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Core Room Door",
+      "GUID": "d89ff5b0-bb55-43a2-9cc8-6c7fc5ee71f5",
+      "mainText": "This door is labeled \"Core Room\".\r\n\r\nThe door is locked. A Rebel figure can attack it (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "e7a58490-da37-4250-9913-cc3a6a3e8384",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "99a88f52-7505-41db-9244-37962f9132f8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "95a8dd62-0360-40cb-8815-d305b2120585",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "ff0e06f2-f4ef-41dc-bd5e-f2f30f816371",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Blue Token",
+      "GUID": "a3dbc1b4-2eaf-45b1-a4d7-e6e116abe04e",
+      "mainText": "Apply *2* additional Health to door with a blue token next to it. If there are two blue tokens next to it, apply *4* additional Health instead.",
+      "buttonList": [
+        {
+          "GUID": "c0641759-c7c0-41c1-a849-5740efaf5c6e",
+          "theText": "Activate Blue"
+        }
+      ]
+    },
+    {
+      "entityName": "Red Token",
+      "GUID": "bed6feb3-bba2-4b88-8e48-9357d99b7265",
+      "mainText": "Each time you open a door with a red neutral mission token next to it, click \"Activate Red\" once for each red token next too the door.",
+      "buttonList": [
+        {
+          "GUID": "20e7822f-67f8-4bee-a352-7d04e645a508",
+          "theText": "Activate Red"
+        }
+      ]
+    },
+    {
+      "entityName": "Green Token",
+      "GUID": "66d11f99-f4c4-4505-a373-7b02e037f156",
+      "mainText": "Each time you attack a door with a green neutral mission token next to it, the attacker suffers 2 {H} for each green neutral mission token next to the door.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Yellow Token",
+      "GUID": "2b36c803-c5bf-4fb8-9cca-b5ad0263e43d",
+      "mainText": "Each time you open a door with a yellow neutral mission token next to it, click \"Activate Yellow\" once for each yellow token next too the door.",
+      "buttonList": [
+        {
+          "GUID": "3e05515a-2aff-4c95-b968-6a77f1964ffb",
+          "theText": "Activate Yellow"
+        }
+      ]
+    },
+    {
+      "entityName": "Data Core",
+      "GUID": "8b48b9c7-d86d-4d8c-a637-c3eb3c120e3e",
+      "mainText": "The facility's date core is illuminated by a soft red light.\r\n\r\nA Rebel figure can interact with the data core to destroy it, ending the mission.",
+      "buttonList": [
+        {
+          "GUID": "c19885d8-2295-4b4a-bd7e-dec1f7af0c1b",
+          "theText": "{A} Destroy"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    }
+  ]
+}

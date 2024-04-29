@@ -1,0 +1,526 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "The Source",
+    "missionDescription": "",
+    "missionInfo": "{-} The <color=\"red\">Imperial Officer</color> has been captured and is a neutral figure.\r\n{-} Doors are locked.\r\n{-} A Rebel figure can interact with the captured officer to perform the following:\r\n⯈ The hero and the captured officer each move 2 spaces.\r\n⯈ Open a door adjacent to the officer.\r\n⯈ Secure a terminal adjacent to the officer.\r\n{-} If there are no healthy Rebel figures within 3 spaces of the captured officer, an Imperial figure can free him when instructed. When this happens, click the highlight and select \"Officer freed\".\r\n{-} The mission progresses when the terminal is found.\r\n{-} The Rebels lose when the captured officer is freed or when all heroes are wounded.",
+    "campaignName": "Core Game",
+    "startingObjective": "Find the terminal.",
+    "repositionOverride": "Be adjacent to the captured officer.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "66b04a4f-ef1a-4b77-97e4-c4c7f8c3b4d4",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "265fc15a-44cc-49fb-b3cb-a040741f6dd8",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "8551d2a6-239b-45f4-99a3-8e3c34cf725a",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "b6ebca86-5099-4e94-8570-c17fd5476c5d",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "1628a543-e830-4eb3-b2af-d13d061850b4",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "2d46a243-a0f8-49a9-821c-0920282637e3",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "\"Spies have tracked down the primary manufacturing plant in Weiss's supply chain,\" your commander informs you. \"It isn't much, but its records could indicate shipping patterns, perhaps even containing the location of the prototype weapon.\" She sounds both desperate and excited. \"This could be the real thing. Make us all proud.\"\r\n\r\nSecurity in the plant is tight, surprisingly so, and each door takes considerable time to hack or break through. Every moment risks your discovery, and you're about to give up  when opportunity strikes.\r\n\r\n\"I don't care about your excuses. Kill the blasted creatures if you cannot keep them contained.\" A scowling officer comes down the hall. He speaks into a comlink. \"Drag me in to this festering hole again and I'll see that you become their next meal.\"\r\n\r\nHe lowers the comlink just as you spring from cover, jamming a blaster into his ribs and suggesting he behave himself and do as you request.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} Place an <color=\"red\">Imperial Officer</color> figure on the red highlighted space.\r\n{-} The Imperial Officer has been captured and is a neutral figure.\r\n{-} Doors are locked.\r\n{-} A Rebel figure can interact with the captured officer to perform the following:\r\n⯈ The hero and the captured officer each move 2 spaces.\r\n⯈ Open a door adjacent to the officer.\r\n⯈ Secure a terminal adjacent to the officer.\r\n{-} If there are no healthy Rebel figures within 3 spaces of the captured officer, an Imperial figure can free him when instructed. When this happens, click the highlight and select \"Officer freed\".\r\n{-} The mission progresses when the terminal is found.\r\n{-} The Rebels lose when the captured officer is freed or when all heroes are wounded.",
+      "eventActions": [
+        {
+          "newInstructions": "{-} If this figure is adjacent to the captured officer and there are no healthy Rebels within 3 spaces of the captures officer: Free the captured officer. (Only figures without \"Non-Sentient\".)",
+          "GUID": "6ae6ca28-965b-4416-9f67-3dc7dafdc667",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "repositionText": "Block access to the terminal.",
+          "GUID": "b4d3ac9b-396a-46da-954f-97c1a0594580",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win early",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "The officer swallows hard, stepping away from the command terminal. \"There, as you can see, its a waste of your time.\" \r\n\r\nAt first glance, that appears true. In spite of numerous shipments to a primary location, none of the materials are related to weaponry.\r\n\r\nAfter only a few questions, the officer cracks. \"Theres no weapon!\" he shouts. \"Its all a trick to lure out the Rebel fleet. I told him that Strang's plan was far more suited-\"\r\n\r\nYou cut him off, examining the terminal with this new information in mind. Indeed, you can see the seeds of the deception. With this information, and a new prisoner, perhaps this can be turned to the Rebellion's advantage.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Place Story Mission card \"Last Stand\" into play.\r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.\r\n{-} Because the Rebels secured the terminal early, they receive an additional 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "The officer scrambles away from you, shouting, \"Shoot them, you fools! Don't let them escape!\" Alarms ring in the background, and you cut through the Imperial forces, trying to catch up to your former captive.\r\n\r\nHowever, its too late. He disappears through an opening, and the door slides shut and locks. By the time you break through this door, he'll be long gone.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} Place Story Mission card \"Desperate Hour\" into play.\r\n{-} The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win late",
+      "GUID": "af2f2988-bb57-4fff-83a5-b964da245b9e",
+      "eventText": "The officer swallows hard, stepping away from the command terminal. \"There, as you can see, its a waste of your time.\" \r\n\r\nAt first glance, that appears true. In spite of numerous shipments to a primary location, none of the materials are related to weaponry.\r\n\r\nAfter only a few questions, the officer cracks. \"Theres no weapon!\" he shouts. \"Its all a trick to lure out the Rebel fleet. I told him that Strang's plan was far more suited-\"\r\n\r\nYou cut him off, examining the terminal with this new information in mind. Indeed, you can see the seeds of the deception. With this information, and a new prisoner, perhaps this can be turned to the Rebellions advantage.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Place Story Mission card \"Last Stand\" into play.\r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Too late",
+      "GUID": "ecf1de70-136a-4490-be18-1688b3901d00",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose 2",
+      "GUID": "1b61136b-334a-4295-9cd5-46d0692a4189",
+      "eventText": "The officer scrambles away from you, shouting, \"Shoot them, you fools! Don't let them escape!\" Alarms ring in the background, and you cut through the Imperial forces, trying to catch up to your former captive.\r\n\r\nHowever, its too late. He disappears through an opening, and the door slides shut and locks. By the time you break through this door, he'll be long gone.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} Place Story Mission card \"Desperate Hour\" into play.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.\r\n{-} Because the captured officer got away early, the threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Opportune Moment Trigger",
+      "GUID": "e56775c8-5f71-47fa-a52c-452e18724a04",
+      "eventText": "Your captive struggles against your grip, shouting for help.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Opportune Moment 1",
+      "GUID": "dafd801b-26dd-475d-83e5-d4b3ace7e470",
+      "eventText": "Your captive manages to break free for a moment and stumbles away.\r\n\r\n{-} The captured officer moves 1 space away from the terminal.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Opportune Moment 2",
+      "GUID": "8a16864b-8890-490e-95e7-988aff129bc4",
+      "eventText": "Your captive shouts orders, and a soldier raises his weapon.\r\n\r\n{-} Another Imperial figure with a figure cost of 3 or less that can perform an attack attacks {rebel}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Opportune Moment 3",
+      "GUID": "e6f35b66-ec50-4ebd-bb1d-5033b97c4035",
+      "eventText": "Your captive shouts for help, and your enemies come rushing forward.\r\n\r\n{-} All Imperial figures within line of sight of the captured officer move 2 towards the captured officer.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Opportune Moment 4",
+      "GUID": "be4c6d97-7cbd-4075-be3d-fd6cdfa2890e",
+      "eventText": "One of the Imperial soldiers, more powerful than the others, rushes forward to attack.\r\n\r\n{-} The other Imperial figure with the highest figure cost that can attack moves 4 to attack {rebel}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Awaiting Departure",
+      "GUID": "4db252f2-291d-482c-8bec-3b14141abf05",
+      "eventText": "\"It won't work, you know,'' the officer says as he inputs yet another unique code. \"My people will fight to protect me.\"\r\n\r\nThe door opens, and several blaster bolts sizzle by, narrowly missing the officer. \"Watch your aim, you fools!\" he shouts.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Inspection Station Door",
+              "GUID": "52ff4c9c-55b3-4de3-9c13-08a5560653ad",
+              "theText": "Soft voices and the whirring of machines can be heard behind this door.\r\n\r\n{-} The door is locked.\r\n{-} If the captured officer is adjacent to the door, a Rebel figure can interact with him to open the door.",
+              "buttonList": [
+                {
+                  "GUID": "aee57271-e00b-4182-aa35-31fc7d1ee722",
+                  "theText": "Open"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "8105369d-26cb-466d-b4fc-1da3cd3b07b9",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "fa5fe700-cc3b-4324-b449-57a536c93ec9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "97bdada8-aa39-405d-b5b0-452e30712702",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "7f7985bf-2672-4f65-bf6c-d4e214ffd3e5",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        }
+      ]
+    },
+    {
+      "eventName": "On Board",
+      "GUID": "3912e9dc-40d0-49a8-b9b2-69a70ed2e210",
+      "eventText": "\"Listen, I'm sure we can come to an arrangement.\" The officer is getting more nervous as you draw closer to your objective. \"Please, you don't understand!\"\r\n\r\nIt takes a little more coaxing to get him to open the door, but eventually he complies, sweat dripping down his face.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Security Station Door",
+              "GUID": "22f46587-af0b-44fd-9202-c3a3f23c6c21",
+              "theText": "Computer beeps can be heard from behind this door. You appear to be close to your target.\r\n\r\n{-} The door is locked.\r\n{-} If the captured officer is adjacent to the door, a Rebel figure can interact with him to open the door.",
+              "buttonList": [
+                {
+                  "GUID": "35f6aacf-0165-466c-960d-f8cb2206b678",
+                  "theText": "Open"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Yellow",
+              "GUID": "c1105bfa-488f-4b65-bfcc-7a628abdbb18",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "9e8c1fa7-a4e5-4662-8733-5f05936421dc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "04a35bbf-4279-4d80-8854-188bd2dcbfd0",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG005/Imperial Officer"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "8a868e5f-e12b-4102-849b-3fc9f032bcb1",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        },
+        {
+          "shortText": "Secure the terminal.",
+          "longText": null,
+          "GUID": "dc1ceafc-63af-4f0e-b5cd-6a5f78b0fde8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "All heroes wounded",
+      "GUID": "fe4d2a95-25d7-4215-a5e4-3ec11626b8ac",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Into the Den",
+      "GUID": "31d4ea33-e4cb-4642-bbb8-2543112b867a",
+      "eventText": "\"No! Not in there! There are disgusting beasts inside!\"\r\n\r\nYour captive struggles, but finally gives in and opens the door. You almost wish he hadn't. Surrounded by trash and debris, snarling beasts turn toward you. The soldiers who were trying to reign them in also turn their attention on you.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Junk Shop Door",
+              "GUID": "e1b97580-a968-42c1-b54f-1e9af9faf33c",
+              "theText": "The growling of beasts can be heard behind this door.\r\n\r\n{-} The door is locked.\r\n{-} If the captured officer is adjacent to the door, a Rebel figure can interact with him to open the door.",
+              "buttonList": [
+                {
+                  "GUID": "c08365ae-af6b-4d43-bbda-26494115dd06",
+                  "theText": "Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "194d19fd-74ec-4195-96d0-ea833ff7fc06",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "0c4add2d-b7a2-4a4a-aca1-d34d7f103251",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG017/Nexu"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "a9cb2912-0aee-4350-bab2-ce7cac7c59fb",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG018/Nexu (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "6385df9f-91d5-4479-a902-5802595d8999",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG009/Royal Guard"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose Round limit",
+      "GUID": "8e4f5c9d-2353-4baa-abfc-27ebbe87129a",
+      "eventText": "The officer scrambles away from you, shouting, \"Shoot them, you fools! Don't let them escape!\" Alarms ring in the background, and you cut through the Imperial forces, trying to catch up to your former captive.\r\n\r\nHowever, its too late. He disappears through an opening, and the door slides shut and locks. By the time you break through this door, he'll be long gone.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} Place Story Mission card \"Desperate Hour\" into play.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "6ffce822-f715-4257-ba2d-a4d939812be8",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "a92b13bb-9068-43ba-bcf4-b1bd022db2ad",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "b91d3fdc-0f2c-490b-ae93-6a75cbb06421",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "17d1442f-da95-40aa-a314-612c8f43b458",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Nexu",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Junk Shop Door",
+      "GUID": "fcc78fba-1d53-45b2-a1b2-062a8e48f5da",
+      "mainText": "The growling of beasts can be heard behind this door.\r\n\r\n{-} The door is locked.\r\n{-} If the captured officer is adjacent to the door, a Rebel figure can interact with him to open the door.",
+      "buttonList": [
+        {
+          "GUID": "31cf3005-e357-4e40-aa67-bcbe15d7faff",
+          "theText": "Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Inspection Station Door",
+      "GUID": "cee84082-4441-4b2a-9ee1-f52f0dddbeec",
+      "mainText": "Soft voices and the whirring of machines can be heard behind this door.\r\n\r\n{-} The door is locked.\r\n{-} If the captured officer is adjacent to the door, a Rebel figure can interact with him to open the door.",
+      "buttonList": [
+        {
+          "GUID": "ee9707b2-ebf3-4b72-b2ba-ecbb46d1134e",
+          "theText": "Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Security Station Door",
+      "GUID": "8172f8c7-3189-4d5a-bc43-efe49038402e",
+      "mainText": "Computer beeps can be heard from behind this door. You appear to be close to your target.\r\n\r\n{-} The door is locked.\r\n{-} If the captured officer is adjacent to the door, a Rebel figure can interact with him to open the door.",
+      "buttonList": [
+        {
+          "GUID": "c72afc4b-faba-42f7-bb1d-b236403f254b",
+          "theText": "Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "9e551b22-5830-4da5-a5e1-5e8cc5c040ea",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "1c35bb0a-2f6f-478d-a31f-f042f7f2092a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Deploy Officer",
+      "GUID": "dd433b7b-167e-40d5-85c4-e54f52f47ef8",
+      "mainText": "Deploy the captured officer here.\r\n\r\nIf the captured officer is freed, click \"Officer freed\".",
+      "buttonList": [
+        {
+          "GUID": "db928c7b-7bfd-4304-b4b2-f6ebdbd72512",
+          "theText": "Officer freed"
+        }
+      ]
+    },
+    {
+      "entityName": "DP ENexu",
+      "GUID": "91ed31ff-6209-4bd4-948c-ed766ded5a26",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Royal 1",
+      "GUID": "b68db7a8-1d65-4b5b-9672-2d9880982165",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Royal 2",
+      "GUID": "ff239397-1a02-40f1-b670-ccea8bcd0d29",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "bdbbce0e-9c64-4769-9cb4-3af34ea45d35",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1",
+      "GUID": "998d5522-ab7a-4744-be0c-25f448ac0ffb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "a3b24115-837e-4396-87a2-f8048499df5b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "e8ecb747-0503-49b9-80eb-6ff8825eda24",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Terminal",
+      "GUID": "d3578f6b-73c0-42d7-9406-94e299654358",
+      "mainText": "The terminal hums softly.\r\n\r\n{-} If the captured officer is adjacent to the terminal, a Rebel figure can interact with him secure the terminal.",
+      "buttonList": [
+        {
+          "GUID": "d3acdf5e-bdf2-4365-b75f-ffaa23b40ada",
+          "theText": "Secure Terminal"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

@@ -1,0 +1,855 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "The Final Order",
+    "missionDescription": "If playing a mini campaign, heroes must bring a Spectre ally that they have not brought to a mission during this mini campaign. ==== An Imperial engineer on Lothal has offered to defect. What's more, he claims to know where we can find vital information on Grand Admiral Thrawn's latest plans for the Lothal system. Command wants you to check into his claim and, if necessary, put a stop to whatever Thrawn is planning.",
+    "missionInfo": "",
+    "campaignName": "Tyrants of Lothal",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the Datavault.",
+    "additionalMissionInfo": "If playing a mini campaign, heroes must bring a Spectre ally that they have not brought to a mission during this mini campaign."
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "8d3841d9-4db5-4ee4-94b7-125a2f43f778",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "ae7c7afe-d50e-40b1-98ee-09b8440ff723",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "cc1dd533-7b86-4afe-80f5-28a16f28d0a6",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "774b1e4d-4b58-42b5-a966-e9873e1446a5",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "bd65e185-2f7e-49e4-a5ef-021cb83b6c55",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "f82ee518-6d69-4966-9ee1-55d29847e6b1",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "You meet the Imperial defector not far from a small settlement on Lothal. He presses a code cylinder into your palm and tells you the location of an Imperial datavault containing intel critical to Thrawn.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.",
+      "eventActions": [
+        {
+          "tbText": "Sentries are guarding the datavault, but even though they offer fierce resistance, you can't shake the feeling that this is all some kind of cruel test of your skills.\r\n\r\n{-} Set aside *1* neutral mission tokens. Neutral mission tokens are insights.",
+          "GUID": "1782c751-a309-4259-8cca-5f447b237f35",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "But whether you are truly being watched or not, the opportunity is too good to pass up.\r\n\r\n{-} The mission will progress at the start of the Status Phase if all Rebels are on the Datavault.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "cdacb49d-26ae-4cb2-9957-bc9a6849a678",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "newInstructions": "{-} When this figure attacks, if there is an insight set aside, place it on the hero sheet / deployment card of the target and apply -1 {H} to the attack.",
+          "GUID": "f184f1d3-bb4b-40ab-8a2c-896e51ac1b78",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "shortText": "Enter the Datavault.",
+          "longText": null,
+          "GUID": "a392947f-57e4-426e-873c-e68f011ac292",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Neutral mission tokens are insights.\r\n{-} The mission will progress at the start of the Status Phase if all Rebels are on the Datavault.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "472d2c84-10ee-4fdb-b32e-25d81355a746",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "\"A worthier foe than even I realized,” Thrawn muses as he falls back to a waiting shuttle.\r\n\r\n{-} The Rebels win the mission!\r\n{-} If playing this mission as a side mission, heroes receive 150 credits per hero.",
+      "eventActions": [
+        {
+          "mainText": "Are you playing this mission as part of the \"Tyrants of Lothal\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "dc37bce0-c4dc-4b63-8c46-b2dcddd8e655",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "042ba502-bd32-441a-8202-812f75973120",
+              "theText": "No"
+            }
+          ],
+          "GUID": "fa160c96-ff1c-4306-ad5f-f40d51ef9331",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Thrawns soldiers close in. He allows a small smile as you fight desperately to escape capture.\r\n\r\n{-} The Rebels lose the mission.",
+      "eventActions": [
+        {
+          "mainText": "Are you playing this mission as part of the \"Tyrants of Lothal\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "ce63b6a1-527a-4347-900b-826b5249186b",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "a4d1cf53-6662-4106-80a9-468bda273fa6",
+              "theText": "No"
+            }
+          ],
+          "GUID": "922d0b18-3b9c-4426-b8b1-9d79afd7d873",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Mini campaign Win",
+      "GUID": "1fb0c0b1-7388-42f6-9c4c-801de27f03a5",
+      "eventText": "The area around the Imperial datavault is in chaos. Smoke rises from the datavault itself as troopers move in. But with Thrawn temporarily indisposed, the Imperial response is confused and ineffective; by the time they arrive, you're long gone.\r\n\r\n\"You met Grand Admiral Thrawn and came out on top. That's impressive\", says Hera after you fill her in. She cannot suppress a smile, even though she's obviously conflicted. \"Thrawn won't forget you any time soon. Lothal isn't safe for you anymore.\" She holds up a hand before you can protest. \"I think it's time I introduced you to someone.\"\r\n\r\nSome weeks later, after being handed off from one Rebel courier to another, you finally descend toward the heavily jungled landscape of the fourth moon of the planet Yavin. Your transport sets down in the shadow of a massive temple far older than this war.\r\n\r\nA man is waiting as you disembark, an older human in uniform. \"Captain Syndulla speaks very highly of you\", he says. \"I am General Dodonna. Let me be the first to say: Welcome to the Rebel Alliance.\"\r\n\r\n{-} The Rebels win the campaign!",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mini campaign Defeat",
+      "GUID": "ee9e6f21-9b9f-47ca-b982-44b59453a837",
+      "eventText": "\"I must commend you\", says Thrawn, his cool, clipped speech grating from days of repetition. He speaks to you only rarely, but his visits are your only respite from his interrogators. \"You know that the information you have can only lead us to a handful of others. The entire Rebel effort is hardly at stake. And yet...\" He turns, inspecting you like one of his trophies. \"...even knowing that, you resist. You are willing to die to save so few.\"\r\n\r\nThrawn moves closer. If your hands weren't in binders you could reach out and strangle him. \"I am willing to ensure that you will live out the remainder of your sentence in relative comfort. For a Rebel, this is an uncommon offer.\r\n\r\nYou say nothing.\r\n\r\nHe frowns. \"Lieutenant\", he says, addressing the interrogator you've come to loathe. \"I believe the labor camp on Wobani is in need of extra hands. Make preparations to transfer this prisoner there.\" Thrawn steps into the doorway, then pauses. Light from the detention corridor plays across his blue skin; you see his red eyes glimmer once more, already planning his next move in his efforts to destroy the Rebellion.\r\n\r\nAnd then he is gone, plunging you back into darkness.\r\n\r\n{-} The Empire wins the campaign!",
+      "eventActions": []
+    },
+    {
+      "eventName": "No campaign",
+      "GUID": "8fe1b24a-487b-46a0-9e81-94329508e0dc",
+      "eventText": "{-} Each hero receives 1 XP.\r\n{-} Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Terminal 1 destroyed",
+      "GUID": "7cfd30bb-fb29-4ecd-b4dd-16838cfb03ea",
+      "eventText": "The terminal collapses in a shower of sparks.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "f6ed69b7-de75-4ef9-876b-979d51a94c11",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "e0af9e83-c24f-49fb-8d36-5772a9f462ee",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "491c6b08-a8a8-420c-93d6-c29c851394c0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 2 destroyed",
+      "GUID": "2d4c1d6d-d05a-46b9-8a71-bc6be23d055b",
+      "eventText": "The terminal collapses in a shower of sparks.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 2",
+              "GUID": "b107799d-ff84-4549-8abb-6f598904a655",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "ad806be8-30c4-423d-b6cc-7187a5ddd348",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "3238d093-0270-46e5-843e-ea73b7a7cd01",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 3 destroyed",
+      "GUID": "1c1454ba-5779-4786-8073-b112a55b584c",
+      "eventText": "The terminal collapses in a shower of sparks.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 3",
+              "GUID": "da77e3c6-ab8d-4954-9a75-239033df53f1",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "6b21df2b-452b-4b73-ae55-3ee0aa9f4954",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "636e9639-a7b5-4b88-86a2-1537eb0d382f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 4 destroyed",
+      "GUID": "3f456ff9-4df9-4486-b3f9-e503ce941476",
+      "eventText": "The terminal collapses in a shower of sparks.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 4",
+              "GUID": "8a9e4263-da37-4e1a-8362-921227ad3c4e",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "edd826cf-314f-40bb-ac05-a72a76428d86",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "efb91b2a-94e4-4335-8397-74c1301bf3ea",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Under Surveillance",
+      "GUID": "724d6085-39c1-4005-b46b-d8c75ae8b2a5",
+      "eventText": "You can't shake the feeling that you are still under surveillance.\r\n\r\n{-} If there is an insight set aside, place it on the hero sheet / deployment card of {rebel}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Enter Datavault",
+      "GUID": "04bc805c-1cd3-4316-92fe-0de10e51bab2",
+      "eventText": "The door to the datavault slides open and reveals a large room. Terminals and computer consoles line the walls and the floors, but they are dark and silent.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Datavault",
+              "GUID": "95c7c418-528b-4628-87cb-be3cc0239424",
+              "theText": "According to your data, this door leads into Thrawn's datavault.",
+              "buttonList": [
+                {
+                  "GUID": "46d715fc-3b5b-4328-a1f8-06dc359dd22c",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "68ace406-80f0-4d93-b9f0-941d9dbfca09",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "A door leads deeper into the facility. From Thrawn's transmissions, you recognize it as the door that leads to his Trophy Room.\r\n\r\n{-} The door to the Trophy Room is locked.",
+          "GUID": "99e94ad1-0364-47c9-8d9e-da71fb46c28f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} The door to the Trophy Room is locked.\r\n{-} Neutral mission tokens are insights.\r\n{-} The mission will progress at the start of the Status Phase if all Rebels are on the Datavault.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "f8a055ba-1aae-498d-8bd6-e3a47ef550b9",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "EoR Question",
+      "GUID": "be10be23-4959-4c11-b144-f79acddbdaec",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Are all heroes on the Datavault?",
+          "buttonList": [
+            {
+              "GUID": "e42c3802-e14c-482a-bad6-85b8392cb0c1",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "0e208891-4efb-4f34-a275-ea5122d06371",
+              "theText": "No"
+            }
+          ],
+          "GUID": "2d3df5e0-6042-4911-848b-5d7ca66bc53a",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Thrawn's Snare",
+      "GUID": "57f33a41-9f08-4911-9558-1f3c620dba0a",
+      "eventText": "Suddenly, terminals power up. On every screen, you see details about Rebel operations in the sector.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Red 1",
+              "GUID": "47ab2a9e-7645-4a55-8e05-b3f3579ca3c5",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "b1237a7d-2558-44f4-b3c2-0c29225ad63a",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 3",
+              "GUID": "112581c8-d514-4a08-9824-4b6750690d3b",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "9b3335e3-9635-41a4-8973-6257152f2edd",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 2",
+              "GUID": "fb2bfbdf-a12f-4d5b-aa03-3b427cfdbafb",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 3",
+              "GUID": "09a260eb-e8ad-4d02-8db1-21d8fef6b285",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "90e8fc83-1f5f-4094-a318-1313ae6e558b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "46f3bc0c-542f-4385-9925-08100e6fa295",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "cbd0750e-827e-41c4-a7a9-286390be81d7",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 2",
+              "GUID": "33532ea5-11bb-4cc3-b040-98131cf7dab2",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "d169bbc2-b638-4966-a13c-9f88fecd7252",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 3",
+              "GUID": "a4ea0785-1b37-4807-9e2e-aef1ad73a120",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "fdc0b55f-8ae2-4e8a-9758-6cd9043f60cf",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 4",
+              "GUID": "efe8252b-0209-4f14-928c-7bc9ca863457",
+              "theText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "6a0c679e-9c01-42f2-8d6b-cf74de0da562",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "a45faf75-c799-4539-a00c-0319c43e24ee",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "A hologram of Grand Admiral Thrawn flickers to life. “Your progress is impressive,\" he says, “but it is time to put an end to this game.”",
+          "GUID": "787c15e4-d4b5-4fcc-9d4f-c183a5a77234",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{-} Ignore the bonus effect LONG-LAID PLANS.\r\n{-} REMOTE SURVEILLANCE: If an insight is set aside, place 1 insight on the hero sheet / deployment card of {rebel}.\r\n{-} REMOTE PATIENCE: The other X highest figure cost Imperial figures gain 1 {h} and 1 {g}. X is equal to the number of exhausted Rebel activation tokens.\r\n{-} REMOTE LONG-LAID PLANS: The other X highest figure cost Imperial figures gain 1 {h}. X is the number of the current round.",
+          "modification": "+*1* Health",
+          "repositionInstructions": "",
+          "GUID": "d987fb4a-7108-4e94-81f6-3a57fdcd2f9a",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG085/Thrawn"
+        },
+        {
+          "tbText": "{-} Set <color=\"red\">Thrawn</color>'s figure aside. It is not on the map.",
+          "GUID": "700f4805-7677-4dc9-813e-f31918a7b3d2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "The vault's computers start uploading the data to Thrawn’s ship — if the upload completes, every Rebel near Lothal could be in danger.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *2*, Defense: 1 {G}).\r\n{-} When all terminals are destroyed, the data upload stops.\r\n{-} The mission will progress when the data upload stops.",
+          "GUID": "37b1172e-d667-46a4-9dfd-7a54caae2a53",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Thrawn's forces have just been lying in wait. They immediately rush in through hidden doors.",
+          "GUID": "de979791-0961-4af1-9837-110bd262f2a0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "newInstructions": "{-} When this figure attacks, if there is an insight on the target, add 1 red die to the attack pool, then set the insight aside. Otherwise, if an insight is set aside, place it on the hero sheet / deployment card of the target and apply -1 {H} to the attack.",
+          "GUID": "f55beb25-8003-4cc9-947f-eccd1fdadddb",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "repositionText": "Block access to the terminals.",
+          "GUID": "d78a7d5f-491f-4c34-aae5-c15913ab7fa8",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "Thrawn's voice crackles over the comlink. \"Thank you for the valuable data I was able to gather from your fighting style,\" he says calmly. \"This will come in very handy.\"\r\n\r\n{-} The Empire can now use insights on hero sheets / deployment cards when instructed.",
+          "GUID": "a3bce6ae-09af-42fb-94b7-b6c39943b64c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Destroy the terminals (&Terminals destroyed&/4).",
+          "longText": null,
+          "GUID": "3a58c36f-6a49-414f-882a-41737d798163",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The door to the Trophy Room is locked.\r\n{-} The door to the outside is locked.\r\n{-} Neutral mission tokens are insights.\r\n{-} A Rebel figure can attack a terminal (Health: *2*, Defense: 1 {G}).\r\n{-} When all terminals are destroyed, the data upload stops.\r\n{-} The mission will progress when the data upload stops.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "13012cba-5a28-4bc6-8475-52de06d5f0d5",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Thrawn's Snare 2",
+      "GUID": "95e8d348-e90d-4a02-a143-49e463771ed0",
+      "eventText": "Urged on by Thrawn's message, the Imperial forces outside the Datavault rush in.\r\n\r\n{-} Push every Imperial figure on an exterior space to the closest free space in the Datavault.",
+      "eventActions": [
+        {
+          "tbText": "Behind them, the door slams shut.\r\n\r\n{-} The door to the outside is locked.",
+          "GUID": "ec918d65-897c-43c8-95c7-4e2b3c94a5df",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Datavault",
+              "GUID": "e3f3cffb-b66c-419e-991d-eda12b65d72a",
+              "theText": "The door to the outside is locked tight.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a7538aa0-a037-43c8-82b4-a7421addc40b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "EoR 7",
+      "GUID": "0a4ab53e-fd4f-4312-82b9-e6e0a405a4b1",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "No More Games",
+      "GUID": "fc80e8f6-1f5a-4ed8-9a4f-f970f075d498",
+      "eventText": "The datavault’s security systems fail. Doors all around fly open. “Seize the Rebels,’ says Thrawn. His bodyguards raise their weapons.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Datavault",
+              "GUID": "5c6a2938-20f8-4f61-899f-14ec18428695",
+              "theText": "According to your data, this door leads into Thrawn's datavault.",
+              "buttonList": [
+                {
+                  "GUID": "2060c71a-11a4-4685-86a5-42156ee03d75",
+                  "theText": "{A} Open"
+                }
+              ]
+            },
+            {
+              "entityName": "Door Trophy Room",
+              "GUID": "3a018e47-596d-4b25-9824-93fec15491ba",
+              "theText": "The door to Thrawn's Trophy Room is locked tight.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "5cda84db-a15c-44a8-80ff-81564a595e80",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "e7718b25-dee0-491b-9258-d6d65c69e275",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        },
+        {
+          "tbText": "{-} Place <color=\"red\">Thrawn</color>'s figure on tile 36B directly behind the central <color=\"red\">Stormtrooper</color>.\r\n{-} When <color=\"red\">Thrawn</color> is attacked, if there is an insight on the attacker, set that inside aside and remove 1 die from the attack pool (priority: red, yellow, green, blue).\r\n{-} The mission no longer ends at the end of Round 7.\r\n{-} The Rebels win when <color=\"red\">Thrawn</color> is defeated.",
+          "GUID": "f4ae2939-bccb-4559-bd3a-c3ff37fa5f42",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "newInstructions": "{-} When this figure attacks, if there is an insight on the target, add 1 red die to the attack pool, then set the insight aside. Otherwise, if an insight is set aside, place it on the hero sheet / deployment card of the target and apply -1 {H} to the attack.\r\n{Q} Move 3 to attack {R1}.\r\n{A} Move 3 toward the closest other Imperial figure.\r\n{-} PATIENCE: This figure and the other highest figure cost Imperial figure within X spaces gains 1 {h} and 1 {g}. X is equal to the number of exhausted Rebel activation tokens.\r\n{A} Move 5 to reposition 3.",
+          "GUID": "e01371aa-7b7f-4cb0-9b43-e4546cefa0da",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "repositionText": "Block line of sight to <color=\"red\">Thrawn</color>.",
+          "GUID": "418bb896-3e13-4656-946a-553cdf987708",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">Thrawn</color>.",
+          "longText": null,
+          "GUID": "90b69418-7bff-4cb2-9995-9b83e23eb450",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Neutral mission tokens are insights.\r\n{-} When <color=\"red\">Thrawn</color> is attacked, if there is an insight on the attacker, set that inside aside and remove 1 die from the attack pool (priority: red, yellow, green, blue).\r\n{-} The Rebels win when <color=\"red\">Thrawn</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "66c6723e-6159-4d72-ab44-a690c680844a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "197fc9ef-071a-4a72-b6fb-54baf94cf0fe",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "b4a68e3e-adaf-4346-b4a4-9d694293e893",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "387ba0cb-92b5-49f9-a27c-c72e88d2600e",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "eb5835a0-a250-4df1-8de1-17942c66d7d3",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EDTrooper",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door Datavault",
+      "GUID": "25174d45-de3d-4e95-be58-6f5b997f6c1f",
+      "mainText": "According to your data, this door leads into Thrawn's datavault.",
+      "buttonList": [
+        {
+          "GUID": "9c9c091f-2c0d-4ae0-b718-13f1d25a68ae",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "371bcb6a-8f39-4f80-b5a3-0814751d7772",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 2",
+      "GUID": "98d27b1b-3f93-438e-a432-c8105e03b3d7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Loth 1",
+      "GUID": "8f75e484-24d0-48c8-b261-18d968e36395",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Loth 2",
+      "GUID": "4a3390db-97da-432e-9984-b4cc270c6060",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door Trophy Room",
+      "GUID": "8a9f52b4-a3b1-4a84-8045-d187b89809ae",
+      "mainText": "The door to Thrawn's Trophy Room is locked tight.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "a8b8e16b-1b80-48cb-a7ed-1591e43be381",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "a7bca883-f0e0-4c14-9d6f-10549d4545c2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 3",
+      "GUID": "bf53163b-ddb2-46eb-aae0-7f5269847d80",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "9bfc9cf9-6dbc-400b-80de-fdadd27f593e",
+      "mainText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "cdc16c0c-cc91-4896-8cd3-8abe63d85f69",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 2",
+      "GUID": "ba4f21b9-2733-439e-9edc-d2e104672058",
+      "mainText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "4758338d-a090-4faa-9b7f-6ed216d21748",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 3",
+      "GUID": "5edda759-585b-4331-b704-c39be2d9d633",
+      "mainText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "75d968e8-b01c-4de7-bbe5-efe4b90cb959",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 4",
+      "GUID": "a407dff0-dab5-4e3c-9123-ba31092d1c30",
+      "mainText": "The terminal hums softly as it uploads the data stream.\r\n\r\n{-} A Rebel figure can attack the terminal (Health: *2*, Defense: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "26e84251-1b82-4efd-a800-7c4deaadeae0",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Trophy Room 1",
+      "GUID": "eaab7cba-dcf9-4370-8524-c3a1e7e03cd7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trophy Room 2",
+      "GUID": "e1a94f9c-7b45-4b8d-8f4f-134162dcefdd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trophy Room 3",
+      "GUID": "add654d3-cf3c-411c-967f-c08fdf872e3c",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Death Trooper (Elite)",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Loth-cat",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    }
+  ]
+}

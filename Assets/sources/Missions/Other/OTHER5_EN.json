@@ -1,0 +1,398 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Binary Revolution",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "IG-88 (Assassin Droid) Villain Pack",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the doors.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "e9f5485a-8343-4d75-a8a1-a5f4b8ca2301",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "88870742-1946-45fa-a305-5b920ec3f30e",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "db604435-2abb-4cbf-9963-069c42fc752d",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Sparks fly as the explosives you laced around the door to IG-88's command center detonate. Laser fire blasts through the opening, and you duck into cover.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} Doors are locked. A Rebel figure can attack a door (Health: *2*, Defense: 1 black die).",
+      "eventActions": [
+        {
+          "tbText": "After laying down some suppressing fire, you are able to gain some ground into the center. Through the smoke and blaster fire, you are surprised to see IG-88 in the wave of guards. If you can take him out quickly, this job might even prove to be easy.",
+          "GUID": "242940e7-54c3-44dc-aa36-dc9765831469",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "IG Copy 1",
+              "GUID": "15d93b3e-12eb-4595-8d0b-5bc04c99ecce",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "108c54c1-5aae-46c1-bbcd-fbd211f162a7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Green Imperial mission tokens represent IG units. IG units do not have the abilities \"Arsenal\" and \"Assault\" that <color=\"red\">IG-88</color> has.",
+          "GUID": "2948eec7-8f2c-4b2b-ae60-fd4dc0ee9599",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Recover 3 {H}\r\n{B}: +2 {H}",
+          "bonuses": "FOCUS ON THE KILL: Discard all Harmful conditions from this figure, or, if it has no harmful conditions, it becomes <color=\"red\">Focused</color> instead. Then, it moves 2 toward the closest Rebel.\r\nBLAZE OF GLORY: At the end of this activation, this figure moves 1 to attack a Rebel with 1 yellow and 1 red die. Apply +2 Accuracy to the attack results. Then, if this figure performed this attack, it suffers 3 {H}.",
+          "keywords": "+1 {G}\r\n+2 Accuracy",
+          "abilities": "Relentless: When you declare an attack targeting a figure within 3 spaces, that figure suffers 1 {C}.",
+          "customText": "{Q} Move 1 to attack {R1} within 3 spaces with 1 red and 1 yellow die.\r\n{Q} Move 1 to attack {R1} within 2 spaces with 1 red and 1 yellow die.\r\n{Q} Move 5 to attack {R1} within 3 spaces with 1 red and 1 yellow die.\r\n{A} Move 1 to reposition 2.\r\n{A} Move 9 to reposition 2.",
+          "cardName": "IG Unit",
+          "GUID": "def5bc9f-52e2-47c0-8efb-c371ce8ca7f2",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: IG Unit"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "IG Copy 1",
+              "GUID": "28f4a446-3c4c-4e52-be0a-81530da3566e",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "76b0e78b-7717-4cf0-bed5-8043821149e4",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "You start blasting the guards, trying to move deeper into the command center.\r\n\r\n{-} The mission will progress when a door is destroyed.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "cc4270b1-40e9-4c2c-a7c1-5a4e8da47127",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Move deeper into the command center.",
+          "longText": null,
+          "GUID": "c8ae1627-d572-47e8-8264-8c27f384f719",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Green Imperial mission tokens represent IG units. IG units do not have the abilities \"Arsenal\" and \"Assault\" that <color=\"red\">IG-88</color> has.\r\n{-} Doors are locked. A Rebel figure can attack a door (Health: *2*, Defense: 1 black die).\r\n{-} The mission will progress when a door is destroyed.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "5f6b3997-511d-4c41-abf4-392289a5b304",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "\"You cannot stop the inevitable,\" IG-88 hisses at you in a rasping, mechanical voice as he retreats. \"We are your superiors. The day is coming soon when we will take our rightful place as masters of this galaxy!\"\r\n\r\n{-} The Rebels win the mission!\r\n{-} Each hero receives 1 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Droids circle around you, threatening as more IG units advance. All you can do is blast through the wall of mechanical bodies and retreat.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The Empire receives <color=\"red\">IG-88</color> (Assassin Droid) as a villain.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Droid Uprising",
+      "GUID": "5203ed2a-49dc-4c15-8eeb-1cff5ff84d5d",
+      "eventText": "The door collapses into rubble and splinters. Security systems malfunction, and the second door slides open, too. Behind lies a small, dimly lit room.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "3cd5745a-ea32-4060-b0c9-af05540d63a3",
+              "theText": "A security door leads deeper into IG-88's base.\r\n\r\n{-} The door is locked. A Rebel figure can attack the door (Health: *2*, Defense: 1 black die).",
+              "buttonList": [
+                {
+                  "GUID": "1da29561-de8c-4268-ab12-deeaa3cfb497",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "Door 2",
+              "GUID": "94300a54-0ab1-4582-b4fe-bb6618a1c131",
+              "theText": "A security door leads deeper into IG-88's base.\r\n\r\n{-} The door is locked. A Rebel figure can attack the door (Health: *2*, Defense: 1 black die).",
+              "buttonList": [
+                {
+                  "GUID": "949a5301-d05c-4d5e-8c0e-7c8a0b8f8a98",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Red 1",
+              "GUID": "f8d45808-c150-48e3-8766-7cdd04636ae0",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "f60e90d9-ec13-45d4-86ae-ffb2ad408c45",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "a67acdcc-0551-48d0-b32f-dab8af043c6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Another IG unit swivels its optical sensors in your direction.",
+          "GUID": "56e1cf93-be7b-45f8-baec-ce2bfb492611",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "IG Copy 2",
+              "GUID": "875692c7-86f1-4d16-9b79-2470d3ea9308",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "6c78f505-0be0-4cf7-9acf-20ae0561eb32",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Recover 3 {H}\r\n{B}: +2 {H}",
+          "bonuses": "FOCUS ON THE KILL: Discard all Harmful conditions from this figure, or, if it has no harmful conditions, it becomes <color=\"red\">Focused</color> instead. Then, it moves 2 toward the closest Rebel.\r\nBLAZE OF GLORY: At the end of this activation, this figure moves 1 to attack a Rebel with 1 yellow and 1 red die. Apply +2 Accuracy to the attack results. Then, if this figure performed this attack, it suffers 3 {H}.",
+          "keywords": "+1 {G}\r\n+2 Accuracy",
+          "abilities": "Relentless: When you declare an attack targeting a figure within 3 spaces, that figure suffers 1 {C}.",
+          "customText": "{Q} Move 1 to attack {R1} within 3 spaces with 1 red and 1 yellow die.\r\n{Q} Move 1 to attack {R1} within 2 spaces with 1 red and 1 yellow die.\r\n{Q} Move 5 to attack {R1} within 3 spaces with 1 red and 1 yellow die.\r\n{A} Move 1 to reposition 2.\r\n{A} Move 9 to reposition 2.",
+          "cardName": "IG Unit",
+          "GUID": "0d9c793a-3f6c-4837-82d6-5d3241f8db44",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: IG Unit"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "IG Copy 2",
+              "GUID": "10e6f915-3879-42f8-9f52-9c1a39151de7",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "dbe31999-5e89-4c24-a797-3d37a5beb07d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "More of IG-88's allies storm in.",
+          "GUID": "b46d2875-46bf-4304-b7da-d46f4e4b8997",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": null,
+          "GUID": "8203037d-5547-4f98-80cf-b17168d1ca96",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "theText": "{-} Green Imperial mission tokens represent IG units. IG units do not have the abilities \"Arsenal\" and \"Assault\" that <color=\"red\">IG-88</color> has.\r\n{-} The mission will progress at the end of the Round.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "de179a60-639c-4711-8f70-22f7df9eda09",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Mass Produced",
+      "GUID": "3d5cf87a-c0f3-4d88-aa11-d85fce7683f8",
+      "eventText": "A third IG unit walks through the door with armored plating and a massive blaster rifle. He looks in your direction, his mechanical eyes glowing bright red.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": "+*1* Health",
+          "repositionInstructions": "",
+          "GUID": "1400cfab-458b-4202-834f-013bc74fef45",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG071/IG-88"
+        },
+        {
+          "tbText": "{-} <color=\"red\">IG-88</color>'s \"Relentless\" ability also causes the target to suffer 1 {H}.\r\n{-} The Rebels win when <color=\"red\">IG-88</color> and both IG units have been defeated.",
+          "GUID": "adbe4226-4baa-434c-aca4-9c35eb54a303",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">IG-88</color> and both IG units.",
+          "longText": null,
+          "GUID": "05910c7e-50a7-4738-86a2-513df90d57bb",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Green Imperial mission tokens represent IG units. IG units do not have the abilities \"Arsenal\" and \"Assault\" that <color=\"red\">IG-88</color> has.\r\n{-} <color=\"red\">IG-88</color>'s \"Relentless\" ability also causes the target to suffer 1 {H}.\r\n{-} The Rebels win when <color=\"red\">IG-88</color> and both IG units have been defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "5e4dfab6-109a-4709-a987-823b73fbceb3",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "7d78288f-644b-4803-a515-5ecd44f14b6b",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "2808b303-524b-4501-9e50-4338d9110e37",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "cbdb05d1-c807-41e8-a6e3-75f217c1d9e9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "59aec7e4-6c85-4d6a-9d26-2bb3ab5ed8df",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "bb6fc133-ed27-442f-b462-84c58bcdd804",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "IG Copy 1",
+      "GUID": "a6233796-70e2-41fa-b878-15b3f02f750e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "IG Copy 2",
+      "GUID": "832a72b2-9e6b-4de4-8594-ee03ce4c1dc7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 1",
+      "GUID": "888dfce9-24f3-4bcd-bedf-03df26ed70f3",
+      "mainText": "A security door leads deeper into IG-88's base.\r\n\r\n{-} The door is locked. A Rebel figure can attack the door (Health: *2*, Defense: 1 black die).",
+      "buttonList": [
+        {
+          "GUID": "df670558-b2a8-4c08-97c4-eebda690b284",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Door 2",
+      "GUID": "bd2cc5d9-c284-4937-93ff-4b7a89ac3ea6",
+      "mainText": "A security door leads deeper into IG-88's base.\r\n\r\n{-} The door is locked. A Rebel figure can attack the door (Health: *2*, Defense: 1 black die).",
+      "buttonList": [
+        {
+          "GUID": "483189dd-87f1-43f4-9701-1df6815ead18",
+          "theText": "Destroy"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    }
+  ]
+}

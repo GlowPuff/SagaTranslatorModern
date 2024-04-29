@@ -1,0 +1,575 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Hostile Takeover",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "The Bespin Gambit",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the Cell.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "f49504ed-b538-457d-97b7-858b80a08db0",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "56c71cb9-3240-4e2a-bfe2-424635f5b45d",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9d0e48d5-b717-4653-8fa3-f114e1adb9f8",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "33c8c41e-ae0f-48ad-902c-08724f4b26bb",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "fb693e22-eda5-46de-98de-74df63c4e2df",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Even the ISB has blind spots. Sympathetic Ugnaught laborers show you how to get down to the carbon freezing chamber unnoticed.\r\n\r\nYou pop the grate off the wall and collect yourselves. The way may have been safe, but the chamber is not.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.",
+      "eventActions": [
+        {
+          "tbText": "{-} Doors are locked.\r\n{-} A Rebel figure can interact with the door to the Cell ({I}) to try and open it.\r\n{-} The mission will progress when the door to the Cell is opened.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "b5251b68-e8cc-40b4-bbed-6a802487af13",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Open the door to the Cell.",
+          "longText": null,
+          "GUID": "91952d74-89c6-4932-8646-1879becf7a5f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Doors are locked.\r\n{-} A Rebel figure can interact with the door to the Cell ({I}) to try and open it.\r\n{-} The mission will progress when the door to the Cell is opened.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "0b5d8b6c-16f6-479f-bf1b-af9582494b0b",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Imperial troops prioritize protecting the now-frozen Agent Blaise, despite your desperate situation. Lando seems to enjoy the moment a little too much.\r\n\r\n{-} The Rebels win the mission!\r\n{-} If playing this mission as a side mission, heroes receive the “Relief Effort” Reward card.",
+      "eventActions": [
+        {
+          "mainText": "Did you play this mission as part of the \"The Bespin Gambit\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "a6ce9472-2690-4d59-ace4-f16ff2831191",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "c0914855-28b9-4ac5-8ef6-2d37f2997e69",
+              "theText": "No"
+            }
+          ],
+          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Blaise’s defenses were ultimately effective, thwarting your counterattack. There is no option but to retreat.\r\n\r\n{-} The Rebels lose the mission.",
+      "eventActions": [
+        {
+          "mainText": "Did you play this mission as part of the \"The Bespin Gambit\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "4e24233e-40a9-4ed6-8ca9-eca1b50db05d",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "cfe65d16-2324-41d2-a8ef-19335febab33",
+              "theText": "No"
+            }
+          ],
+          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Campaign Win Yes",
+      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
+      "eventText": "“Where are my 'Rebel friends', Interrogator? Right here, you son of a bantha!” ISB interrogation methods are highly classified, but whatever happened, Lando has taken it extremely personally. “Your bucketheads couldn't save you, could they? And now you're frozen. You! Not me, you stupid nerfherder!”\r\n\r\nYou pull the raving Lando from the controls. Though the ISB is primarily concerned with secrecy, the countless Imperial troops doubtlessly on their way will be much more aggressive. You break for headquarters immediately.\r\n\r\nOnce safely back with your guerrillas, Lando reveals that he swiped a few surveillance codes from Blaise on the way out. He addresses the soldiers, “These aren't what we went in for, but they do give the resistance a window of opportunity. It’s time to strike a blow against the Imperial occupation!” The resistance leaders immediately begin setting in motion a plan that has obviously been practiced.\r\n\r\nLando turns back to you. “Thank you, friends. You've done enough. We can take it from here. Get back to High Command. We may never know what those Imperial codes contained, but we wort come out of this empty-handed.”\r\n\r\n{-} The Rebels win the campaign!",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Defeat Yes",
+      "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
+      "eventText": "Unable to best the ISB, you retreat amidst overwhelming blaster fire. Lando crawls back into the service tunnels and scampers to warn the guerrillas. As you kneel to follow, you feel the first blaster bolt.\r\n\r\nAfter a brief, but intense firefight you are subdued, physically beaten. “No, no, no. You don’t get to die, yet. There is still so much to learn.” Blaise issues a few orders, and you watch blurry medics tend your wounds before you finally lose consciousness.\r\n\r\nAfter weeks of interrogation, Blaise is content that the Rebels are broken. ISB infiltrators raid guerrilla strongholds and eliminate the resistance. Peace and stability return to Cloud City.\r\n\r\nLong live the Emperor!\r\n\r\n{-} The Rebels lose the campaign.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign No",
+      "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
+      "eventText": "{-} Each hero receives 1 XP.\r\n{-} Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Cell Door Attempt",
+      "GUID": "43162076-510d-4770-ae85-76bfc27fb14b",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You start picking the lock.\r\n\r\n{-} Test {I}. Apply +1 {B} for each strain token on the door, then discard all strain tokens on the door. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "b34aa8c5-edea-44f8-88cf-a85851bc6275",
+              "theText": "You don't make any progress."
+            },
+            {
+              "GUID": "ff84ec7a-3511-4e55-a050-70fb33240a21",
+              "theText": null
+            }
+          ],
+          "GUID": "e6e99c20-3773-4192-9ba4-53cdddf3aa28",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "A Familiar Face",
+      "GUID": "39145145-213a-4a97-8aca-b807b6490e0a",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cell Door",
+              "GUID": "29e99fdf-b5a0-44ba-b3e0-04a9b52efaf3",
+              "theText": "The door to the improvised holding cell is locked tight.\r\n\r\n{-} A Rebel figure can interact with the door to the Cell ({I}) to try and open it.",
+              "buttonList": [
+                {
+                  "GUID": "a84f22fc-6cfa-4dd4-a9e3-0396dbf86aaf",
+                  "theText": "{A} Pick lock"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "88bb3582-e997-42a3-ad66-1d31e85cd41f",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Yellow 1",
+              "GUID": "a0bc8948-2ef4-4ec0-b768-907c98a987b7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Yellow 2",
+              "GUID": "9bc0335d-2e66-48ab-a4c5-b1a3a4b6f847",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Command Center Door Right",
+              "GUID": "1926693f-7bd5-4d44-a118-0cdeb0e04602",
+              "theText": "This door separates the Command Center and the Hall.",
+              "buttonList": [
+                {
+                  "GUID": "3829fa31-09af-4279-9de2-17de3d98c462",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "04f40adf-75d5-41d0-95c5-9f2e42c06bf9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Lando glares up at you with fresh bruises, muttering, “We'll see who ends up frozen. ISB son-of-a...”",
+          "GUID": "d9fa8045-ca8f-4181-ab79-5088f06bb333",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "customName": null,
+          "GUID": "73165d65-a241-414f-a37a-2e9cfbd23870",
+          "eventActionType": 7,
+          "eaName": "Ally Deployment"
+        },
+        {
+          "tbText": "\"C'mon,\" Lando mutters, rising to his feet. \"I know that Blaise is somewhere in the command center. Luckily, I still got the codes for that.\"\r\n\r\n{-} Rebels control <color=\"red\">Lando Calrissian</color> as an ally.\r\n{-} The door between Command Center and Hall unlocks to Rebel figures.\r\n{-} The mission will progress when the door to the Command Center is opened.",
+          "GUID": "10ddd084-c8bf-47c6-b956-977420442233",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Just as you leave the cell, a large Trandoshan comes charging through a door, roaring and brandishing a huge weapon. He is quickly followed by more troops.",
+          "GUID": "8e4042a8-092c-4682-8584-cde2624b2110",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "dcf65c52-77ed-438b-8999-92e4d855c314",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG080/Bossk"
+        },
+        {
+          "shortText": "Open the door between Hall and Command Center.",
+          "longText": null,
+          "GUID": "e8d65c9e-c973-468c-80ab-eeb99b611a24",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The door between Carbonite Chamber and Command Center is locked.\r\n{-} The door between Command Center and Hall is locked to Imperial figures.\r\n{-} The mission will progress when the door to the Command Center is opened.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "3b81f647-bbf7-4eca-8327-a3d32d9ae7fc",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "repositionText": "Block access to the Command Center.",
+          "GUID": "e4d34cac-dd5e-4f74-b954-126b59d03715",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "Hostage Situation",
+      "GUID": "5a6df01a-8d45-4fa2-a250-d1f6962ba22b",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Command Center Door Right",
+              "GUID": "9a940fa1-d106-4da9-b7d7-b466faa869ea",
+              "theText": "The door between Command Center and Hall is locked tight.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Carbonite Chamber",
+              "GUID": "0b3f6ca9-369f-4edc-a22f-bf2db6cab599",
+              "theText": "Steam is billowing out of the carbonite pit. It is ready to use.\r\n\r\n{-} During a Rebel figure's activation, if <color=\"red\">Agent Blaise</color> is adjacent to the Carbonite Pit, that Rebel figure may interact with Agent Blaise ({K}) to freeze him in carbonite, ending the mission.",
+              "buttonList": [
+                {
+                  "GUID": "9bc9146a-86fa-446f-9e5f-f18b7636a3a6",
+                  "theText": "Freeze Blaise (End Mission)"
+                }
+              ]
+            },
+            {
+              "entityName": "Command Center Door Left",
+              "GUID": "e5e7878f-6efa-4419-b798-020b3fcf25d9",
+              "theText": "This door separates the Carbonite Chamber and the Command Center.",
+              "buttonList": [
+                {
+                  "GUID": "835cf19f-2f66-4c68-b0f9-89ad39aac1c3",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "fd367eb7-fc6b-4376-976f-ad4f44daab7f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block access to the Carbonite Pit.",
+          "GUID": "c07bf4e3-0112-4183-8531-40447972b53d",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "Agent Blaise, who has been busy checking data on a terminal, looks up in surprise as you barge into the command center. He draws his weapon, a move quickly mirrored by his aide. ",
+          "GUID": "4e0945ac-4637-4d06-8259-c0343b70833b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "While adjacent to a Rebel figure, <color=\"red\">Agent Blaise</color> cannot voluntarily exit his space.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "fb7f8734-3b36-4598-9207-3c475e6edd96",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG079/Agent Blaise"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "5c205672-3dca-472f-a13c-9a5504cf640a",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "tbText": "You can end this once and for all. With Blaise under your control, you can try to let him experience what he did to so many others: The cool silence of the carbonite pit.\r\n\r\n{-} The door to the Carbonite Chamber unlocks for Rebel figures.\r\n{-} <color=\"red\">Agent Blaise</color> cannot suffer {H} and cannot be defeated. While adjacent to a Rebel figure, <color=\"red\">Agent Blaise</color> cannot voluntarily exit his space.\r\n{-} During his activation, a Rebel figure adjacent to <color=\"red\">Agent Blaise</color> may test {K}. If successful, that hero pushes <color=\"red\">Agent Blaise</color> up to 2 spaces. Otherwise, that hero pushes <color=\"red\">Agent Blaise</color> up to 1 space. Limit once per activation.\r\n{-} During a Rebel figure's activation, if <color=\"red\">Agent Blaise</color> is adjacent to the Carbonite Pit (red highlight), that Rebel figure may interact with Agent Blaise ({K}) to freeze him in carbonite.\r\n{-} The Rebels win when <color=\"red\">Agent Blaise</color> is frozen in carbonite.",
+          "GUID": "0b610221-4a2a-4039-8630-5ad46406b485",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Freeze <color=\"red\">Agent Blaise</color> in carbonite.",
+          "longText": null,
+          "GUID": "6bca99b5-203f-4d82-8a05-385849a5ff54",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Doors are locked to Imperial figures.\r\n{-} <color=\"red\">Agent Blaise</color> cannot suffer {H} and cannot be defeated. While adjacent to a Rebel figure, <color=\"red\">Agent Blaise</color> cannot voluntarily exit his space.\r\n{-} During his activation, a Rebel figure adjacent to <color=\"red\">Agent Blaise</color> may test {K}. If successful, that hero pushes <color=\"red\">Agent Blaise</color> up to 2 spaces. Otherwise, that hero pushes <color=\"red\">Agent Blaise</color> up to 1 space. Limit once per activation.\r\n{-} During a Rebel figure's activation, if <color=\"red\">Agent Blaise</color> is adjacent to the Carbonite Pit (red highlight), that Rebel figure may interact with Agent Blaise ({K}) to freeze him in carbonite.\r\n{-} The Rebels win when <color=\"red\">Agent Blaise</color> is frozen in carbonite.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "d16e6ea6-5610-4e52-9985-0a7a7adf4c05",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Open CC Door Left",
+      "GUID": "2582d6fc-6f95-4533-ad37-d35933d6fdd0",
+      "eventText": "The door slides open. Alerted by Agent Blaise's shouts, a squad of stormtroopers rushes in.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Command Center Door Left",
+              "GUID": "00f83e0d-1acd-435b-a27c-7b8bae02ffd9",
+              "theText": "The door between Carbonite Chamber and Command Center is locked tight.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "b92eda8d-fcad-403b-88c0-a594ec3a3c16",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "015b54ff-cfbf-478b-b935-d730dadae8e5",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG002/Stormtrooper"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "03751d04-e60f-4353-a566-f54628dab1d4",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "20e61345-83ac-4410-9e02-b9728f3b25cc",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "fe729197-bdcb-4746-bf21-dc1ddbeb9625",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "56cebf5a-1c42-45b6-b5d7-a7a710d2842d",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "ce28cf20-2624-430a-8e5f-78f842ea8500",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "1109fbc8-1835-4e92-8d41-a069c8bfbc04",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "17d7de92-95e0-4d46-b39c-0cc55524b252",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wing 1",
+      "GUID": "f25e6e73-5e26-4d00-aa1d-fd0d85e2b1d1",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wing 2",
+      "GUID": "1772f4dc-f2b5-40db-8bef-92c0e3e0d9af",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wing 3",
+      "GUID": "e3d82a43-e46d-42d7-b859-8ef51fdb5a7b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Cell Door",
+      "GUID": "1ebccf52-2047-44c4-8a10-017951b63124",
+      "mainText": "The door to the improvised holding cell is locked tight.\r\n\r\n{-} A Rebel figure can interact with the door to the Cell ({I}) to try and open it.",
+      "buttonList": [
+        {
+          "GUID": "67118e41-5e5f-4896-bddf-e3a7e7ba8baa",
+          "theText": "{A} Pick lock"
+        }
+      ]
+    },
+    {
+      "entityName": "Command Center Door Left",
+      "GUID": "c3fdd431-884b-43e5-9740-171b85b4321d",
+      "mainText": "The door between Carbonite Chamber and Command Center is locked tight.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Command Center Door Right",
+      "GUID": "90e59ed2-d289-4d88-af4a-ed48a5313d56",
+      "mainText": "The door between Command Center and Hall is locked tight.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Blue",
+      "GUID": "7517db83-c6af-4fcd-a9ab-0274ab9679f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "d40f0588-3761-4977-91f6-5d8dbe09b59c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 1",
+      "GUID": "f4b49e42-189f-4d55-ad1b-3cfe3ddfbf21",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 2",
+      "GUID": "5c1d90d4-9521-4074-8b53-94eb737d2860",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Carbonite Chamber",
+      "GUID": "ee2df8ea-85ad-4155-a243-b3a1b180c1cc",
+      "mainText": "Steam is billowing out of the carbonite pit. It is ready to use.\r\n\r\n{-} During a Rebel figure's activation, if <color=\"red\">Agent Blaise</color> is adjacent to the Carbonite Pit, that Rebel figure may interact with Agent Blaise ({K}) to freeze him in carbonite, ending the mission.",
+      "buttonList": [
+        {
+          "GUID": "c7e44115-732d-4edb-b971-7a3f5a8cc14e",
+          "theText": "Freeze Blaise (End Mission)"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Wing Guard",
+      "customInstructions": ""
+    }
+  ]
+}

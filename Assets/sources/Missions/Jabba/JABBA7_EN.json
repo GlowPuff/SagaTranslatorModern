@@ -1,0 +1,928 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Mutiny",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "Jabba's Realm",
+    "startingObjective": "",
+    "repositionOverride": "",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "9f0d52eb-31b9-4992-be80-69421bb43a7a",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "eb293c67-5052-47b9-b827-1341fffad953",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "28fee8f5-7204-4f13-8249-2e9475c5b735",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "c652e2df-2519-40fe-9631-8bc27164c0f7",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "35845dbd-06e0-458f-9c6a-0fd2b7e26bea",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "243e6a2c-41c4-44fd-acd4-cb6dc0c4714a",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "The two execution skiffs hover over the looming Pit of Carkoon. One of the Weequay drivers takes a moment to salute Jabba the Hutt’s approaching barge, when you make your move.\r\n\r\nA headbutt topples the pirate into the controls, sending the skiff into a dive. The craft crashes and crumples, throwing you from the wreckage. Your captors fare worse, being swallowed by the excited Sarlacc.",
+      "eventActions": [
+        {
+          "tbText": "Not far away, your allies struggle for control of the second skiff.",
+          "GUID": "8ab510ca-9857-40c7-9cac-f99fe65e66d1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "The Weequay mercenaries guarding the second skiff turn toward you, weapons drawn.",
+          "GUID": "104a25cb-4594-4078-a28c-dd3922bd5e11",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "75bf206d-8f5f-4fb9-a570-18d833ee7de6",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG042/Weequay Pirate"
+        },
+        {
+          "tbText": "Below, the lone surviving Gamorrean guard from the first skiff is shaken, but staggers to his feet and readies his axe, grunting encouragement to his comrade on the second skiff.",
+          "GUID": "ea600446-7469-443d-b2e9-e4620ad5aa77",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "46bc8072-90ed-4e32-bda7-64b1ba235555",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG041/Gamorrean Guard (Elite)"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Entrance 1",
+              "GUID": "c2eaf384-226e-468b-b05f-02bf42a8354e",
+              "theText": "Deploy the heroes divided as evenly as possible between the blue highlights.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Entrance 2",
+              "GUID": "f811f041-0d47-4742-ae51-27165db652a4",
+              "theText": "Deploy the heroes divided as evenly as possible between the blue highlights.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "f44427a5-9f77-4b69-8171-4783d0afb397",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "You break free of your binds.\r\n\r\n{-} Deploy the heroes divided as evenly as possible between the blue highlights.",
+          "GUID": "1aace200-cc28-4b23-83cb-f0ab254e481a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "In the dunes, Imperial forces, gathered to witness your execution, ready their weapons, too.",
+          "GUID": "0e6f15a7-dfb5-4782-b826-3167ffd62d1e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "22236bb4-51a7-4cb7-8b51-0b6e978697f6",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG036/Jet Trooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "a2edd708-09b1-428c-9182-6f29c94080cd",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "6db44485-316a-4b05-b6ac-12d11c750227",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG013/Probe Droid (Elite)"
+        },
+        {
+          "tbText": "The skiff is flying low enough that the ladder below the hatch reaches the ground.",
+          "GUID": "32a86ea4-3710-4be7-a709-f0123bf410fa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hatch Blue",
+              "GUID": "685f5996-852c-45bf-98ff-f7854da920dc",
+              "theText": "The hatch leads down to the ladder of the first skiff.\r\n\r\n{-} A figure can move between this hatch and the blue ladder as if they were adjacent spaces.\r\n{-} A figure on this Skiff can perform {O} attacks as though it was on the blue ladder. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on this Skiff as though the target was on the blue ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Ladder Blue",
+              "GUID": "b55c13d3-908c-40a7-9eb8-6add9aa19b13",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "404a9de0-69d9-4e28-8980-555f42a80dbe",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Colored mission tokens on Skiffs represent hatches. Colored mission tokens on exterior spaces represent ladders. A figure can move between hatches and ladders of the same color as if they were adjacent spaces.\r\n{-} A figure on a Skiff can perform {O} attacks as though it was on the ladder corresponding to the hatch on that Skiff. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on a Skiff as though the target was on the corresponding ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.\r\n{-} Once during his activation, if a hero controls a terminal, he may move the ladder of the same color up to 2 spaces, ignoring terrain.\r\n{-} When a ladder enters a space adjacent to a Rebel figure, heroes may place that figure on the corresponding Skiff.\r\n{-} Heroes on Skiffs gain: 1 {C}: Choose an adjacent, small, hostile figure and test {K}. If you receive 2 or more successes, place that figure in a space adjacent to the corresponding skiff ladder, and that figure suffers 1 {H}. If that figure is placed in the Sarlacc Pit (red highlight), it is defeated.",
+          "GUID": "c46b5fd0-bc45-46ba-a4bc-8a3401548678",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You wrestle some weapons from the fallen guards and get ready to fight for your lives.\r\n\r\n{-} The mission will progress at the end of Round 2.\r\n{-} The Rebels lose when all heroes are wounded.\r\n",
+          "GUID": "cd863054-38f8-4a0a-ba6d-7295dcc65e15",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Ladder Blue",
+              "GUID": "bbc2f126-b1e3-49eb-91f4-ce019834fe41",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "1fa48c05-6528-4d25-81f6-9fad99bdc0a5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Fight for your lives.",
+          "longText": null,
+          "GUID": "a5352aff-1941-4f0a-9992-deb0a2fb07db",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Colored mission tokens on Skiffs represent hatches. Colored mission tokens on exterior spaces represent ladders. A figure can move between hatches and ladders of the same color as if they were adjacent spaces.\r\n{-} A figure on a Skiff can perform {O} attacks as though it was on the ladder corresponding to the hatch on that Skiff. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on a Skiff as though the target was on the corresponding ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.\r\n{-} Once during his activation, if a hero controls a terminal, he may move the ladder of the same color up to 2 spaces, ignoring terrain.\r\n{-} When a ladder enters a space adjacent to a Rebel figure, heroes may place that figure on the corresponding Skiff.\r\n{-} Heroes on Skiffs gain: 1 {C}: Choose an adjacent, small, hostile figure and test {K}. If you receive 2 or more successes, place that figure in a space adjacent to the corresponding skiff ladder, and that figure suffers 1 {H}. If that figure is placed in the Sarlacc Pit (red highlight), it is defeated.\r\n{-} The mission will progress at the end of Round 2.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "a96cf64e-29d1-414b-a146-4746b2d2ea5f",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "You corner Jabba and Bib in the hold. Without his court and guards, the Hutt is only a glimmer of the legend. Unfazed, he offers congratulations. \"Well done, Rebels. Despite our... strained relationship, I can use more fighters like you. What do you say I make you the richest bounty hunters in the galaxy?\"\r\n\r\nRather than answer, you simply drag the Hutt to the deck in chains, steering the <i>Khetanna</i> directly above the Sarlacc. Facing his own execution now, Jabba offers a new deal. \"Stop. Stop! Kill me and there will be war on Tatooine. A war for my palace. You will not escape it, and your friends will not survive. Instead, take my ships, your friends, and some credits, as a gift. And get off my planet!\"\r\n\r\nDespite Jabba’s arrogance, there’s truth in his threat. Eager for safety, you drag the Hutt back to his palace, rather than risk any more conflict. \r\n\r\nWith the Rebellion’s new ships fully loaded with cargo and refugees, you chain Jabba to his throne and disappear into the stars, safe at last.\r\n\r\n{-} The Rebels win the campaign!",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "A swarm of skiffs catches up with the <i>Khetanna</i>, and the deck is quickly covered in mercenaries.\r\n\r\nWeequay jab your legs, forcing you to kneel as Jabba worms his way to the deck. “Impressive, Rebels. You could have been the most feared bounty hunters in the galaxy. Instead, you will be slowly devoured, and your friends will be my slaves.\"\r\n\r\nAs you're led to the railing, Jabba crunches on a paddy frog while you think one last time of the lives you couldn't save.\r\n\r\n{-} The Rebels lose the campaign.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Destroy Door",
+      "GUID": "a748c988-b53d-494a-a8d2-7dc1ef82b885",
+      "eventText": "A single shot from the <i>Khetanna</i>'s main gun reduces the door to rubble.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Khetanna Door",
+              "GUID": "5ee0fc64-42ea-4c06-bf6a-f9bf3aa13c6c",
+              "theText": "A security door leads into Jabba's quarters on the <i>Khetanna</i>.\r\n\r\n{-} The door is locked. It does not block movement, adjacency, counting spaces, or line of sight for Imperial figures.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "316390b6-f5d1-46c2-8526-0cddeee7a694",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block line of sight to <color=\"red\">Jabba the Hutt</color>.",
+          "GUID": "38fcc3cc-a7e8-4bfb-b00e-5f93d413f0ef",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">Jabba the Hutt</color>.",
+          "longText": null,
+          "GUID": "2d661a06-f828-4624-b478-2f13ce70a885",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Colored mission tokens on Skiffs represent hatches. Colored mission tokens on exterior spaces represent ladders. A figure can move between hatches and ladders of the same color as if they were adjacent spaces.\r\n{-} A figure on a Skiff can perform {O} attacks as though it was on the ladder corresponding to the hatch on that Skiff. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on a Skiff as though the target was on the corresponding ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.\r\n{-} Once during his activation, if a hero controls a terminal, he may move the ladder of the same color up to 2 spaces, ignoring terrain.\r\n{-} When a ladder enters a space adjacent to a Rebel figure, heroes may place that figure on the corresponding Skiff.\r\n{-} Heroes on Skiffs gain: 1 {C}: Choose an adjacent, small, hostile figure and test {K}. If you receive 2 or more successes, place that figure in a space adjacent to the corresponding skiff ladder, and that figure suffers 1 {H}. If that figure is placed in the Sarlacc Pit (red highlight), it is defeated.\r\n{-} The door is locked. It does not block movement, adjacency, counting spaces, or line of sight for Imperial figures.\r\n{-} Figures on the Khetanna Deck (green highlight) follow the same rules as figures on Skiffs.\r\n{-} The Rebels win when <color=\"red\">Jabba the Hutt</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "e99853d0-ed1f-4f82-97d3-45b67b018a34",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Arrest",
+      "GUID": "2a653673-5ed9-4fdb-a3d6-bd8d848548f9",
+      "eventText": "A heavily armed sand skiff fires a flare as it speeds from the <i>Khetanna</i>.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Ladder Red",
+              "GUID": "25de38ed-33cf-4400-ba2c-2fd78414000a",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "6365cf0c-4263-4023-b5de-42f99491581e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "3e6d9f17-9fea-408d-b1f8-15fb41a45e37",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG007/E-Web Engineer"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "165a9803-614a-4446-8bd7-97b8acec6ba3",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG044/Weequay Pirate (Elite)"
+        },
+        {
+          "tbText": "You turn your own skiff toward the new threat. If you manage to seize the second skiff, you can attack the <i>Khetanna</i> from two sides.\r\n\r\n{-} A figure on a Skiff can perform {O} attacks targeting a figure on another Skiff as though the attacker and defender were each on the corresponding ladders.\r\n{-} The mission will progress when a Rebel figure interacts with the red terminal.",
+          "GUID": "1cd280cf-2b35-4386-99e8-a8cb7a32a991",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Ladder Red",
+              "GUID": "27662da1-b2ac-4d97-bbf6-7afa50e37eaa",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "101d45ec-86a2-4b31-90ab-b7a889c9ff7f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Seize the second skiff.",
+          "longText": null,
+          "GUID": "46154167-ced0-4656-b335-0844fd852ad3",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Colored mission tokens on Skiffs represent hatches. Colored mission tokens on exterior spaces represent ladders. A figure can move between hatches and ladders of the same color as if they were adjacent spaces.\r\n{-} A figure on a Skiff can perform {O} attacks targeting a figure on another Skiff as though the attacker and defender were each on the corresponding ladders.\r\n{-} A figure on a Skiff can perform {O} attacks as though it was on the ladder corresponding to the hatch on that Skiff. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on a Skiff as though the target was on the corresponding ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.\r\n{-} Once during his activation, if a hero controls a terminal, he may move the ladder of the same color up to 2 spaces, ignoring terrain.\r\n{-} When a ladder enters a space adjacent to a Rebel figure, heroes may place that figure on the corresponding Skiff.\r\n{-} Heroes on Skiffs gain: 1 {C}: Choose an adjacent, small, hostile figure and test {K}. If you receive 2 or more successes, place that figure in a space adjacent to the corresponding skiff ladder, and that figure suffers 1 {H}. If that figure is placed in the Sarlacc Pit (red highlight), it is defeated.\r\n{-} The mission will progress when a Rebel figure interacts with the red terminal.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "7f6bfe3d-b37d-4362-9aa7-174fb4e33237",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Khetanna",
+      "GUID": "45d5b0e0-3163-4b12-a3cd-b500e511c9b1",
+      "eventText": "The <i>Khetanna</i> lumbers into range and swivels its gun. You see Jabba through a lower window and resolve to end this.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Ladder Green",
+              "GUID": "6ecdb200-3452-41a8-8003-cae653dabcd9",
+              "theText": "A ladder leads up to the <i>Khetanna</i>.\r\n\r\n{-} A figure can move between this ladder and the hatch on the Khetann Deck as if they were adjacent spaces.",
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 3",
+              "GUID": "c850cb1d-6f37-4e25-a048-22d992cca2c8",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 4",
+              "GUID": "6e451ce0-d550-4901-862d-7c5a55d2f785",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 5",
+              "GUID": "84524299-e013-4153-981f-13865c133e95",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 6",
+              "GUID": "1d4c496b-29bc-4636-bc1c-c1552f0f4f4b",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "f2a8b74c-b8d5-490a-a97b-a1c21a1f75dc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "9e33b6df-3e1b-4afb-a33c-fd95a429e977",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG081/Jabba the Hutt"
+        },
+        {
+          "tbText": "{-} The door is locked. It does not block movement, adjacency, counting spaces, or line of sight for Imperial figures.",
+          "GUID": "59e352a8-366b-447a-a4d4-cf4a1d274947",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Jabba's mercenaries man the deck of Jabba's barge.",
+          "GUID": "c8edf2c7-d93c-466a-ba68-091558e53d26",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "64966aca-b92b-4f2e-9cb2-84190839d746",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG016/Trandoshan Hunter (Elite)"
+        },
+        {
+          "repositionText": "Control the Main Gun.",
+          "GUID": "cfd15cfb-7d0f-43b0-a519-faba06e7fc97",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "The <i>Khetanna</i>'s main gun swivels in your direction.",
+          "GUID": "d1b773b6-eaf5-4a81-9230-ff636c53eec1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Main Gun 1",
+              "GUID": "6510d421-02f5-4443-80a5-ab2358d28ef1",
+              "theText": "The Main Gun of the <i>Khetanna</i> can be used to fire devastating blaster shots.\r\n\r\n{-} During his activation, if there are more Rebel figures than Imperial figures adjacent to the Main Gun (a hero with 2 activation tokens counts as 2 figures for this purpose), a Rebel figure can interact with the Main Gun to destroy the door.",
+              "buttonList": [
+                {
+                  "GUID": "b737a136-c797-42f3-a758-e6aac53e073b",
+                  "theText": "Destroy Door"
+                }
+              ]
+            },
+            {
+              "entityName": "Main Gun 2",
+              "GUID": "1e0c7901-1da0-43b0-b6d6-d4d041db2866",
+              "theText": "The Main Gun of the <i>Khetanna</i> can be used to fire devastating blaster shots.\r\n\r\n{-} During his activation, if there are more Rebel figures than Imperial figures adjacent to the Main Gun (a hero with 2 activation tokens counts as 2 figures for this purpose), a Rebel figure can interact with the Main Gun to destroy the door.",
+              "buttonList": [
+                {
+                  "GUID": "b22367d5-c246-4b26-9d1f-f62cbc8128f7",
+                  "theText": "Destroy Door"
+                }
+              ]
+            }
+          ],
+          "GUID": "4ca00332-e098-40bc-830e-7e1aa5dae390",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} During his activation, if there are more Rebel figures than Imperial figures adjacent to the Main Gun (a hero with 2 activation tokens counts as 2 figures for this purpose), a Rebel figure can interact with the Main Gun to destroy the door.",
+          "GUID": "3f12bfbf-42c3-44f6-b7a0-a82041ce60c0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Your skiffs speed toward the huge barge.\r\n\r\n{-} Figures on the Khetanna Deck (green highlight) follow the same rules as figures on Skiffs.\r\n{-} The mission will progress when the door is destroyed.",
+          "GUID": "5ab35eea-15cd-425f-9f5c-2c22d6e0602f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Khetanna Deck 1",
+              "GUID": "cea129af-c00c-482b-87c5-51742abe5981",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Khetanna Deck 2",
+              "GUID": "7cbc3755-aeb1-4e72-9868-d1baf6a2c2c2",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Khetanna Deck 3",
+              "GUID": "3043c579-35ce-4565-b4b1-6c0b34f6f6ff",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Khetanna Deck 4",
+              "GUID": "2fe78549-a56a-4298-828b-d755b07e80b2",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Khetanna Deck 5",
+              "GUID": "35ec2330-e30b-45b5-8e29-f48a1dcf5c81",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "554edc15-dac1-4532-a1f9-826f1f11f4b6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Destroy the door.",
+          "longText": null,
+          "GUID": "c8b2a855-1104-401a-9afb-765795f3b156",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Colored mission tokens on Skiffs represent hatches. Colored mission tokens on exterior spaces represent ladders. A figure can move between hatches and ladders of the same color as if they were adjacent spaces.\r\n{-} A figure on a Skiff can perform {O} attacks as though it was on the ladder corresponding to the hatch on that Skiff. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on a Skiff as though the target was on the corresponding ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.\r\n{-} Once during his activation, if a hero controls a terminal, he may move the ladder of the same color up to 2 spaces, ignoring terrain.\r\n{-} When a ladder enters a space adjacent to a Rebel figure, heroes may place that figure on the corresponding Skiff.\r\n{-} Heroes on Skiffs gain: 1 {C}: Choose an adjacent, small, hostile figure and test {K}. If you receive 2 or more successes, place that figure in a space adjacent to the corresponding skiff ladder, and that figure suffers 1 {H}. If that figure is placed in the Sarlacc Pit (red highlight), it is defeated.\r\n{-} The door is locked. It does not block movement, adjacency, counting spaces, or line of sight for Imperial figures.\r\n{-} During his activation, if there are more Rebel figures than Imperial figures adjacent to the Main Gun (a hero with 2 activation tokens counts as 2 figures for this purpose), a Rebel figure can interact with the Main Gun to destroy the door.\r\n{-} Figures on the Khetanna Deck follow the same rules as figures on Skiffs.\r\n{-} The mission will progress when the door is destroyed.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "7e0419bb-f29b-420e-8d9a-e776423a9f29",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Main Gun Fires",
+      "GUID": "17b76f4e-9647-4baf-bfa5-926a9fab7634",
+      "eventText": "The main gun of the <i>Khetanna</i> is a near-constant threat.\r\n\r\n{-} If the Empire controls the Main Gun, chooses the space on the map the most Rebel figures on or adjacent to it and roll 1 red die. Each Rebel figure on or adjacent to that space suffers  {H} equal to the {H} results.",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "6e362e9f-a9a2-4492-ad8c-b920eeb999aa",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "b614c687-bb7d-41dd-b057-4505579fbdfa",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "26e8a85d-338b-48ad-8d89-6f7aa93a2783",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance 1",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes divided as evenly as possible between the blue highlights.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "ca4e6ea8-52ac-4cc2-a883-40c674d8c84f",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EGammo 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance 2",
+      "GUID": "b8924f79-3fd0-4852-913e-c37a069f7653",
+      "mainText": "Deploy the heroes divided as evenly as possible between the blue highlights.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 5",
+      "GUID": "fc38e954-2de3-4b02-ae48-2ce13e4725ae",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 6",
+      "GUID": "d98ee410-f979-40a1-9e46-40585b8e20ea",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EGammo 2",
+      "GUID": "d58db018-f370-405c-a687-d85d2d40eeda",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Jet 1",
+      "GUID": "3bebd7e3-11e0-4035-9fb3-0e5daa334c78",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Jet 2",
+      "GUID": "c4cf6773-0fcb-4596-abc5-6674f1432e2b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EProbe Droid",
+      "GUID": "b4179e8f-2571-4ea8-8a66-a2993b13786f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "9eb73188-de08-40d7-8eaf-a132f6cdea68",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "a8e6bb82-0af6-4594-a426-567d2ba5e5d8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "c5b09ac0-f1ba-4448-ae7f-b829d83f7324",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 1",
+      "GUID": "f28427f5-ed92-4133-ab05-21e16ce83cbb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 2",
+      "GUID": "b03fcbc3-2d66-4a5c-83e4-3de027b9fefb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Jabba",
+      "GUID": "13d18b87-5027-4838-bc72-dd3dd4bc3f4b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 1",
+      "GUID": "2abce296-f640-49af-993a-735b7e11cb86",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 2",
+      "GUID": "b2ee9618-f1bd-452f-8022-d29a0b342ee7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 3",
+      "GUID": "d0aeea30-0de5-45d5-9246-f47a465480af",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 4",
+      "GUID": "0edc5995-7760-4611-bfb0-0d9323942ae4",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Terminal Blue",
+      "GUID": "69833a83-18f5-4751-a689-15510ec246a6",
+      "mainText": "This control panel controls the movement of the first skiff.\r\n\r\n{-} Once during his activation, if a hero controls this terminal, he may move the blue ladder up to 2 spaces, ignoring terrain.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Hatch Blue",
+      "GUID": "d9281392-57ff-45a0-b3f0-96344b37379a",
+      "mainText": "The hatch leads down to the ladder of the first skiff.\r\n\r\n{-} A figure can move between this hatch and the blue ladder as if they were adjacent spaces.\r\n{-} A figure on this Skiff can perform {O} attacks as though it was on the blue ladder. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on this Skiff as though the target was on the blue ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder Blue",
+      "GUID": "cd060fb7-6fe1-404d-a54d-9dcc32f7089c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Terminal Red",
+      "GUID": "a2401771-38ff-427f-8ffb-883721571498",
+      "mainText": "This control panel controls the movement of the skiff.\r\n\r\n{-} Once during his activation, if a hero controls this terminal, he may move the red ladder up to 2 spaces, ignoring terrain.\r\n{-} A Rebel figure can interact with this terminal to seize the skiff.",
+      "buttonList": [
+        {
+          "GUID": "4009c467-90b9-45d6-8d8c-02747f4bbfa3",
+          "theText": "{A} Seize Skiff"
+        }
+      ]
+    },
+    {
+      "entityName": "Hatch Red",
+      "GUID": "5b05ccdd-f8ec-4d85-aaea-d86571d1e783",
+      "mainText": "The hatch leads down to the ladder of the first skiff.\r\n\r\n{-} A figure can move between this hatch and the red ladder as if they were adjacent spaces.\r\n{-} A figure on this Skiff can perform {O} attacks as though it was on the red ladder. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on this Skiff as though the target was on the red ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Dummy Highlight 1",
+      "GUID": "b9352af4-fdaa-499d-a30c-7d524052e127",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Dummy Highlight 2",
+      "GUID": "5814c244-d86f-49b6-876f-9b71f96117fe",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Dummy Highlight 3",
+      "GUID": "6a228b7b-8c19-4131-bf81-39a9f2beb8ca",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Dummy Highlight 4",
+      "GUID": "da974bef-2eb8-44c3-b2e9-662acadc6e9d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Dummy Highlight 5",
+      "GUID": "629de6c0-ba19-4e6d-bac3-6fc96efa5f5f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder Red",
+      "GUID": "cc8fd61f-d385-43a4-826c-98335f2da714",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder Green",
+      "GUID": "02550b19-e790-4404-aeb1-4c96a6bc928b",
+      "mainText": "A ladder leads up to the <i>Khetanna</i>.\r\n\r\n{-} A figure can move between this ladder and the hatch on the Khetann Deck as if they were adjacent spaces.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Hatch Green",
+      "GUID": "0101ab7a-e4c6-41d7-99d2-4922dee6b5fa",
+      "mainText": "The hatch leads down to the ladder of the <i>Khetanna</i>.\r\n\r\n{-} A figure can move between this hatch and the green ladder as if they were adjacent spaces.\r\n{-} A figure on the <i>Khetanna</i> Deck can perform {O} attacks as though it was on the green ladder. When an attack is declared this way, apply +2 Accuracy to the attack results.\r\n{-} A figure in an exterior space can perform {O} attacks targeting a figure on the <i>Khetanna</i> Deck as though the target was on the green ladder. When an attack is declared this way, apply -2 Accuracy to the attack results.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Main Gun 1",
+      "GUID": "be34815b-727f-42f6-9f1a-be676c05a019",
+      "mainText": "The Main Gun of the <i>Khetanna</i> can be used to fire devastating blaster shots.\r\n\r\n{-} During his activation, if there are more Rebel figures than Imperial figures adjacent to the Main Gun (a hero with 2 activation tokens counts as 2 figures for this purpose), a Rebel figure can interact with the Main Gun to destroy the door.",
+      "buttonList": [
+        {
+          "GUID": "3af86342-0862-4394-a537-746120c8002c",
+          "theText": "Destroy Door"
+        }
+      ]
+    },
+    {
+      "entityName": "Main Gun 2",
+      "GUID": "a93824a4-e344-4827-b712-9e944672485f",
+      "mainText": "The Main Gun of the <i>Khetanna</i> can be used to fire devastating blaster shots.\r\n\r\n{-} During his activation, if there are more Rebel figures than Imperial figures adjacent to the Main Gun (a hero with 2 activation tokens counts as 2 figures for this purpose), a Rebel figure can interact with the Main Gun to destroy the door.",
+      "buttonList": [
+        {
+          "GUID": "18079660-9311-481c-a319-c6a5cb1a2e8d",
+          "theText": "Destroy Door"
+        }
+      ]
+    },
+    {
+      "entityName": "Khetanna Door",
+      "GUID": "843bc43a-5e15-473f-a534-a5c3e43b81b7",
+      "mainText": "A security door leads into the <i>Khetanna</i>'s hold.\r\n\r\n{-} The door is locked. It does not block movement, adjacency, counting spaces, or line of sight for Imperial figures.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Sarlacc 1",
+      "GUID": "00242145-6549-41a3-a9c2-c5349fdc4a1f",
+      "mainText": "The sarlacc from the Great Pit of Carkoon is waiting, hungry.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Sarlacc 2",
+      "GUID": "615356c1-d953-4ad0-b857-48c2bcf31d1e",
+      "mainText": "The sarlacc from the Great Pit of Carkoon is waiting, hungry.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP E-Web",
+      "GUID": "b31d6174-e1e2-432d-ab3b-62a38f7ce5bf",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EWeequay 1",
+      "GUID": "0841fdc2-f7e8-490e-8a0b-c7f1aec5f4bb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EWeequay 2",
+      "GUID": "a142d686-119e-4202-93e5-7a6c867b0ccc",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Khetanna Deck 1",
+      "GUID": "a3b4a193-4957-49f7-abdb-7266ab1b0613",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Khetanna Deck 2",
+      "GUID": "39491f9f-8970-46b8-a931-60488c2b299c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Khetanna Deck 3",
+      "GUID": "9fbf0288-b6f0-402c-9b1c-c2b1d1ebd0a9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Khetanna Deck 4",
+      "GUID": "f2dd79fe-c2ab-425c-ab4b-974ea98a04f6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Khetanna Deck 5",
+      "GUID": "2aa3a554-7a62-4c3b-962d-3b6c485ffcf4",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": []
+}

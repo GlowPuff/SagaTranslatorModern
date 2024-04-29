@@ -1,0 +1,642 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Dubious Disposition",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the informant and the doors.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "1e59a6bb-cf5f-46f1-baec-96a997f50fa8",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "cb815d1f-c33f-4bae-8803-b5f445813fe1",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "a02e0bd6-8dda-4668-8fef-aa9e6ba78e8f",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "An informant has intel on the elusive Maul and agrees to help you locate the former Sith. Upon arrival at the informant's location, however, Maul’s operatives emerge from a nearby facility.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.",
+      "eventActions": [
+        {
+          "tbText": "Your contact moves to cower behind cover, suddenly frightened and reluctant to cooperate.",
+          "GUID": "9de781c1-7320-44d9-a824-7b3f39b35ff9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Informant",
+              "GUID": "507e66d3-4e21-4b81-af52-ab7877959e6d",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "c21cf3da-8749-401f-adfd-853a255f532e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} The Rebel mission token represents the informant. Once during his activation, a hero adjacent to the informant can suffer 1 {C} to push him 1 space. That hero may test {K} or {I}. If successful, that hero may push him 2 spaces instead.\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+          "GUID": "57232d0d-a564-4a3e-9a60-f71f7f3f591e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You start to make your way toward the informant, your weapons ready.\r\n\r\n{-} The mission will progress when the door opens.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "c9facddd-a601-4d4c-87cd-a469e2b4824c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Informant",
+              "GUID": "d4f17d46-f727-4349-8253-0034879dfd6b",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "a4db01fd-7754-48ac-bbd4-d475d894342d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Enter the hideout.",
+          "longText": null,
+          "GUID": "fb39d927-3b22-4498-a6c8-d989400c57cf",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The Rebel mission token represents the informant. Once during his activation, a hero adjacent to the informant can suffer 1 {C} to push him 1 space. That hero may test {K} or {I}. If successful, that hero may push him 2 spaces instead.\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.\r\n{-} The mission will progress when the door opens.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "2eb5bd5e-f0fa-43bb-a9e5-12cf981a461c",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "You are not the easy prey Maul took you for. He sneers at you and darts into the shadows, his secret base of operations now uncovered, wrecked, and useless. He'll eventually regroup, but for now you can rest assured his plans have been delayed.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Each hero receives 1 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Bloody and broken, you tear through the hideout back to the safety of your ship. Behind you, the informant cries out, “Wait! You promised me protection! Don't leave me!!!” You try not to think of his inevitable fate at the hands of Maul.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The Empire receives <color=\"red\">Maul</color> (Seeker of Vengeance) as a villain.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Extra Help",
+      "GUID": "c6254a78-f832-46eb-a2ba-46e6c0fbf9ea",
+      "eventText": "More of Maul's thugs arrive at the scene.",
+      "eventActions": []
+    },
+    {
+      "eventName": "The Former Master",
+      "GUID": "7bc63b11-5877-4356-a758-393fe20fd042",
+      "eventText": "The door opens into an old, decrepit building with dim, unsteady lighting.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "6c0f8b4f-f6cc-47d5-969e-c5ea85be7a06",
+              "theText": "A rust-covered door leads into the facility used by Maul as a hideout.\r\n\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+              "buttonList": [
+                {
+                  "GUID": "31fa0cdf-3ea1-4ef7-971a-72555ede91e5",
+                  "theText": "{A} Open (informant adjacent)"
+                }
+              ]
+            }
+          ],
+          "GUID": "eafdf6af-25ee-4f1c-b911-de6f5da93bb2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Standing in the twilight, Maul, Seeker of Vengeance, snarls, his eyes glowing eerily. \"It was a mistake coming here\", he growls. With a snap-hiss, his double-bladed lightsaber ignites. Then Maul presses a small button at his belt, and the glow of a personal shield surrounds him.",
+          "GUID": "e96ad765-cd14-45fb-940e-5b9361f22ebf",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": "+*2* Health",
+          "repositionInstructions": "",
+          "GUID": "602cfa8a-8a2e-4de0-a05a-91defc3d4220",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG084/Maul"
+        },
+        {
+          "tbText": "{-} At the start of <color=\"red\">Maul</color>'s activation, if he has suffered *1* or more {H}, he recovers all {H} and becomes <color=\"red\">Stunned</color>.\r\n{-} <color=\"red\">Maul</color> cannot be defeated during a round in which he has not yet resolved an activation.\r\n{-} The Rebels win when <color=\"red\">Maul</color> is defeated.",
+          "GUID": "6ac7c763-a712-48f7-8241-fa87b19798cd",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">Maul</color>.",
+          "longText": null,
+          "GUID": "a4b43506-8778-4c8e-ba9f-2174876ced18",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "Maul's thugs are getting ready to defend their master.",
+          "GUID": "ec7e829d-ebfb-409a-82f3-ac298adb8ecf",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You ready your weapons when you spot something strange: A power cell in the corner of the room pulses in exactly the same rhythm as Maul's personal shield. The shield appears to be connected to multiple power sources. If you can find and eliminate them, you might stand a better chance against the former Sith.",
+          "GUID": "0d981248-4af5-481a-bfd1-31e0d7c30301",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "f8c37519-15cb-4c68-a901-48dd1e352199",
+              "theText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+              "buttonList": [
+                {
+                  "GUID": "e99632b7-66a9-4dd7-97a6-9e2196394e8f",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "d93cc815-50fe-487a-917e-be7377e270cb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+          "GUID": "73b30800-8475-4f45-b59a-72a8a1326de5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": "Block line of sight to <color=\"red\">Maul</color> and the terminals.",
+          "GUID": "0f9b54b7-d42c-4ebf-ad41-f52119a17afb",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">Maul</color>. Power cells destroyed: &Terminals Destroyed&/3",
+          "longText": "",
+          "GUID": "698202db-f638-43c5-b0c7-9ca21fd307d9",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The Rebel mission token represents the informant. Once during his activation, a hero adjacent to the informant can suffer 1 {C} to push him 1 space. That hero may test {K} or {I}. If successful, that hero may push him 2 spaces instead.\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.\r\n{-} At the start of <color=\"red\">Maul</color>'s activation, if he has suffered *1* or more {H}, he recovers all {H} and becomes <color=\"red\">Stunned</color>.\r\n{-} <color=\"red\">Maul</color> cannot be defeated during a round in which he has not yet resolved an activation.\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.\r\n{-} The Rebels win when <color=\"red\">Maul</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "48b5b9e0-a739-4361-a201-d4419b2b5801",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Maul Activates",
+      "GUID": "ec3fe1ca-b39e-44eb-a3b7-8bc4cb696a4b",
+      "eventText": "Maul snarls, and his personal shield glows as it absorbs the damage.\r\n\r\n{-} If <color=\"red\">Maul</color> has suffered *1* or more {H}, he recovers all {H} and becomes <color=\"red\">Stunned</color>.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Destroy Power Cell 1",
+      "GUID": "0af01602-10d0-454f-bdf9-7dfd7763fbcb",
+      "eventText": "The power cell explodes into a shower of sparks, and Maul's shield flickers.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "4bc28d80-05bd-49ab-80b7-9d6f32846eb4",
+              "theText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+              "buttonList": [
+                {
+                  "GUID": "e7547521-66a5-49d0-9197-8cb32547f058",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "c5baf978-0665-4932-99c1-3ab02da8753a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Power Cell 2",
+      "GUID": "6f4858d7-4e60-4c8f-9ba8-861c7e66e876",
+      "eventText": "The power cell explodes into a shower of sparks, and Maul's shield flickers.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 2",
+              "GUID": "1bcf7184-c359-4a0b-9603-0d4bde732a64",
+              "theText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+              "buttonList": [
+                {
+                  "GUID": "807ace5a-79d3-4c8c-aa01-998b36fc1f21",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "24aebe45-5140-418d-9a86-4228a7ed1c85",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Power Cell 3",
+      "GUID": "dac3a21b-2027-481a-b06b-8507e31828a5",
+      "eventText": "The power cell explodes into a shower of sparks, and Maul's shield flickers.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 3",
+              "GUID": "e3326cfb-e14d-458f-b4ed-4966487ae43a",
+              "theText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+              "buttonList": [
+                {
+                  "GUID": "72c2d924-23ff-43ef-b700-f4dfc9e14f50",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "0426845e-168f-4537-9bf9-4da6d5268864",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Backup",
+      "GUID": "05e5dee9-f4a9-425c-82ef-190c2537b39c",
+      "eventText": "The door opens into a small storage room. A power cell is humming in the corner.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 2",
+              "GUID": "98401c65-bed0-45a2-97cd-10076e8c7b8a",
+              "theText": "This door leading deeper into the hideout has seen better days.\r\n\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+              "buttonList": [
+                {
+                  "GUID": "e1beb4f1-ee50-4097-9e21-9ee4705f6056",
+                  "theText": "{A} Open (informant adjacent)"
+                }
+              ]
+            }
+          ],
+          "GUID": "470244dc-58b3-412a-a8a9-c070aa434310",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "More of Maul's thugs are waiting for you here.",
+          "GUID": "80bc516c-9c11-45de-a4a2-ca7d38f8b73f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Operatives",
+      "GUID": "d4927c4d-cd77-4869-acb4-e27326a469ad",
+      "eventText": "Behind the door lies an old workshop with a power cell in the corner.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 3",
+              "GUID": "22912312-df8d-4350-b4a2-bd85ac777241",
+              "theText": "This door leading deeper into the hideout has seen better days.\r\n\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+              "buttonList": [
+                {
+                  "GUID": "e2110db3-aba1-4f2f-ab8b-a057746d49cd",
+                  "theText": "{A} Open (informant adjacent)"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Green 2",
+              "GUID": "11effb6e-0ae3-4044-a697-180490ea80aa",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "acb9d06c-948a-4e2b-9e83-bc9ce15ea957",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "More of Maul's thugs are waiting for you here.",
+          "GUID": "b2a69aa4-cec2-495e-b4e6-567e8a69e849",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "All Doors Open",
+      "GUID": "61609290-1b25-4595-9d40-b96aebc64065",
+      "eventText": "",
+      "eventActions": [
+        {
+          "theText": "{-} At the start of <color=\"red\">Maul</color>'s activation, if he has suffered *1* or more {H}, he recovers all {H} and becomes <color=\"red\">Stunned</color>.\r\n{-} <color=\"red\">Maul</color> cannot be defeated during a round in which he has not yet resolved an activation.\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.\r\n{-} The Rebels win when <color=\"red\">Maul</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "35167888-87bc-46d2-8375-8ba216edf31c",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "repositionText": "Block access to the terminals.",
+          "GUID": "7ea1252e-7696-40c8-9d6c-2df1efc837c8",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "All Terminals Destroyed",
+      "GUID": "c7bd9b77-1239-47bc-99e1-d22130aeb9b6",
+      "eventText": "The last power cell explodes, and Maul's personal shield first flickers, then vanishes. The Zabrak growls and spins his lightsaber. \"This won't help you. Surrender, you pathetic beings!\"",
+      "eventActions": [
+        {
+          "repositionText": "Block line of sight to <color=\"red\">Maul</color>.",
+          "GUID": "603ca67e-0301-4623-b293-408334846078",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "theText": "{-} <color=\"red\">Maul</color> cannot be defeated during a round in which he has not yet resolved an activation.\r\n{-} The Rebels win when <color=\"red\">Maul</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "2da3beb3-14b5-4c35-8489-fd1fa827a82e",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "240b62f7-4d9e-4b79-985c-df49de97db94",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "7b519e51-a84d-46af-8a8c-0539f5c51fa7",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "997297d0-a929-4b95-899b-d1f2af19e8aa",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "11833111-88f2-4240-b358-a11844651fc2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "f6a12e2a-8e59-4a20-991e-a9169a6c7acc",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Clawdite",
+      "GUID": "1460dd4c-9ef1-43e1-abcd-e40a6602b78a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 1",
+      "GUID": "19a071fd-a09c-4e7e-b35e-02c59ddf6880",
+      "mainText": "A rust-covered door leads into the facility used by Maul as a hideout.\r\n\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+      "buttonList": [
+        {
+          "GUID": "c0cf03c2-7631-4081-aa40-c1766ee2ccd2",
+          "theText": "{A} Open (informant adjacent)"
+        }
+      ]
+    },
+    {
+      "entityName": "Door 2",
+      "GUID": "4a1c442c-ce64-490f-b4d4-4d45a70beb86",
+      "mainText": "This door leading deeper into the hideout has seen better days.\r\n\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+      "buttonList": [
+        {
+          "GUID": "2516d235-8d82-4b9c-959f-38e214e66832",
+          "theText": "{A} Open (informant adjacent)"
+        }
+      ]
+    },
+    {
+      "entityName": "Door 3",
+      "GUID": "1816700c-bc61-44c0-83c3-142d086c5191",
+      "mainText": "This door leading deeper into the hideout has seen better days.\r\n\r\n{-} Doors are locked. A door is unlocked to Rebels while the informant is adjacent to it.",
+      "buttonList": [
+        {
+          "GUID": "3a37cacb-83f3-4371-a9cc-50f2c62c43c1",
+          "theText": "{A} Open (informant adjacent)"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Blue",
+      "GUID": "0a8a27e1-2a88-46e5-ac44-3e253ff7bf6f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "754b68c8-b523-4c3a-872e-7d86fa29a1fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "38914952-e3f1-4b24-8c7e-9fc587efe1ec",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Black",
+      "GUID": "4c600620-9135-41f6-a6bc-4bce2141e1b9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "e4c80318-8982-4804-a34b-8a729d532d71",
+      "mainText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+      "buttonList": [
+        {
+          "GUID": "7e350241-31f9-42f5-9ff8-50ff4738273b",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 2",
+      "GUID": "4feaedb8-4f41-427c-b380-d0a6199c818e",
+      "mainText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+      "buttonList": [
+        {
+          "GUID": "fa21c3f8-6f7a-4399-b411-90e5df58babc",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 3",
+      "GUID": "68e0bcb2-a0e2-489d-a65d-5b403b5220fb",
+      "mainText": "The power cell is humming and pulsing as it supports Maul's personal shield with energy.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: *1*, Defense: 1 {G}). When all terminals are destroyed, <color=\"red\">Maul</color> no longer recovers {H} or becomes <color=\"red\">Stunned</color> at the start of his activation.",
+      "buttonList": [
+        {
+          "GUID": "a783994b-04fb-43cc-a649-616322e78d6a",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Informant",
+      "GUID": "5e768af1-85f9-4963-9a0a-126974245044",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Maul 1",
+      "GUID": "2afc066f-8f37-4dfd-a568-a91b2a7fc19b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Maul 2",
+      "GUID": "8e92716d-8fe1-4ecb-ab18-818135ab262c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Maul 3",
+      "GUID": "e2e4b07b-0306-478e-8d07-f9308f3fd77e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Maul 4",
+      "GUID": "4893d857-fbbf-4125-849d-2e21ac93a757",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Clawdite Shapeshifter",
+      "customInstructions": ""
+    }
+  ]
+}

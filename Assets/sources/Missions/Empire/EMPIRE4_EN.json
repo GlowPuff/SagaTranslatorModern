@@ -1,0 +1,694 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Double Agent",
+    "missionDescription": "",
+    "missionInfo": "{-} Lorn is a Rebel figure controlled by the Rebels as an ally. Lorn cannot suffer {H}.\r\n{-} Lorn does not activate as normal. Instead he performs 1 action at the start of each Status Phase.\r\n{-} If there are no healthy heroes within 3 spaces of Lorn, an Imperial figure can interact with Lorn to arrest him when instructed. When that happens, click the Imperial mission token and select \"Lorn arrested\".\r\n{-} Walls between 2 rubble tokens do not block movement for figures on 1 of those rubble tokens.\r\n{-} When it is the Rebel's turn to activate a figure, they may instead choose to pass play back to the Imperial player.\r\n{-} The Rebels win at the end of Round 7.\r\n{-} The Rebels lose when Lorn is arrested.",
+    "campaignName": "Heart of the Empire",
+    "startingObjective": "",
+    "repositionOverride": "Be adjacent to Lorn (only figures without \"Massive\" or \"Non-Sentient\").",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "f2037eb8-7860-4951-971f-d417208d7076",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "06b72f01-872b-4341-8367-271a0c01312d",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9b3a2b9e-e148-4c39-8f64-5ea7153a78ed",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "87ca8257-5cc3-485e-a161-97365cdc74df",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "085fb320-a2fb-468c-b997-42f76f03ffa6",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "d2a6d47f-7563-4355-8345-dceef72b8944",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "The small diner Lorn chose for your meeting is located in a heavily industrialized part of the planet. The air is choked with smog and soot, making it difficult to spot incoming craft.\r\n\r\nTo avoid arousing too much suspicion, half of the team remains outside with the speeder while the others go in to make contact. You take a seat in a booth and wait for Lorn to arrive.\r\n\r\nAfter a few beverages that the waitress guilted you into ordering, you grow annoyed that Lorn hasn't arrived. Beginning to think he is not coming at all, you suddenly notice a shady figure in a long coat and dark glasses. You roll your eyes at the obviousness of the\r\ndisguise and get up to make contact when your attention is drawn by movement you catch out of the corner of your eye. You realize you have other company as well.\r\n\r\nOutside, a low hum grows in intensity just before a glowing orb smashes into your speeder, leaving it a smoldering wreck, Through the haze you see the silhouette of a bomber shuttle circling around for another pass. You activate your emergency beacon to call for extraction, hoping it will arrive in time.\r\n\r\n{-} Deploy the Rebels divided as evenly as possible between the 2 blue highlights.",
+      "eventActions": [
+        {
+          "tbText": "Lorn huddles in a corner, shellshocked by the explosion, but slowly coming to his senses.",
+          "GUID": "5b964cf1-c4ec-419f-8868-89fe26e87fad",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "9778b553-efb9-4b26-8274-14e5098f8d2d",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "43c6692e-2e24-497a-892e-168bfddab23d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Place 1 Rebel mission token as shown. This is Lorn.\r\n{-} Lorn is a Rebel figure controlled by the Rebels as an ally. Lorn cannot suffer {H}.\r\n{-} Lorn does not activate as normal. Instead he performs 1 action at the start of each Status Phase.\r\n{-} If there are no healthy heroes within 3 spaces of Lorn, an Imperial figure can interact with Lorn to arrest him when instructed. When that happens, click the Imperial mission token and select \"Lorn arrested\".",
+          "GUID": "b105c929-e6f1-4d5e-aae0-242334f974c4",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "02412988-576f-47ae-b577-c622a890aadb",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "1d180127-e449-4410-a9f1-985197678024",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Suddenly, explosions rock the building, and parts of the wall collapse.",
+          "GUID": "3efe625c-14a1-439c-ae9d-2d6eaa9460ec",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rubble 1",
+              "GUID": "92b565b4-df7c-4337-979d-6d09ce317b65",
+              "theText": "{-} Place 1 rubble token on each space here.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Rubble 2",
+              "GUID": "4c75e93e-c4ce-4d4f-a0e5-2041654c56d9",
+              "theText": "{-} Place 1 rubble token on each space here.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "c728e70e-f255-4a42-963f-f6495e45b2ae",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Place 1 rubble token on each of the red highlighted spaces.\r\n{-} Walls between 2 rubble tokens do not block movement for figures on 1 of those rubble tokens.\r\n",
+          "GUID": "26fdb11f-00d2-4f23-bd4f-fbb28d5f4b8a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "\"Rebel terrorists\", the amplified voice of an Imperial commander echoes over the plaza. \"You are harboring a wanted traitor. Turn him in and surrender or you will be detained by force.\"\r\n\r\nOutside, a terrifying number of Imperial troops move into position, soon joined by bounty hunters looking for an easy catch.",
+          "GUID": "97405af1-5e8c-4650-a4d0-4deb5af90ebd",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4036526b-ca2a-4d6e-9313-e9bfea70834d",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG053/Clawdite Shapeshifter"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "bb83c616-c0f4-4c27-9aa8-958f44d423c6",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "dc4f5eb9-0e27-4c81-8464-3f1f46c9f197",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG011/Probe Droid"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "0dc972f2-860c-44f8-91f3-b4a32f5c68ad",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        },
+        {
+          "tbText": "You look around for a way out when the first troopers burst into the diner, carrying huge riot shields. Two Trandoshan patrons who have followed every move of you jump up, too, bare their teeth, and grab their weapons.",
+          "GUID": "9991c6ea-bb03-4330-8283-b8797980e32b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b0787cce-9950-48e9-bdf6-413c6326fca5",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG047/Riot Trooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "c6e6b60f-a723-417d-a8f2-243e8dd69a9b",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG015/Trandoshan Hunter"
+        },
+        {
+          "newInstructions": "{-} If adjacent to Lorn, and there are no healthy heroes within 3 spaces of Lorn: Arrest Lorn. (Only figures without \"Massive\" or \"Non-Sentient\")",
+          "GUID": "7ba6b65e-37a0-4062-ab97-a70781895197",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "tbText": "You ready your weapons, hoping that the extraction will arrive soon.\r\n\r\n{-} When it is the Rebel's turn to activate a figure, they may instead choose to pass play back to the Imperial player.\r\n{-} The Rebels win at the end of Round 7.\r\n{-} The Rebels lose when Lorn is arrested.",
+          "GUID": "b9203bd6-64cf-4d5d-afed-f4b51edfc6d1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Protect Lorn.",
+          "longText": null,
+          "GUID": "b22d0e98-6e38-40c8-8ab7-0368a1fc5cd2",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "“Anyone need a lift?” a voice crackles over your comlink. A speeder drops out of the cloud of smog above and weaves its way toward the ground, avoiding fire from the circling bomber. It sets down only long enough for you and Lorn to pile into it before lifting off once more and disappearing into the cloudy haze.\r\n\r\n“That was close!” Lorn says, a little too chipper for having just escaped from a war zone, “Thanks for your help! Now Id be glad to return the favor.’\r\n\r\n{-} The Rebels win the mission!\r\n{-} Heroes receive the “Inside Source” Reward card. (This Reward card works differently when playing with <b>Imperial Commander</b>. Refer to the <b>Rules Change</b> section of the wiki documentation for details.)\r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.\r\n{-} The heroes must choose whether to pursue the artifact with or without Lorn. If the heroes pursue the artifact with Lorn, place Story Mission card “History Repeats” into play. If they pursue it without Lorn, place Story Mission card “Enemies Closer” into play.",
+      "eventActions": [
+        {
+          "mainText": "Is there only 1 healthy hero?",
+          "buttonList": [
+            {
+              "GUID": "8d8778d6-9b04-48bd-a46c-b627f517758d",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "ee0dfae9-26c0-481d-9450-e685e59cf4d9",
+              "theText": "No"
+            }
+          ],
+          "GUID": "9d3c24ba-360f-4934-ade8-5deb209c4add",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Imperial soldiers close in around Lorn and throw him to the ground, cuffing his hands behind his back. “Help me!” Lorn cries out. “Don't leave me!” Knowing this battle is lost, you push down the feelings of guilt and abandon the poor man, trying not to think about his fate.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.\r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Story 1",
+      "GUID": "fac456cf-6c32-4b32-9708-84538d36ec5d",
+      "eventText": "The Empire decides to pursue the artifact directly, hoping to recover it before the heroes.\r\n\r\n{-} Place Story Mission card “Enemies Closer” into play.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Story 2",
+      "GUID": "24142781-4f57-4d08-aa89-dec53e4c9c27",
+      "eventText": "Instead of pursuing the artifact directly, the Empire decides to try and sabotage the heroes' efforts, slowing them down.\r\n\r\n{-} Place Story Mission card “On the Run” into play.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Intrusion",
+      "GUID": "09ddd186-7d41-47bf-85b6-f792b390346c",
+      "eventText": "Military speeders approach, and heavily armored troopers jump out of the transports.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "5832a217-3135-44c0-a80f-478316479a42",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG049/Riot Trooper (Elite)"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Yellow 1",
+              "GUID": "318c85f7-9805-4bcd-a226-7be45b3768d7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Yellow 2",
+              "GUID": "491ef120-8b43-49a4-8066-890758af8faf",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "72c3d9ca-4db2-4aec-8f05-ad6cb125995d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "On Patrol",
+      "GUID": "bc7c7bb6-4193-4ae2-8b86-56cba06225c3",
+      "eventText": "Hearing the commotion around the diner, a Stormtrooper patrol rushes in and immediately joins the fray.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4b0be648-1bca-4560-9e3c-5a32bc1f30fa",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 2",
+              "GUID": "252e0460-93e1-4a69-ab6f-a8cb68ae0def",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 3",
+              "GUID": "13109eba-3824-43e7-8d4b-a7bc850414fa",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 4",
+              "GUID": "08137dee-1ca3-4006-ab44-86bfd67186d9",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd68b9ea-4fc4-4497-9ca5-6ea77b6d8a8a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Walker Support",
+      "GUID": "7ba30888-5045-4e89-b23e-27e3a360142c",
+      "eventText": "“You'll never take me alive!” Lorn yells at the Imperials with a laugh as you dispatch another soldier. Just then, you notice a rhythmic rumbling in the ground, accompanied by the thumping steps of an approaching walker. Lorn swallows hard, his confidence gone.\r\n\r\n“On second thought...”",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "{-} CHARGE GENERATORS: If this figure has suffered less than 9 {H}, it gains +2 {H}.\r\n{-} EXPLOSIVE SHOTS: After each attack, place 1 rubble token on the space of the defender. Then, if the defender was adjacent to the wall, also place 1 rubble token on the other side of the wall, if possible.\r\n{Q} Move 1 to attack {rebel}.\r\n{Q} Move 1 to attack {rebel}.\r\n{Q}{A} Move 3 to attack {rebel}.\r\n{A}{A} Move 6 toward {rebel}.\r\n{A} Move 2 toward the closest Rebel.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "95c8aa6c-a44a-4bce-abb1-e21970d0a3ad",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG046/AT-DP"
+        }
+      ]
+    },
+    {
+      "eventName": "Vile Creatures",
+      "GUID": "e7a1428c-82d4-43ce-858f-4c4a2785cf50",
+      "eventText": "The back walls to the diner burst open as hidden charges detonate. Snarling, Trandoshan mercenaries rush in, their scatterguns drawn.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "671ba25a-0664-4179-a472-05d57f193e69",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG016/Trandoshan Hunter (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Bombardment Trigger",
+      "GUID": "b9c89a5d-76bd-4b75-a41c-ed5e93ca55db",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 1",
+      "GUID": "a1da5642-7efc-4dfe-872d-9c095d79e9c3",
+      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on each side of the wall between Core 28B and Empire 18B.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 2",
+      "GUID": "6beddd1a-ab84-4ca7-b0cd-f397fec871c7",
+      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on each side of the wall between Core 23B and Empire 6B (lowest possible position).",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 3",
+      "GUID": "15210d80-ba8f-45c2-9ff9-cc1c851f2c22",
+      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on the space of the Rebel figure adjacent to the most other Rebel figures. Each Rebel figure on or adjacent to that rubble token suffers 1 {C}. Each figure on that rubble token also suffers 1 {H}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 4",
+      "GUID": "3b229440-a554-407c-aab9-227f78b7a121",
+      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on the space of the Rebel figure adjacent to the most other Rebel figures. Each Rebel figure on or adjacent to that rubble token suffers 1 {C}. Each figure on that rubble token also suffers 1 {H}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 5",
+      "GUID": "78323a7e-9f9f-4824-8969-c0b746c5ddc4",
+      "eventText": "Alarms keep blaring through the streets of Coruscant, alerting the Imperial forces to the scene.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 6",
+      "GUID": "cfac4d25-94d5-439f-bab7-401d86d6165d",
+      "eventText": "Alarms keep blaring through the streets of Coruscant, alerting the Imperial forces to the scene.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Round 7 starts",
+      "GUID": "f2beeb78-c18d-4fa7-9971-fd6ae5e3fa2c",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Rebels Lose Bonus Credits",
+      "GUID": "1e764237-0372-404c-826a-5fcaf978fefd",
+      "eventText": "Because Lorn was not arrested until round 7, the heroes receive 25 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Rebels Lose No Bonus Credits",
+      "GUID": "6381b60d-b612-4eb5-be22-6befded031e0",
+      "eventText": "Because this is round 7, the heroes receive 25 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Healthy Hero Yes",
+      "GUID": "92cb039a-9d87-412e-8afd-a01f525208f5",
+      "eventText": "The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Healthy Hero No",
+      "GUID": "64a222fd-16e5-4545-9d2b-2a8fe10f7261",
+      "eventText": "",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "412e45a2-5009-45e8-aa24-9a37bb3ada93",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "95e52a17-75ad-42b4-8aa2-61eb3faef7a9",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "0f956e2c-894b-4de9-b716-28e346d32723",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance 1",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy half of the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "13302b9b-01cc-42bc-82df-1140c2b9afcb",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance 2",
+      "GUID": "af39b8f5-dbf6-441c-b5e1-f221ab357918",
+      "mainText": "Deploy half of the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Rubble 1",
+      "GUID": "4869b0f2-600e-4a8c-8a02-c62fdd1857c3",
+      "mainText": "{-} Place 1 rubble token on each space here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Rubble 2",
+      "GUID": "b42c137c-9598-40be-a8b8-50a7309ebae4",
+      "mainText": "{-} Place 1 rubble token on each space here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Lorn",
+      "GUID": "72d9bc48-2bd4-4243-8a02-d794ecec8439",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 5",
+      "GUID": "683f3140-50cf-44c5-8c1c-b9a5c99ce91b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1",
+      "GUID": "96efd903-fa53-4958-870f-0c3a490e0588",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "011fbe90-2374-4817-8867-4bec2c29d3f0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "415fabe1-fdb7-4daf-a409-f4aec0113510",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "49f3a43a-477b-42c8-817a-630f509e032e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Clawdite",
+      "GUID": "111e8b4c-871b-434e-9d54-b4b96ad58de6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "6e8c747c-e13d-431f-8a6e-a6bf8d4d42b7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "59b045e1-66e7-4c76-9f51-d267eb62bfcb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP RTrooper 2",
+      "GUID": "274ebb06-986f-4aed-a2d7-5aaec76c9f05",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP RTrooper 1",
+      "GUID": "e5fc0f24-9e5e-4420-82d5-7583cbb41134",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Black 1",
+      "GUID": "cb138c1f-99c3-482e-9a93-794529b2354b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Black 2",
+      "GUID": "e61b564c-e072-4a46-acfc-25843760934e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 1",
+      "GUID": "ab63f242-66aa-49b0-8f3d-64f42d4fec9e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 2",
+      "GUID": "27a5a1d8-3ccc-41ec-80c4-de777d6e270f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "ded513cc-509e-4eb2-8c4a-2e29c559bcf2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Arrest Token",
+      "GUID": "5ed67f85-cc46-47e9-942a-44147e380ce9",
+      "mainText": "{-} When Lorn is arrested, click \"Lorn Arrested\".",
+      "buttonList": [
+        {
+          "GUID": "f7c43e95-93ad-4c8a-aa10-cfdaee1c603c",
+          "theText": "Lorn Arrested"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

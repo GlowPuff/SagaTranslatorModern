@@ -1,0 +1,606 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Under Siege",
+    "missionDescription": "",
+    "missionInfo": "{-} Mission tokens represent capture sites. At he end of each round, if an Imperial figure occupies a tile with a capture site and there are no healthy Rebel figures on that tile, that site is secured by the Empire and that token is claimed.\r\n{-} Doors are locked. An Imperial figure can attack a door (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.\r\n{-} The Rebels win at the end of Round 8.\r\n{-} The Rebels lose when the Empire secures 4 capture sites or when all heroes withdraw. When all heroes withdraw, click the green highlighted space and select \"Heroes withdrawn\".",
+    "campaignName": "Core Game",
+    "startingObjective": "Protect the capture sites. (Capture sites taken by the Empire: &Sites taken&/4)",
+    "repositionOverride": "Closest capture site not occupied by at least two Imperial figures.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "827b99ae-363a-47dd-b845-1d7130b36ad6",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "fabd6f5f-4e77-4685-8514-80e850d7427a",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "42965739-f412-415c-9df4-26fde0e1f392",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "17ea4354-f911-4fce-93be-3666386aef37",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "b61421c7-d835-46cb-a3f2-01a1c49bfe9c",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "28249e53-3725-4a27-949c-ea8fe840a995",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Command has assigned you a brutally simple task: you're to cause a diversion, allowing another team to investigate a facility under Weiss's control.\r\n\r\nThe instructions from your commander were clear. \"Don't jam or cut off any signals,'' she told you. \"If they send any calIs for help, good. If they don't, then you didn't make enough noise.\"\r\n\r\nConsidering the sheer amount of Imperial weight now bearing down on the compound, you certainly succeeded in \"making enough noise.\"\r\n\r\nAfter removing the Imperial presence from the facility, you made preparations to defend it. Many of the doors are sealed off, barricaded against the possibility of troops coming in through another entrance. You're expecting they'll try, but hopefully your hasty fortifications will hold long enough to keep their numbers manageable.\r\n\r\n{-} Place 1 Rebel mission token on each tile with a red highlight.\r\n{-} Mission tokens represent capture sites. At he end of each round, if an Imperial figure occupies a tile with a capture site and there are no healthy Rebel figures on that tile, that site is secured by the Empire and that token is claimed.\r\n{-} Doors are locked. An Imperial figure can attack a door (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.\r\n{-} The Rebels win at the end of Round 8.\r\n{-} The Rebels lose when the Empire secures 4 capture sites or when all heroes withdraw. When all heroes withdraw, click the green highlighted space and select \"Heroes withdrawn\".\r\n{-}  Rebel players deploy their figures to any interior space.",
+      "eventActions": [
+        {
+          "newInstructions": "All Imperial figures will attack doors instead of Rebels if it is the quickest way to get to a capture site.",
+          "GUID": "c38f00ef-c5f7-4130-be5d-0d4267f5bc8a",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "newInstructions": "{-} When this group resolves an ORDER, after the ordered attack, the ordered group moves 2 towards the closest capture site on a tile not occupied by at least 2 Imperial figures.",
+          "GUID": "1a726c83-5fed-4b28-a01b-32bcc0257bd2",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Even though the call came for you to pull back several minutes ago, you still held in spite of the overwhelming odds.\r\n\r\nYou're told later that the few extra minutes meant clear skies for the other team's escape. Your pilot wasn't thrilled about the enemy fighters that came to deal with you, but it still worked out.\r\n\r\nThe recon team's success has revealed a new weapon project under Weiss's development, and their findings suggest that this should be of great concern to the Rebellion.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Place Story Mission card \"Imperial Hospitality\" into play.\r\n{-} Each hero receives 2 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Imperial forces charge into the compound, and you're unable to hold them back any longer. Hoping the time you bought the other strike team will be enough, you quickly disengage.\r\n\r\nLuck is on your side; after you're extracted, a transmission arrives from your commander. She makes no mention of your efforts and instead focuses entirely on the findings of the other team. \"Weiss is developing a weapon,\" she tells you, ''and High Command is very nervous about it. They're already clamoring for more information, so don't be surprised if you're called on soon.\" \r\n\r\n{-} The Rebels lose the mission.\r\n{-} Each hero receives 1 XP in addition to any that he has already received. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Door North Destroyed",
+      "GUID": "90d1b4d1-be9e-46b0-a3c2-296dd70b2b8f",
+      "eventText": "The door collapses under the Imperial onslaught.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door North",
+              "GUID": "ffa66119-6440-4198-9b64-34cce69ef8b5",
+              "theText": "A sturdy door leads out of the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+              "buttonList": [
+                {
+                  "GUID": "2d777e9a-8d77-473a-b1ba-66a00d4bde9a",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "28d34923-bd25-4d56-ba22-327853725c43",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Door West Destroyed",
+      "GUID": "6d27aa05-8749-42a7-b5f9-c87c1d25a0f8",
+      "eventText": "The door collapses under the Imperial onslaught.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door West",
+              "GUID": "918310f1-3b26-46a7-b13d-7eb1bcb32342",
+              "theText": "A sturdy door leads deeper into the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+              "buttonList": [
+                {
+                  "GUID": "79af972d-d90e-4bac-bd28-ee202fc751eb",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "d50380f8-f882-4ac9-b9a6-3d0411ff535f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Door East Destroyed",
+      "GUID": "72ef0c64-a827-4197-bcfc-d9e4c75daf42",
+      "eventText": "The door collapses under the Imperial onslaught.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door East",
+              "GUID": "db0ab614-9c27-46ea-b67e-33eaa4e1d58f",
+              "theText": "A sturdy door leads out of the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+              "buttonList": [
+                {
+                  "GUID": "c6972345-93a5-47a0-be75-006381823df8",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "11fe6849-ed7f-4c80-a2ef-35339d6942dc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Door South Destroyed",
+      "GUID": "4bb0438e-fab6-4344-9cb9-52fc282af205",
+      "eventText": "The door collapses under the Imperial onslaught.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door South",
+              "GUID": "04b6c2df-50f2-47ce-a1cc-ba81090b4ca9",
+              "theText": "A sturdy door leads deeper into the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+              "buttonList": [
+                {
+                  "GUID": "a98293ed-aeea-4c0c-84ed-b88d73b16f59",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "33caeab1-5e1e-4f6e-9665-42a5c47d1fca",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Capture",
+      "GUID": "ac4ad5ed-82a8-4689-8d3c-f540e2bb0cc5",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "How many tiles are there with a capture site, no healthy figure on the tile, and at least 1 Imperial figure on the tile?",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "329063cc-21d8-4ddc-b1b2-daa2b86b50a5",
+              "theText": null
+            },
+            {
+              "GUID": "8c32786c-818e-4c56-a163-a32baae259f5",
+              "theText": null
+            },
+            {
+              "GUID": "2e152e21-1d59-44a2-b99e-aefec524f2ee",
+              "theText": null
+            },
+            {
+              "GUID": "d778f441-07ca-4dc7-a90b-ea6ccb4fcffc",
+              "theText": null
+            },
+            {
+              "GUID": "e6d48132-69f2-4572-aaa4-6efb545fa18d",
+              "theText": null
+            }
+          ],
+          "GUID": "f8294708-3f8d-42c5-aed6-4f4459413dc4",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Capture 1",
+      "GUID": "537a8e7f-221e-4f25-a26e-f558dd57b1aa",
+      "eventText": "The Empire fortifies the captured positions.\r\n\r\n{-} The Empire claims all secured capture sites. Discard their tokens.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Imperial Capture 2",
+      "GUID": "d6113ed7-0f2d-4199-b875-005d39042e14",
+      "eventText": "The Empire fortifies the captured positions.\r\n\r\n{-} The Empire claims all secured capture sites. Discard their tokens.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Imperial Capture 3",
+      "GUID": "62676cdb-452c-4c37-8602-5afa9972d5eb",
+      "eventText": "The Empire fortifies the captured positions.\r\n\r\n{-} The Empire claims all secured capture sites. Discard their tokens.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Imperial Capture 4",
+      "GUID": "1cc27b31-bcdc-47a7-a1b8-cc1638ffbfee",
+      "eventText": "The Empire fortifies the captured positions.\r\n\r\n{-} The Empire claims all secured capture sites. Discard their tokens.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Imperial Capture 0",
+      "GUID": "fc33f044-a723-4ce7-90a7-2f806c55c4f3",
+      "eventText": "To their leaders' horror and fury, the Empire has made little progress.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Wave 1",
+      "GUID": "85b75175-11ae-41a3-b6e2-05951e077bf6",
+      "eventText": "For every troop you cut down, it seems as though three more take its place. Though the pressure continues to mount, the base is still under your control for the time being.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "e95ee450-b488-4c50-9191-9dc5fb37620c",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG009/Royal Guard"
+        }
+      ]
+    },
+    {
+      "eventName": "Assault - Trigger",
+      "GUID": "1e6d3a2a-7f03-4245-aef8-875bed6ec770",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Assault-1",
+      "GUID": "d5587515-8c6f-4636-a830-a8abd6579f32",
+      "eventText": "Artillery fire rains down on the compound. Suddenly, one of the protected doors is blasted open, smoldering splinters flying everywhere.\r\n\r\n{-} Remove the door with the most Rebel figures within 3 spaces of it.\r\n{-} Roll 1 red die. Each Rebel figure within 3 spaces of the removed door suffers {H} equal to the {H} results.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Assault-2",
+      "GUID": "a8b9a758-67f4-4d67-a284-2144d859f522",
+      "eventText": "Scrambled Imperial radio transmissions are heard in the distance, signaling the looming arrival of more reinforcements.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Wave 2",
+      "GUID": "b920817b-0fcf-4dc7-8dc8-5a28b28a1a83",
+      "eventText": "The pressure rises with each passing moment, but you're informed through your comlink that the other strike team is nearly finished.\r\n\r\nA detonation resounds through the corridors, originating from somewhere within the compound. It was only a matter of time before they tried to get in another way, but you curse your luck all the same. You just hope the explosion doesn't mean they already breached the compound and are flooding inside.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "15a9f143-7ba1-49c0-9994-f546c883e522",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Specialists - Trigger",
+      "GUID": "28b144e0-9278-4d30-87e2-cf3e5f0f11ba",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Specialists-1",
+      "GUID": "e05da1bd-81c4-45fa-9ba2-09e7942a1795",
+      "eventText": "Mechanical clanking and whirring is heard. A huge combat walker comes stomping out of the woods, guns blazing.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4ab567b6-13de-48ed-a3e5-1eb060925285",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG014/AT-ST"
+        }
+      ]
+    },
+    {
+      "eventName": "Specialists-2",
+      "GUID": "7d96e633-09e6-4e52-b783-2c49f29424e3",
+      "eventText": "You hear the hissing sound of a cutting torch, then a short, but violent explosion as an air vent flies open. Enemies flood in, right into the heart of the compound. Their sudden arrival takes you completely by surprise.\r\n\r\n{-} In this round, the Empire gets the first two activations. Click the \"Next activation\" icon to activate the first two groups without performing Rebel activations.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Wave 3",
+      "GUID": "b1377a3f-3a85-4fda-8857-64b23737a51a",
+      "eventText": "You can hardly believe it, but striding through the field off fallen troops is the imposing, terrifying figure of Darth Vader himself, followed by a flood of troops.\r\n\r\nA comlink message tells you that the other team is on its way out. Even though your Job is done, you know a few more minutes of diversion could make a world of difference to your comrades.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "1fe83cbc-fc56-444a-a03e-bdeaf44c76aa",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG072/Darth Vader"
+        }
+      ]
+    },
+    {
+      "eventName": "Check Early Defeat",
+      "GUID": "f611e2f4-0c47-445e-9beb-70444601f4fd",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End Mission Early Defeat",
+      "GUID": "c50c6aaf-484d-4d57-916b-9a88481941e5",
+      "eventText": "Because 4 capture points were secured before the end of Round 6, Place Story Mission card \"Fly Solo\" into play.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End Mission Normal",
+      "GUID": "bc91a667-9a7f-4669-9dc5-89f1505fdca8",
+      "eventText": "Because 4 capture points were secured after the end of Round 6, place Story Mission card \"Imperial Hospitality\" into play and each hero receives 1 XP.",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "2f610d32-7e36-4e55-b60b-f7d0e3668f15",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "eb91e47c-df47-4fd3-bd57-ee7746d1bb17",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "c27f4ad4-b136-4e34-b18c-d717afb40661",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "1c7bdb35-6237-466b-9965-21cee348796f",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP E-Web",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Heroes withdrawn",
+      "GUID": "fc1e56aa-2472-471f-a805-18928d0ace00",
+      "mainText": "When all heroes are withdrawn, click \"Heroes withdrawn\".",
+      "buttonList": [
+        {
+          "GUID": "8875b42f-4120-4eb7-aac5-aacb57da9ffb",
+          "theText": "Heroes withdrawn (End Mission)"
+        }
+      ]
+    },
+    {
+      "entityName": "Capture Site",
+      "GUID": "18f8a5d2-960e-4d89-8d02-1c83415c1c20",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Capture Site (Duplicate)",
+      "GUID": "c9dde8d2-f67b-4752-8513-19961c5df3ec",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Capture Site (Duplicate) (Duplicate)",
+      "GUID": "3736f6ad-eb5d-41fa-81d0-709e5533b48a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Capture Site (Duplicate) (Duplicate) (Duplicate)",
+      "GUID": "a1c44d68-8da8-4357-92c3-2723fbcb5048",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Capture Site (Duplicate) (Duplicate) (Duplicate) (Duplicate)",
+      "GUID": "b50371bc-4960-42a1-a6ba-8668897423bd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP AT-ST",
+      "GUID": "9eda6375-5593-488d-9833-572a5104767f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "96096f01-99e7-4761-9729-319564f73ad8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "0e4ca184-d044-4bbc-90bc-cb5f4393d80e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "2149341e-b917-4595-952e-6ab062a0a63b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "6fc50ef3-9191-4721-8521-7a7cade02ac1",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "184d0a25-8864-490b-9c29-f605f34cf442",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door North",
+      "GUID": "e4abd589-83f6-4bee-b266-cafd131bd5a0",
+      "mainText": "A sturdy door leads out of the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+      "buttonList": [
+        {
+          "GUID": "3c2a265f-3e51-4f81-855a-39c84cadd868",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Door East",
+      "GUID": "2c105e11-d552-4065-8800-68a05569a099",
+      "mainText": "A sturdy door leads out of the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+      "buttonList": [
+        {
+          "GUID": "267648fb-9aa4-4af9-9ba4-32f8b30dd957",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Door West",
+      "GUID": "71e51334-3a34-4f78-a9e1-ba534f3a3b64",
+      "mainText": "A sturdy door leads deeper into the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+      "buttonList": [
+        {
+          "GUID": "44cedb8d-cfdd-4100-9b92-6c1207433c70",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Door South",
+      "GUID": "a92d82bb-182f-462a-ba99-7f8a9fd97b7b",
+      "mainText": "A sturdy door leads deeper into the compound, but it won't keep the Imperials out forever.\r\n\r\n{-} The door is locked. An Imperial figure can attack it (Health: 6, Defense: 1 black die).\r\n{-} A door adjacent to a Rebel figure does not block his movement or line of sight.",
+      "buttonList": [
+        {
+          "GUID": "3779d042-d706-4642-a51c-6566de992ce2",
+          "theText": "Destroy"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "E-Web Engineer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    }
+  ]
+}

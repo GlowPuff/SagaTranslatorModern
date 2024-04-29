@@ -1,0 +1,387 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Civil Unrest",
+    "missionDescription": "",
+    "missionInfo": "{-} The <color=\"red\">AT-DP</color> cannot suffer {H}.\r\n{-} Neutral mission tokens represent civilians. Civilians are neutral figures. Imperial figures can attack civilians (Health: 4).\r\n{-} The Rebel mission token represents an escape route. When a civilian enters a space on or adjacent to the escape route, click the escape route and select \"Civilian escapes\".\r\n{-} When a civilian is defeated, click the escape route and select \"Civilian defeated\".\r\n{-} At the end of a hero's activation, that hero may move a civilian within 2 spaces up to 2 spaces.\r\n{-} A hero can spend 1 movement point to place an energy shield from his play area on an adjacent space.\r\n{-} A hero can spend 1 movement point to claim an adjacent energy shield.\r\n{-] The mission will progress when there are no civilians left on the map or at the end of Round 4.\r\n{-} The Rebels lose when all heroes are wounded.",
+    "campaignName": "",
+    "startingObjective": "Protect the civilians. Civilians escaped or defeated: &Civilians&/9",
+    "repositionOverride": null,
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "ab093815-8db6-493c-a4fd-08e70cacc5a7",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "2c4ed049-ca85-449d-853d-d5be3cd7c526",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9f70865a-5404-4aad-bfc7-2edbe4b51cb8",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "9917c48a-121a-4904-8a68-d8122d438c52",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "By the time you reach the scene, chaos has already engulfed the streets. Civilians cower behind what cover they can find, desperate to escape the Empire's towering war machines.\r\n\r\n{-} Deploy the heroes to the Rebel mission token.",
+      "eventActions": [
+        {
+          "tbText": "Former protesters cower in fear or sprint for cover.\r\n\r\n{-} Place 1 neutral mission token on each red highlighted space.\r\n{-} Neutral mission tokens represent civilians. Civilians are neutral figures. Imperial figures can attack civilians (Health: 4).\r\n{-} The Rebel mission token represents an escape route. When a civilian enters a space on or adjacent to the escape route, click the escape route and select \"Civilian escapes\".\r\n{-} When a civilian is defeated, click the escape route and select \"Civilian defeated\".\r\n{-} At the end of a hero's activation, that hero may move a civilian within 2 spaces up to 2 spaces.",
+          "GUID": "561387f9-553b-46ec-a660-6061017be9d0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "A huge combat walker stomps through the streets of Taris. His metal frame is surrounded by a shimmering energy shield.\r\n\r\n{-} The <color=\"red\">AT-DP</color> cannot suffer {H}.",
+          "GUID": "b8b5546d-2fe9-48e2-8171-7863e3295c4b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{-} CHARGE GENERATORS: If this figure has suffered less than 9 {H}, it gains +2 {H}.\r\n{Q} Move 2 to attack {rebel}.\r\n{Q} Move 2 to attack {rebel}.\r\n{Q}{A} Move 5 to attack {rebel}.\r\n{A}{A} Move 8 toward {rebel}.\r\n{A} Move 3 toward the closest Rebel.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "0b17956e-45fb-44be-b43c-daa860b4484f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG046/AT-DP"
+        },
+        {
+          "tbText": "You are glad that High Command thought of equipping you with portable shield generators. You take them out of your bags.\r\n\r\n{-} Distribute 4 energy shield tokens among the heroes' play areas.\r\n{-} A hero can spend 1 movement point to place an energy shield from his play area on an adjacent space.\r\n{-} A hero can spend 1 movement point to claim an adjacent energy shield.",
+          "GUID": "08d99eaa-d73c-450f-a76f-9cbf0620dd0b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You ready your weapons. This is going to be a tough fight.\r\n\r\n{-} The mission will progress when there are no civilians left on the map or at the end of Round 4.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "aae392af-b09a-4c1a-a99e-a3f1e586e032",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "The walker crashes to the ground in flames. Some of the braver protesters come out of cover to climb the wreckage and raise their voices in defiance once again. You leave confident that the spirit of the Rebellion has grown stronger today.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Heroes receive the \"Populist Support\" Reward card. (This Reward card works differently when playing with <b>Imperial Commander</b>. Refer to the <b>Rules Change</b> section of the wiki documentation for details.)\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "The metal giant seems unstoppable, and you are forced to join in the fleeing crowds, leaving the innocent citizens to their fate. It will be some time before the citizens of Taris regain enough bravery to show any further resistance.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Civilian defeated",
+      "GUID": "58e40a61-4aaa-4aa8-80dc-91073f9b838b",
+      "eventText": "The Imperial shots strike down another protester who collapses to the ground.\r\n\r\n{-} Remove the defeated civilian.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Civilian escapes",
+      "GUID": "16c86d5f-75fb-4367-841c-ef999722d18e",
+      "eventText": "Another protester manages to reach the escape route, finally safe from the Empire.\r\n\r\n{-} Remove the escaped civilian.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Heating Up",
+      "GUID": "1a3613c4-127c-404f-98a0-1fc1b154d8c9",
+      "eventText": "More and more Imperial forces flood into the streets.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Take it Down!",
+      "GUID": "0bb9fb9f-d9a4-489f-a1c7-0ea302f87cfe",
+      "eventText": "As reinforcements close in, remaining protesters attempt to huddle in safety. Your pilot zooms overhead, launching an EMP blast targeting the AT-DP's shield generators.\r\n\r\nWith its weaknesses now revealed, you aim your weapons and prepare to take down the less-intimidating walker.\r\n\r\n{-} The <color=\"red\">AT-DP</color> can now suffer {H}.\r\n{-} The Rebels win when the <color=\"red\">AT-DP</color> is defeated.",
+      "eventActions": [
+        {
+          "shortText": "Take down the <color=\"red\">AT-DP</color>.",
+          "longText": null,
+          "GUID": "e5a15a54-2d26-43ea-92b3-c8641bf3dc0f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} At the end of a hero's activation, that hero may move a civilian within 2 spaces up to 2 spaces.\r\n{-} A hero can spend 1 movement point to place an energy shield from his play area on an adjacent space.\r\n{-} A hero can spend 1 movement point to claim an adjacent energy shield.{-} The Rebels win when the <color=\"red\">AT-DP</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "22cff33b-02ff-48b7-a9f3-74133a80c17c",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Escape Route",
+              "GUID": "751be06f-102c-4cfd-b6a3-d7e46ead9da9",
+              "theText": "Narrow streats lead off into the lower levels of Taris, making it impossible for the Empire to follow.\r\n\r\n{-} Deploy the heroes here.\r\n{-} When a civilian enters a space on or adjacent to the escape route, click the escape route and select \"Civilian escapes\".\r\n{-} When a civilian is defeated, click the escape route and select \"Civilian defeated\".",
+              "buttonList": [
+                {
+                  "GUID": "3cd60078-1086-4878-86ea-4b6a802d7f34",
+                  "theText": "Civilian escapes"
+                },
+                {
+                  "GUID": "6fef5a45-1ef6-4c01-b8be-193017fc511c",
+                  "theText": "Civilian defeated"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Red 1",
+              "GUID": "23764870-6a54-400f-a2c2-a8b531db0f51",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "eb55c00a-0a2f-44b2-91de-76eff63cf156",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "9ddd4ed2-0edb-4bfd-bd04-206966731496",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "3fd5a087-331c-4e50-b595-174f355b46e4",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "befff3de-2756-4d8e-a7fb-e1e19038eabe",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "9183fb28-5787-4648-b078-1298d184217f",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Escape Route",
+      "GUID": "ee1ec8a2-4825-447d-9f0a-49664ed84091",
+      "mainText": "Narrow streats lead off into the lower levels of Taris, making it impossible for the Empire to follow.\r\n\r\n{-} Deploy the heroes here.\r\n{-} When a civilian enters a space on or adjacent to the escape route, click the escape route and select \"Civilian escapes\".\r\n{-} When a civilian is defeated, click the escape route and select \"Civilian defeated\".",
+      "buttonList": [
+        {
+          "GUID": "3fb56b57-3f57-4eab-a12f-b2fb00c45ea3",
+          "theText": "Civilian escapes"
+        },
+        {
+          "GUID": "398d40ee-5bae-49fa-ae68-5fb311c10fc8",
+          "theText": "Civilian defeated"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "bd0b25fa-7742-42d1-b89a-c652ac4b6add",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "9aafd505-a163-4845-8870-58ab8c76d5d0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "c4d5c970-92d4-474e-8a6e-6ee10c47d58c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "e4e544a0-bb2f-45bb-8fd1-d9e28a17e6fb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP AT-DP",
+      "GUID": "a8142ab6-52dc-43a9-8ed5-872cdf85a9a2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "9e570400-6000-44e8-8d33-4db79de3b7a3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "0c460771-18cb-43cd-8b34-0799f7d780c8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 1",
+      "GUID": "f5159dd1-a62b-4385-b436-8358b30426e8",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 2",
+      "GUID": "2f382096-e498-4edd-a093-ba5db92d65a4",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 3",
+      "GUID": "8fe5a957-7a17-4d6a-9c2d-28f3e35b4fba",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 4",
+      "GUID": "b04b35f0-40b4-4b95-8ccc-d5b2373e90a9",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 5",
+      "GUID": "e610676b-6778-4037-8ccb-d6b0c7f3bc48",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 6",
+      "GUID": "b21d981a-e87c-4b43-bc6b-76b63f2966f7",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 7",
+      "GUID": "e1b0f97b-00e0-4c60-9f11-92be28ec2330",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 8",
+      "GUID": "1bd9659f-6cd4-4605-a56c-9ffe25171e0d",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 9",
+      "GUID": "c87315a0-931b-4385-a10e-59196ea59158",
+      "mainText": "Place 1 neutral mission token here.",
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    }
+  ]
+}

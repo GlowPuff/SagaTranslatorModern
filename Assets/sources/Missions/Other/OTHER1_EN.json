@@ -1,0 +1,555 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "A Bounty Protected",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "Dengar (Ruthless Killer) Villain Pack",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "eb3ff8d4-7924-4f1a-8636-06cb1f8864da",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "37e14e38-3a29-4d83-a7b0-dafaa2579bb4",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9a704104-b3a7-4f94-be55-e4afb7773fa4",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "a601b96b-0218-4040-b794-ee32c54d3249",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "395a81fe-43a8-4a2a-b02e-c6af453107de",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "96e5cb12-9ac7-40c3-9d47-442eb9cce736",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "After tracking Dengar and his party of bounty hunters for days, your search has finally brought you here. Your intelligence indicates that Dengar will transfer Taya Vontaq, the Rebel operative from Dathomir, into Imperial custody in a prisoner exchange in a nearby valley. Only a stinking sewer, an icy mountain trail, and a stubborn rockfall block your path.\r\n\r\n\"Well, those and Dengar’s heavily-armed associates,” your pilot reminds you.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.",
+      "eventActions": [
+        {
+          "tbText": "A rockfall is blocking the way to the valley.",
+          "GUID": "1ed9f156-283f-4b28-9567-2f33fd44f77a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Obstruction 1",
+              "GUID": "77099e42-c327-4f06-aa47-e511b37d6f3e",
+              "theText": "A rockfall is blocking your path here. It is impossible to see what lies behind it.\r\n\r\n{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The first time a Rebel figure enters a space containing an obstruction, click \"Enter\".",
+              "buttonList": [
+                {
+                  "GUID": "e2431ff3-9dcf-4e9d-9acd-73b4c135fee8",
+                  "theText": "Enter"
+                }
+              ]
+            },
+            {
+              "entityName": "Obstruction 2",
+              "GUID": "f19ea56f-6df8-410a-89dd-253359218b62",
+              "theText": "A rockfall is blocking your path here. It is impossible to see what lies behind it.\r\n\r\n{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The first time a Rebel figure enters a space containing an obstruction, click \"Enter\".",
+              "buttonList": [
+                {
+                  "GUID": "0dee0c8a-e469-4e46-b7dd-d264f384076d",
+                  "theText": "Enter"
+                }
+              ]
+            }
+          ],
+          "GUID": "8f98d278-9b2c-4ae2-832e-a9ec32772cb5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The first time a Rebel figure enters a space containing an obstruction, click the obstruction and select \"Enter\".\r\n{-} The mission will progress when a Rebel figure enters a space containing an obstruction.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "caa1a3e4-336f-40f7-9727-4a6b67a6b82e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Find Taya.",
+          "longText": null,
+          "GUID": "aa536ae3-ec13-4f53-918b-3aeab085e187",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The first time a Rebel figure enters a space containing an obstruction, click the obstruction and select \"Enter\".\r\n{-} The mission will progress when a Rebel figure enters a space containing an obstruction.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "bbcd7b8a-1d7a-4b3e-b4f4-4912a7438d8a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "You load the weary prisoner onto your shuttle and blast away from the planet. Taya looks at you and mutters a quiet, “Thank you,” before she passes out from exhaustion.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Each hero receives 1 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "The bounty hunters keep you pinned down with relentless fire. An engine roars, and in the sky you see an Imperial transport zooming toward the ground. Taya is loaded onto the ship, still screaming for your help.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The Empire receives <color=\"red\">Dengar</color> (Ruthless Killer) as a villain.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Imperial Interests",
+      "GUID": "722db063-e204-4dd2-9748-5a3a23017a90",
+      "eventText": "Suddenly, you spot a man in the uniform of an Imperial officer watching over the scene. Of course. Where a bounty hunter is, his client is usually not far. The Empire appears to have taken some interest in Taya.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 1",
+              "GUID": "d7f5ca69-f217-45da-b6ca-e4ab2a038cae",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "18838acd-8d48-4185-8ee3-63af3beacbdd",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b9281c27-31ec-42cf-bf09-7b92436a33aa",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Deactivate DP2",
+      "GUID": "9e6d9898-8ca0-48eb-b1ec-bc5f9f6b4e5f",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 2",
+              "GUID": "ac33b663-cfc2-4309-bfdd-ac33da58bfce",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "e90fc30e-717b-40d3-ae6a-479cf92c576c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Guarding his Prisoner",
+      "GUID": "c782b2f6-204c-483b-9a12-7756b3966775",
+      "eventText": "As you finally make your way across the rockfall, you arrive in a small valley. Behind some rocks, you can see Taya Vontaq, shackled, writhing helplessly. \"HELP!\", she calls out as she spots you.",
+      "eventActions": [
+        {
+          "repositionText": "Block access to Taya.",
+          "GUID": "eb3e3882-6918-4293-84c4-7fd97b4f3a3a",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Obstruction 1",
+              "GUID": "daed8127-5cad-4c05-ac1c-371b8eac2f9a",
+              "theText": "A rockfall is blocking your path here. It is impossible to see what lies behind it.\r\n\r\n{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Obstruction 2",
+              "GUID": "19738c38-89e0-473b-9df4-8852ef5cca1d",
+              "theText": "A rockfall is blocking your path here. It is impossible to see what lies behind it.\r\n\r\n{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Prisoner",
+              "GUID": "d1b6a9a7-35de-4a5b-9c9c-950e2357c27f",
+              "theText": "Taya Vontaq, the Dathomiri spy that Dengar has caught, is struggling with the shackles that immobilize her. \r\n\r\n{-} A Rebel figure can interact with Taya to retrieve her.",
+              "buttonList": [
+                {
+                  "GUID": "37cac31a-7b3e-4283-b225-a62baeda044c",
+                  "theText": "{A} Retrieve"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Yellow",
+              "GUID": "a127f4bc-1e91-4e29-b372-aef7224915fe",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "70aa3d3f-5e28-4b15-9b7e-41c8fa89955d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} The Rebel mission token represents Taya. A Rebel figure can interact with Taya to retrieve her.",
+          "GUID": "c0f078d1-4633-408b-a09f-99ae6e772bce",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "As you move closer, Taya calls out again. \"Watch out! That <i>sleemo</i> is still around somewhere!\" She has barely finished when a man with a scarred face steps forth from behind the rocks. And he is not alone.",
+          "GUID": "8ea144a9-1e42-4807-adc9-abb265783c97",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "e38bfa56-2f14-4c96-991c-7377e9ce0291",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG077/Dengar"
+        },
+        {
+          "tbText": "You call in your shuttle, which approaches within seconds, hovering over a point not far away from you and Taya.",
+          "GUID": "da520fbb-f286-4487-938f-1049acdff94a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Extraction Point",
+              "GUID": "f2af296c-9a27-42e2-b0ba-feb309391069",
+              "theText": "Your shuttle is hovering over this point. If you can make it there with Taya, and shake off the pursuit, you can escape from this place.\r\n\r\n{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "86c97f43-f85a-462f-91b9-8d41e94d6acc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.\r\n{-} The Rebels win when the Rebel carrying Taya escapes.",
+          "GUID": "481b175b-f904-42bc-9b97-54d22d31f2a1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Retrieve Taya.",
+          "longText": "",
+          "GUID": "2b7c5642-1ede-4775-8238-1621cd13c3bc",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The Rebel mission token represents Taya. A Rebel figure can interact with Taya to retrieve her.\r\n{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.\r\n{-} The Rebels win when the Rebel carrying Taya escapes.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "e9508763-a079-4017-99ce-9cab4eb5b1ed",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Taya Retrieved",
+      "GUID": "94226076-7a37-4adb-a7d1-c9842162060b",
+      "eventText": "You help Taya up, but the shackles and the exhaustion are too much. You need to carry her.\r\n\r\n{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.",
+      "eventActions": [
+        {
+          "repositionText": "Block access to the extraction point.",
+          "GUID": "75164eae-e4f1-4342-82ac-0ef32a0be090",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Extraction Point",
+              "GUID": "e7475954-0f67-4ab9-9041-444d4791759a",
+              "theText": "Your shuttle is hovering over this point. If you can make it there with Taya, and shake off the pursuit, you can escape from this place.\r\n\r\n{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.",
+              "buttonList": [
+                {
+                  "GUID": "afadaea6-c1c4-4ff2-804b-1fcec76a73f6",
+                  "theText": "Escape"
+                }
+              ]
+            },
+            {
+              "entityName": "Prisoner",
+              "GUID": "0e673523-e21f-4020-b17d-fb88215315cf",
+              "theText": "Taya Vontaq, the Dathomiri spy that Dengar has caught, is struggling with the shackles that immobilize her. \r\n\r\n{-} A Rebel figure can interact with Taya to retrieve her.",
+              "buttonList": [
+                {
+                  "GUID": "4b9459a9-6537-4726-9f0e-edcd1a00cf42",
+                  "theText": "{A} Retrieve"
+                }
+              ]
+            }
+          ],
+          "GUID": "c935fdc5-9a1a-4a11-966e-8ac857e295fc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Take Taya to safety.",
+          "longText": null,
+          "GUID": "c48bfafb-4634-47a4-a69e-9946bd455007",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.\r\n{-} The Rebels win when the Rebel carrying Taya escapes.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "fc72d1e3-625a-419a-9a0c-959c5dba5c0b",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Escape",
+      "GUID": "b7b6ba5c-ce1e-4e23-933c-aabc6a8bce32",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Is <color=\"red\">Dengar</color> on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight)?",
+          "buttonList": [
+            {
+              "GUID": "271f7313-9e02-429e-b29c-f61d53928446",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "dcd82e54-f782-4e5c-9f57-ecadbd0900bd",
+              "theText": "No"
+            }
+          ],
+          "GUID": "9bc7615b-04c7-41e6-9dc8-152c1c61008d",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Dengar Yes",
+      "GUID": "55b342f7-43f6-454d-a40f-6c66871258e8",
+      "eventText": "You need to get rid of Dengar before you can escape with Taya.",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "5c7460fa-eed4-4f81-8bb1-b0406343c234",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "20516713-d655-49b4-b437-44a1567614fb",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 2",
+      "GUID": "dbba5bd0-b0a7-4ddb-9f83-79e4a8633b37",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "4d76c6b0-cc59-409a-a3cf-aaa3a2510cbb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "467db905-ea7e-4d4b-ab3a-f6ec8add9d37",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Prisoner",
+      "GUID": "940d15f3-44c7-40ce-9d31-dba074c8dc73",
+      "mainText": "Taya Vontaq, the Dathomiri spy that Dengar has caught, is struggling with the shackles that immobilize her. \r\n\r\n{-} A Rebel figure can interact with Taya to retrieve her.",
+      "buttonList": [
+        {
+          "GUID": "a3b2ee48-bda4-444c-8f14-67d88cb22f17",
+          "theText": "{A} Retrieve"
+        }
+      ]
+    },
+    {
+      "entityName": "Obstruction 1",
+      "GUID": "d67d4660-3565-4994-b058-677fce459185",
+      "mainText": "A rockfall is blocking your path here. It is impossible to see what lies behind it.\r\n\r\n{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The first time a Rebel figure enters a space containing an obstruction, click \"Enter\".",
+      "buttonList": [
+        {
+          "GUID": "0f258740-e121-49ae-b6fc-961b6d00e98a",
+          "theText": "Enter"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Dengar",
+      "GUID": "ceba015c-17f9-4f00-9998-324f2394a146",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "d193a97b-736d-4a70-b5f3-505e62033c9c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Obstruction 2",
+      "GUID": "6a5a02e2-4327-485a-8371-31eddab9a821",
+      "mainText": "A rockfall is blocking your path here. It is impossible to see what lies behind it.\r\n\r\n{-} Neutral mission tokens represent obstructions. Rebel figures must spend 4 movement points to enter a space containing an obstruction. Once per activation, a Rebel figure can test {K} to reduce that movement point cost by the number of successes until the end of the activation, to a minimum of 0.\r\n{-} Line of sight cannot be traced and spaces cannot be counted through a space containing an obstruction.\r\n{-} The first time a Rebel figure enters a space containing an obstruction, click \"Enter\".",
+      "buttonList": [
+        {
+          "GUID": "d4e07347-5863-4148-952f-5d5f8cc50c37",
+          "theText": "Enter"
+        }
+      ]
+    },
+    {
+      "entityName": "Extraction Point",
+      "GUID": "7b7c2ee8-110a-430e-9587-b2a35444aa7d",
+      "mainText": "Your shuttle is hovering over this point. If you can make it there with Taya, and shake off the pursuit, you can escape from this place.\r\n\r\n{-} If <color=\"red\">Dengar</color> is not on the Holding Zone (tile CORE 1A) or the Extraction Point (green highlight), a Rebel figure carrying Taya can escape through the Extraction Point.",
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Trandoshan Hunter",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    }
+  ]
+}

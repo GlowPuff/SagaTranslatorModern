@@ -1,0 +1,86 @@
+﻿<Window
+	x:Class="Saga_Translator_V2.ShowProblemsDialog"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:Saga_Translator_V2"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Title="Problems Found In Loaded Data"
+	Width="600"
+	MaxHeight="500"
+	Background="#1f1f1f"
+	ResizeMode="CanResizeWithGrip"
+	SizeToContent="Height"
+	TextElement.Foreground="White"
+	WindowStartupLocation="CenterScreen"
+	mc:Ignorable="d">
+
+	<Window.Resources>
+		<ResourceDictionary>
+			<DataTemplate x:Key="LVitemTemplate">
+				<TextBlock
+					Margin="5"
+					VerticalAlignment="Center"
+					Foreground="White"
+					Text="{Binding}"
+					TextWrapping="Wrap" />
+			</DataTemplate>
+
+		</ResourceDictionary>
+	</Window.Resources>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="auto" />
+		</Grid.RowDefinitions>
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<TextBlock
+				Margin="10"
+				FontSize="14"
+				Foreground="White"
+				Text="The following problems were found and fixed in the loaded data:" />
+
+			<ListView
+				x:Name="sourceLV"
+				Grid.Row="1"
+				Margin="10"
+				HorizontalContentAlignment="Stretch"
+				d:ItemsSource="{d:SampleData ItemCount=5}"
+				Background="Transparent"
+				ItemTemplate="{StaticResource LVitemTemplate}"
+				ItemsSource="{Binding}"
+				ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+				ScrollViewer.VerticalScrollBarVisibility="Auto" />
+
+		</Grid>
+
+		<!--  BOTTOM ROW  -->
+		<GroupBox
+			Grid.Row="1"
+			Padding="0,5,0,0"
+			BorderThickness="0">
+			<Grid>
+				<StackPanel
+					Grid.Column="2"
+					HorizontalAlignment="Right"
+					Orientation="Horizontal">
+					<Button
+						x:Name="continueBtn"
+						Margin="5"
+						HorizontalAlignment="Center"
+						Click="continueBtn_Click"
+						Content="CONTINUE"
+						Foreground="White"
+						IsDefault="True"
+						Style="{StaticResource greenHover}" />
+				</StackPanel>
+			</Grid>
+		</GroupBox>
+	</Grid>
+</Window>

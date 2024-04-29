@@ -1,0 +1,132 @@
+﻿<Window
+	x:Class="Saga_Translator_V2.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:Saga_Translator_V2"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Title="{Binding translationPanel.commonPanelData.windowTitle}"
+	Width="900"
+	Height="600"
+	Background="#181a21"
+	PreviewKeyDown="Window_PreviewKeyDown"
+	ResizeMode="CanResizeWithGrip"
+	WindowStartupLocation="CenterScreen"
+	mc:Ignorable="d">
+
+	<Window.Resources>
+		<BooleanToVisibilityConverter x:Key="b2v" />
+	</Window.Resources>
+
+	<!--  COMMON UI CHROME  -->
+	<DockPanel Background="#272727" LastChildFill="True">
+		<Grid DockPanel.Dock="Top">
+			<Grid Background="#1f1f1f">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+
+				<!--  PROJECT SELECTOR  -->
+				<Button
+					x:Name="selectorBtn"
+					Grid.Column="0"
+					Margin="10,10,5,10"
+					Click="selectorBtn_Click"
+					Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+					ToolTip="Switch Translation Data Set">
+					<Image Height="30" Source="Assets/mode-toggle.png" />
+				</Button>
+
+				<Border
+					Grid.Column="1"
+					Width="2"
+					Height="40"
+					Background="#737373" />
+
+				<!--  OPEN TRANSLATED  -->
+				<Button
+					x:Name="openFileBtn"
+					Grid.Column="2"
+					Margin="5,10,5,10"
+					Click="openFileBtn_Click"
+					Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+					ToolTip="Open an Existing Translated File">
+					<Image Height="30" Source="Assets/open.png" />
+				</Button>
+
+				<!--  SAVE  -->
+				<Button
+					x:Name="saveFileBtn"
+					Grid.Column="3"
+					Margin="5,10,10,10"
+					Click="saveFileBtn_Click"
+					Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+					ToolTip="Save the Translated File">
+					<Image Height="30" Source="Assets/save.png" />
+				</Button>
+
+				<TextBlock
+					Grid.Column="4"
+					Margin="10,0,0,0"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					FontSize="14"
+					Foreground="White"
+					Text="Target Language:" />
+
+				<!--  LANGUAGE LIST  -->
+				<ComboBox
+					Grid.Column="5"
+					Width="150"
+					Margin="10,10,0,10"
+					VerticalContentAlignment="Center"
+					ItemsSource="{Binding languageList}"
+					SelectedItem="{Binding selectedLanguageID}"
+					Visibility="{Binding translationPanel.commonPanelData.showLanguageSelector, Converter={StaticResource b2v}}" />
+
+				<!--  NOTICE  -->
+				<TextBlock
+					Grid.Column="6"
+					Margin="10,0,0,0"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					FontSize="14"
+					FontStyle="Italic"
+					Foreground="White"
+					Text="Save your work or load an existing translation to work on."
+					TextWrapping="Wrap" />
+			</Grid>
+		</Grid>
+
+		<!--  BOTTOM  -->
+		<Grid
+			Margin="0"
+			Background="#3e3e42"
+			DockPanel.Dock="Bottom">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+				</Grid.ColumnDefinitions>
+				<Border Background="{Binding statusColor}">
+					<TextBlock
+						Margin="10"
+						Foreground="White"
+						Text="{Binding translationPanel.commonPanelData.infoText}" />
+				</Border>
+			</Grid>
+		</Grid>
+
+		<!--  DYNAMIC CONTENT  -->
+		<ContentControl Content="{Binding translationPanel}" />
+
+	</DockPanel>
+</Window>

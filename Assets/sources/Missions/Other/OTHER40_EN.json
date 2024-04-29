@@ -1,0 +1,769 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Top Target",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "Greedo (Ambitious Mercenary) Villain Pack",
+    "startingObjective": "",
+    "repositionOverride": "Be on or adjacent to the closest terminal with the fewest Imperial figures on or adjacent to it.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "d6af50fe-1ae6-46a2-a8c6-deda92401a00",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "e1b4acce-78aa-4c2d-b9a5-33a09f2067a0",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "2b734f99-6b41-4200-a9b6-15d9ef30f63a",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "After arriving at what was supposed to be a Rebel safe area, you hear explosions and the sound of footsteps as the tunnel locks behind you.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Trap Door Locked",
+              "GUID": "fb61ad16-2644-4477-a0ab-52179b914467",
+              "theText": "The trap door is locked shut.\r\n\r\n{-} When the marked hero is wounded, click \"Target Wounded\".",
+              "buttonList": [
+                {
+                  "GUID": "fb32ec5b-25b2-42d7-b42e-37c8468910e9",
+                  "theText": "Target Wounded"
+                }
+              ]
+            }
+          ],
+          "GUID": "883816ee-03d5-4cfe-84f1-aec25d6b0d35",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} The Imperial mission token represents the locked trap door.",
+          "GUID": "a7ddc621-8198-42e0-a364-6f0c513fbf5f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "The Imperials and bounty hunters rush in. One of them points in {rebel}'s direction and snarls, \"That one.\"\r\n\r\n{-} The selected hero becomes the marked hero. If the app chose an ally as marked, the hero closest to that ally becomes the marked hero.\r\n{-} Imperial figures cannot declare attacks targeting the marked hero if he is adjacent to a healthy Rebel figure. In that case, the attack targets the closest healthy Rebel figure.",
+          "GUID": "a4e8bdaf-5712-4ebd-b126-c99547d1b1c4",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You need to get out. But to get out, you need to open the door. Maybe the computer consoles in the area hold pieces of the door code.\r\n\r\n{-} A hero can interact with a terminal to perform an attribute test based on the color of the terminal to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Blue terminals: {I} or {J}; red terminals: {I} or {K}.\r\n{-} The mission will progress when all code fragments have been downloaded.\r\n{-} The Rebels lose when the marked hero is wounded. When that happens, click the trap door and select \"Target Wounded\".",
+          "GUID": "43965ab4-3bcc-4488-8ef3-1e7c0d3cf778",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Find the consoles and download the code fragments (&Terminals&/4).",
+          "longText": null,
+          "GUID": "8859bf5e-e743-49ac-97ac-79eb07537a3e",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Imperial figures cannot declare attacks targeting the marked hero if he is adjacent to a healthy Rebel figure. In that case, the attack targets the closest healthy Rebel figure.\r\n{-} A hero can interact with a terminal to perform an attribute test based on the color of the terminal to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Blue terminals: {I} or {J}; red terminals: {I} or {K}.\r\n{-} The Imperial mission token represents the locked trap door.\r\n{-} The mission will progress when all code fragments have been downloaded.\r\n{-} The Rebels lose when the marked hero is wounded. When that happens, click the trap door and select \"Target Wounded\".",
+          "GUID": "7635633b-004a-4029-8e46-99583a01e952",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "You enter the code to open the trap door. With blaster bolts whizzing above you, you slip into the secret tunnel, locking the way behind you. After taking a couple of moments to catch your breath, you break into laughter for having eluded capture once again.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Each hero receives 1 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Greedo and his bounty hunters circle around their quarry. They then load their prisoner onto a stormtrooper transport as blaster fire holds you back. Command eventually engineers a costly rescue, but your friend returns visibly shaken.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The Empire receives <color=\"red\">Greedo</color> (Ambitious Mercenary) as a villain.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Attempt Terminal Blue 1",
+      "GUID": "e75ddb61-032a-466c-8aa2-7cf2813fe3d6",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You quickly begin to work on the terminal.\r\n\r\n{-} Test {J} or {I}. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Apply +1 {B} for each strain token on the terminal, then discard all strain tokens on the terminal. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "4bd09c0b-b1b5-4be5-a928-9a2601246b09",
+              "theText": "You don't make any progress. You need to keep trying."
+            },
+            {
+              "GUID": "fcec4778-84b3-4cd5-985d-e5a8c2341eb9",
+              "theText": null
+            }
+          ],
+          "GUID": "f581f6bd-cd6c-4c29-b1d2-43683a8ad1e6",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Success Terminal Blue 1",
+      "GUID": "2a66c9e1-903e-4988-9971-cec9fed690c8",
+      "eventText": "You manage to download the code fragment.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal Blue 1",
+              "GUID": "41606963-596f-4362-ae27-a6fd2e6f7942",
+              "theText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {J}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.\r\n",
+              "buttonList": [
+                {
+                  "GUID": "56859cdd-829e-4d13-a8b0-c5e04f4a5b34",
+                  "theText": "{A} Download Code"
+                }
+              ]
+            }
+          ],
+          "GUID": "3c9e19c4-67ae-4fad-94cf-3d96300b9bd2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Attempt Terminal Blue 2",
+      "GUID": "53e6be72-98ed-4e99-8cfa-4e128cde3a42",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You quickly begin to work on the terminal.\r\n\r\n{-} Test {J} or {I}. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Apply +1 {B} for each strain token on the terminal, then discard all strain tokens on the terminal. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "d4cab2d7-4049-4ae2-bb63-12aaa04fb42a",
+              "theText": "You don't make any progress. You need to keep trying."
+            },
+            {
+              "GUID": "67dfc81e-b026-4a93-b9ec-61f445073973",
+              "theText": null
+            }
+          ],
+          "GUID": "05148dd0-c84f-4204-b266-ee01cc5b6059",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Success Terminal Blue 2",
+      "GUID": "6e21d9d7-e174-4cd2-bdb2-3ca034b33a98",
+      "eventText": "You manage to download the code fragment.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal Blue 2",
+              "GUID": "beb20dec-d756-43e0-84da-b5fceebde7fd",
+              "theText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {J}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.\r\n",
+              "buttonList": [
+                {
+                  "GUID": "e5144ad9-d062-4d6d-bb30-8109da8a58ee",
+                  "theText": "{A} Download Code"
+                }
+              ]
+            }
+          ],
+          "GUID": "2f169bff-6aa5-4ac0-9262-d5337c7df87d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Attempt Terminal Red 1",
+      "GUID": "55824684-388c-439c-a9e1-ea9ff347c40c",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You quickly begin to work on the terminal.\r\n\r\n{-} Test {K} or {I}. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Apply +1 {B} for each strain token on the terminal, then discard all strain tokens on the terminal. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "d424d464-88eb-40a0-81ef-aadbd0ad1b6f",
+              "theText": "You don't make any progress. You need to keep trying."
+            },
+            {
+              "GUID": "a215a86d-19f7-4d8f-98da-0b37f6c80c1b",
+              "theText": null
+            }
+          ],
+          "GUID": "8fb2339e-1538-4204-a35c-c68d600047d2",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Success Terminal Red 1",
+      "GUID": "0bb08edd-8a15-4961-bb30-0521faac3e70",
+      "eventText": "You manage to download the code fragment.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal Red 1",
+              "GUID": "599af357-3695-4625-95ae-5d9612a6ef36",
+              "theText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {K}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.",
+              "buttonList": [
+                {
+                  "GUID": "24e36083-5285-4152-8401-e6d8cd8cdf62",
+                  "theText": "{A} Download Code"
+                }
+              ]
+            }
+          ],
+          "GUID": "de584d30-c9f9-410d-829d-ab064ef2522a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Attempt Terminal Red 2",
+      "GUID": "66f78386-1ea1-42d5-a0e9-336acdd57396",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You quickly begin to work on the terminal.\r\n\r\n{-} Test {K} or {I}. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Apply +1 {B} for each strain token on the terminal, then discard all strain tokens on the terminal. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "54055344-e1ff-4ac9-a028-96348d53816a",
+              "theText": "You don't make any progress. You need to keep trying."
+            },
+            {
+              "GUID": "7c3c40f5-d28a-4c3a-86d6-1a25b9a2919e",
+              "theText": null
+            }
+          ],
+          "GUID": "c50eb16e-43d3-433d-97d0-f9f5b1784057",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Success Terminal Red 2",
+      "GUID": "00ac2a95-2853-4f6c-86d7-e4ecbc300d14",
+      "eventText": "You manage to download the code fragment.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal Red 2",
+              "GUID": "2e9e69c0-9816-41cc-b409-bf023ac0102a",
+              "theText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {K}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.\r\n",
+              "buttonList": [
+                {
+                  "GUID": "46cd4575-6874-4663-85ac-cfe6b4fa23b4",
+                  "theText": "{A} Download Code"
+                }
+              ]
+            }
+          ],
+          "GUID": "6031fd04-982b-4a34-be7b-48035737b5c4",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Ambition",
+      "GUID": "11089a48-b30a-4845-a5cf-883386f9586f",
+      "eventText": "You spot some movement, and out of the shadows emerges a green-skinned Rodian, a blaster in his hands. \"Oot wan ka noota,\" he says. Well, he's about to find out you're not <i>that</i> easy money.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "{-} When this figure declares an attack targeting the marked hero, apply +1 {H} to the attack results.",
+          "modification": "+*1* Health",
+          "repositionInstructions": "",
+          "GUID": "048fdc42-9551-46ec-bdb9-61bf2de422b8",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG090/Greedo"
+        }
+      ]
+    },
+    {
+      "eventName": "Surrounded",
+      "GUID": "8a3e17dd-76bb-4f32-9e6f-002b3c64c9cf",
+      "eventText": "More and more panic breaks out around you. You're running out of time.\r\n\r\n{-} The Empire receives additional {D} at the beginning of each Status Phase.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Surrounded Repeat",
+      "GUID": "fa3570e5-4f48-477c-abe1-cebaae42b5b4",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Cantina Door N",
+      "GUID": "ed4ebe21-8f5b-4ec3-ac26-05dfb9f3a678",
+      "eventText": "The door slides open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cantina Door N",
+              "GUID": "1fbcecc6-bd41-47f3-9b7d-2076eea80c64",
+              "theText": "Music and voices can be heard from behind the cantina door.",
+              "buttonList": [
+                {
+                  "GUID": "73e7e165-8aac-4a09-b54c-ce83157be633",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "c8886f32-346f-4246-98a2-0daea41feaf7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Cantina Door W",
+      "GUID": "d7a2e2e2-dacc-44d1-8f72-5c996a49a31e",
+      "eventText": "The door slides open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cantina Door W",
+              "GUID": "2da59354-5884-4a84-b20e-6e0d878f2943",
+              "theText": "Music and voices can be heard from behind the cantina door.",
+              "buttonList": [
+                {
+                  "GUID": "8642a5fc-5666-4c86-b93f-dd0d9aacb0f3",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "a96bda2b-6989-430a-8850-56ca9e1e046a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Cantina Door S",
+      "GUID": "397db23b-41de-41e0-a728-f19eca731517",
+      "eventText": "The door slides open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cantina Door S",
+              "GUID": "e4b6b874-6ff6-4b12-9fb3-d6c080d457e0",
+              "theText": "Music and voices can be heard from behind the cantina door.",
+              "buttonList": [
+                {
+                  "GUID": "84144fe7-29c9-49cd-b524-7be24a3ed05f",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5a275cf7-cbb3-473b-8fb2-9060083a3802",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Inciting Panic",
+      "GUID": "153b3b25-bd1e-4487-a667-29dfd56e3f86",
+      "eventText": "You break into the cantina trying to find the controls to escape through the same secret tunnel that got you in. The bounty hunters pursuing you fire off some blaster bolts into the room, whipping the patrons inside into a violent stampede.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Inciting Panic 1",
+      "GUID": "fea08608-4a1e-4a5c-bf6c-3b97de1d83db",
+      "eventText": "The screams, the noise and the panicking patrons make it almost impossible to concentrate.\r\n\r\n{-} When a figure on the Cantina (tile CORE 21B) performs a test, apply -1 {B} to the results.",
+      "eventActions": [
+        {
+          "theText": "{-} Imperial figures cannot declare attacks targeting the marked hero if he is adjacent to a healthy Rebel figure. In that case, the attack targets the closest healthy Rebel figure.\r\n{-} A hero can interact with a terminal to perform an attribute test based on the color of the terminal to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal. Blue terminals: {I} or {J}; red terminals: {I} or {K}.\r\n{-} When a figure on the Cantina (tile CORE 21B) performs a test, apply -1 {B} to the results.\r\n{-} The Imperial mission token represents the locked trap door.\r\n{-} The mission will progress when all code fragments have been downloaded.\r\n{-} The Rebels lose when the marked hero is wounded. When that happens, click the trap door and select \"Target Wounded\".",
+          "GUID": "8b42e002-0595-4992-8838-e60a7bd26c56",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Inciting Panic 2",
+      "GUID": "b69a4e77-41ac-4270-b675-41f36f4c98a5",
+      "eventText": "The panicking patrons storm out of the cantina, trampling you in the process.\r\n\r\n{-} The figure who opened the door suffers 4 {C}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Inciting Panic 3",
+      "GUID": "58de5fad-837f-43d4-ad70-62b04ce86c76",
+      "eventText": "The panicking patrons storm out of the cantina, and you find yourself unable to move against the flow.\r\n\r\n{-} The figure who opened the door is pushed 3 spaces away from the cantina.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Dead End",
+      "GUID": "732d6fd5-bba1-4fd5-9f00-325590c1aab0",
+      "eventText": "The door slides open to reveal a large, but old storage room.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Storage Door",
+              "GUID": "e2f496dd-9ca6-4c11-9ced-45a6ba283aeb",
+              "theText": "A rusty door leads into what looks like a storage room.",
+              "buttonList": [
+                {
+                  "GUID": "10df8e22-9743-4966-9c05-dd6a9a1d1267",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5e8b8da7-9122-4ac6-b49d-9894ff2a747f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Enemies are already waiting for you inside.",
+          "GUID": "6fd412f4-5a8c-45ce-a07c-e41608744dc1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "All Data Downloaded",
+      "GUID": "e885f48f-93f8-4ba8-8360-04885d0358a4",
+      "eventText": "You manage to piece together the code for the trap door. Now you only need to get away.\r\n\r\n{-} The Rebel mission token represents the unlocked trap door.\r\n{-} The marked hero can escape through the trap door. When he does, click the trap door and select \"Target Escapes\".\r\n{-} The Rebels win when the marked hero escapes.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Trap Door Locked",
+              "GUID": "d04dea44-010e-43d5-9c4d-a6d6ae7035eb",
+              "theText": "The trap door is locked shut.\r\n\r\n{-} When the marked hero is wounded, click \"Target Wounded\".",
+              "buttonList": [
+                {
+                  "GUID": "a5ee9cd3-5a03-4fec-8b14-57def35f8de9",
+                  "theText": "Target Wounded"
+                }
+              ]
+            },
+            {
+              "entityName": "Trap Door Open",
+              "GUID": "4a3edb7e-64b4-42a2-9da8-22f2c9c292f0",
+              "theText": "Now that you found the code, you can finally open the escape route again.\r\n\r\n{-} When the marked hero is wounded, click \"Target Wounded\".\r\n{-} The marked hero can escape through the trap door, ending the mission. When he does, click the trap door and select \"Target Escapes\".",
+              "buttonList": [
+                {
+                  "GUID": "e4e4d75a-b0de-4c4d-ae54-2156a4a58f52",
+                  "theText": "Target Wounded"
+                },
+                {
+                  "GUID": "9e0b9876-45e7-4513-a3b9-6646d52c2afc",
+                  "theText": "Target Escapes"
+                }
+              ]
+            }
+          ],
+          "GUID": "b3530f09-dc8e-47f9-b35c-a49e9dfba3b9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block access to the trap door.",
+          "GUID": "7161a2fe-f556-4f8f-b031-610b09c3f956",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Help the target escape.",
+          "longText": null,
+          "GUID": "a6f8e2cc-433a-4cab-aded-0923c0490b11",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The Rebel mission token represents the unlocked trap door.\r\n{-} The marked hero can escape through the trap door. When he does, click the trap door and select \"Target Escapes\".\r\n{-} The Rebels win when the marked hero escapes.\r\n{-} The Rebels lose when the marked hero is wounded. When that happens, click the trap door and select \"Target Wounded\".",
+          "GUID": "4511b4fe-7329-4702-aadf-c45127c16886",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "a6d164f0-ec98-4001-80bd-d19c93f42381",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "02b8c5a6-b77c-4268-8f57-6ad7c9ec7ebd",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EProbe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer 1",
+      "GUID": "f23c1a7c-fd35-40f3-a234-6a319e3789b2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer 2",
+      "GUID": "6f675479-908c-4e75-8422-7418d2dce023",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "2d8495be-14d7-400e-8bcd-332b5f8833e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "4b267540-7b57-4b10-b131-f5ba178d9977",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Cantina Door N",
+      "GUID": "1368ddaa-5ea0-42dd-b0ad-76163539d64c",
+      "mainText": "Music and voices can be heard from behind the cantina door.",
+      "buttonList": [
+        {
+          "GUID": "b9be95ae-779a-4d92-abe7-dc615eca93b2",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Cantina Door W",
+      "GUID": "be167455-9e12-45e7-a4d8-d6d429ea2f27",
+      "mainText": "Music and voices can be heard from behind the cantina door.",
+      "buttonList": [
+        {
+          "GUID": "ea87d0ea-edd9-4de1-9258-1e92efd82c47",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Cantina Door S",
+      "GUID": "3896bc47-0b3d-43f1-88ec-8afebf9ef4ef",
+      "mainText": "Music and voices can be heard from behind the cantina door.",
+      "buttonList": [
+        {
+          "GUID": "1875b74f-0f47-4979-800b-3de4dabc4dc1",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Storage Door",
+      "GUID": "924286a9-bb61-4478-86d8-55bf1a36509f",
+      "mainText": "A rusty door leads into what looks like a storage room.",
+      "buttonList": [
+        {
+          "GUID": "71fedd7d-eb41-4b25-aa7f-a9aed42258b7",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal Blue 1",
+      "GUID": "56fe6313-fe43-483b-afa4-3281085e66e2",
+      "mainText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {J}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.\r\n",
+      "buttonList": [
+        {
+          "GUID": "9e47ee97-6477-41f2-86aa-ac536b59337e",
+          "theText": "{A} Download Code"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal Blue 2",
+      "GUID": "8257ce90-3ccc-4a5e-bcf9-83c41689d487",
+      "mainText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {J}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.\r\n",
+      "buttonList": [
+        {
+          "GUID": "a48d9615-46d4-4d67-b8f1-f692c16888ae",
+          "theText": "{A} Download Code"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal Red 1",
+      "GUID": "e05d24e0-0f43-4a41-8f4a-42e9aa48dd81",
+      "mainText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {K}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.",
+      "buttonList": [
+        {
+          "GUID": "44d73ad8-d438-44be-a929-2abcf1d756ae",
+          "theText": "{A} Download Code"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal Red 2",
+      "GUID": "144b8307-24af-4773-81c2-3c1a4f963208",
+      "mainText": "The old computer console might contain part of the code to unlock your escape route.\r\n\r\n{-} A hero can interact with the terminal ({I} or {K}) to try and download the code fragment. Apply -1 {B} if there are 1 or more Imperial figures on or adjacent to the terminal.\r\n",
+      "buttonList": [
+        {
+          "GUID": "c5e399e1-dfd8-403f-8d18-3e5f9fdb0a7b",
+          "theText": "{A} Download Code"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "8b502450-a1df-4cb0-9cd4-c9412392ecff",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Trap Door Locked",
+      "GUID": "fa2be1d7-0fb3-409c-8daa-ba3697be792d",
+      "mainText": "The trap door is locked shut.\r\n\r\n{-} When the marked hero is wounded, click \"Target Wounded\".",
+      "buttonList": [
+        {
+          "GUID": "a5e7f0d7-e9ad-48ae-ac55-b1c5224a3e4b",
+          "theText": "Target Wounded"
+        }
+      ]
+    },
+    {
+      "entityName": "Trap Door Open",
+      "GUID": "65e87d57-cf1f-4151-b460-25d369c16178",
+      "mainText": "Now that you found the code, you can finally open the escape route again.\r\n\r\n{-} When the marked hero is wounded, click \"Target Wounded\".\r\n{-} The marked hero can escape through the trap door, ending the mission. When he does, click the trap door and select \"Target Escapes\".",
+      "buttonList": [
+        {
+          "GUID": "4b522f3a-f793-433c-93da-162768b0248d",
+          "theText": "Target Wounded"
+        },
+        {
+          "GUID": "49c94068-cba1-444c-a979-256363451473",
+          "theText": "Target Escapes"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid (Elite)",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Trandoshan Hunter",
+      "customInstructions": ""
+    }
+  ]
+}

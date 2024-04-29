@@ -1,0 +1,544 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Fire in the Sky",
+    "missionDescription": "",
+    "missionInfo": "{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move.\r\n{-} Doors are locked. A hero can interact with the green terminal ({I}) to open the doors leading into the ship.\r\n{-} The mission will progress when the doors leading into the ship open.\r\n{-} The Rebels lose when all heroes are wounded.",
+    "campaignName": "Twin Shadows",
+    "startingObjective": "Open the doors.",
+    "repositionOverride": "Block access to the terminals.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "4a7bd81f-cc8d-457a-8dcc-54dfd186b615",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "a1e5975e-bdc8-42bb-b091-8a946ac43630",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "dc42ba6c-3af5-4a6a-8c89-20d7958b7fb1",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "This Star Destroyer has posed a threat in this area for far too long, and the time has finally come to do something about it. You have been sent in to invade the ship, take out its defenses, and trigger its destruction however you can.\r\n\r\nFlying toward the massive starship, you transmit stolen Imperial codes to override its detectors, praying that they work. You stare at the turbolasers, waiting for them to activate, but they never do; it looks like you'll make it through this phase of the journey, at least.\r\n\r\nYour pilot transmits the code to open the hangar, and you fly in and land your shuttle. As expected, this phase is met with considerably more resistance. An officer triggers the alarm, causing Imperials to begin flooding into the hangar. This you were ready for, however, and you draw your weapons and charge the Imperials, eager to complete the mission.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move.\r\n{-} Doors are locked. A hero can interact with the green terminal ({I}) to open the doors leading into the ship.\r\n{-} The mission will progress when the doors leading into the ship open.\r\n{-} The Rebels lose when all heroes are wounded.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "You jump into your shuttle as blaster fire zooms past your head. Your pilot hits the throttle and you blast out of the hangar bay to safety. Out the window, you see the Star Destroyer’ turbolasers, now controlled by the remote you installed in the weapons console, turn in on themselves and fire. A series of small and then larger explosions ripple through the starship until one final blast tears it apart. You fly off into the stars with fire and scorched pieces of metal in your wake.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Heroes receive 100 credits per hero.",
+      "eventActions": [
+        {
+          "mainText": "Did you play this mission as part of the \"Twin Shadows\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "14800255-708a-4ee4-9ed1-828ca7bc16d6",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "92fff5d7-837e-4965-8ae8-958e8924ffd1",
+              "theText": "No"
+            }
+          ],
+          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "You were foolish to think you could invade such a well-defended Imperial starship. You are overwhelmed by all the patrols and troopers, and you simply have to sprint deeper into the ship, hoping to find a place to hide until you can safely escape.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.",
+      "eventActions": [
+        {
+          "mainText": "Did you play this mission as part of the \"Twin Shadows\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "ee6ebbab-cf82-4690-bc65-18ca1bf67e9b",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "e7807218-5db3-4cf5-bb4b-6e13fb36d153",
+              "theText": "No"
+            }
+          ],
+          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Campaign Win Yes",
+      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
+      "eventText": "Success! The destruction of a Star Destroyer is always a major victory for the Rebellion, but this being the base of operations for all of the Empire’ anti-Alliance activity on this planet just makes the win all the sweeter. Although you pick up many signatures of escape ships fleeing the area, including Boba Fett's ship, you know the success was complete regardless.\r\n\r\nYou spend some time locating various Rebel operatives on the planet and letting them know the extent of the situation and its resolution, with plenty of time budgeted for celebration.\r\n\r\nBut, most exciting of all, with the Star Destroyer’s interference out of the way the channels of communication are back open to Command and you are able to tell your superiors that you not only discovered a new Imperial threat, but that you've already eliminated it. Upon receiving this wonderful news, Command immediately calls you back to Alliance headquarters to receive commendations for skill and valor.\r\n\r\n{-} The Rebels win the campaign!",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Defeat Yes",
+      "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
+      "eventText": "You duck and hide throughout the Star Destroyer, trying to find a way to stay safe and even complete your mission if you can. Suddenly, you're cornered by the powerful stormtrooper commander, Kayn Somos, brandishing a blaster. When all hope seems lost, you hear your pilot come in on your comlink, sounding somber:\r\n\r\n“It’s been a pleasure serving with you all, but it seems this is the end of the line. I’ve reached weapons control. The mission above all else. Long live the Republic!”\r\n\r\nThe comlink clicks off. You hear several mechanical noises as the ship’s turbolaser systems activate, turning in on themselves. You feel small shudders and ripples of explosions in the ship growing larger and larger. At great cost, the mission was completed. You just hope your sacrifice will be known and remembered.\r\n\r\nLong live the Republic.\r\n\r\n{-} The Rebels lose the campaign.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign No",
+      "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
+      "eventText": "{-} Each hero receives 1 XP.\r\n{-} Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Heavy Security",
+      "GUID": "1d1405ca-441a-4bdf-a5b7-5a912fa455d7",
+      "eventText": "As the doors open to reveal the Star Destroyer's bridge, you can hear a voice coming in over intercom: \"Ship has arrived.\" As Imperial soldiers turn to face you and protect the security terminal, you see the silhouette of Boba Fett entering the room behind them.\r\n\r\n{-} Doors are locked. The blue terminal can be destroyed (Health: *2*, Defense: 2 {G}). When it is, the door to the weapons console opens.\r\n{-} The mission will progress when the door protecting the weapons console opens.",
+      "eventActions": [
+        {
+          "shortText": "Destroy the blue terminal.",
+          "longText": null,
+          "GUID": "b4987cd3-72a8-473f-b21e-5b2c0a1041f2",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move.\r\n{-} Doors are locked. The blue terminal can be destroyed (Health: *2*, Defense: 2 {G}). When it is, the door to the weapons console opens.\r\n{-} The mission will progress when the door protecting the weapons console opens.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "bc0c3004-4114-4730-877e-47392e84d188",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Bridge Door 1",
+              "GUID": "7592261b-80d8-4d01-a3d9-435f58886662",
+              "theText": "This door leads deeper into the Star Destroyer.\r\n\r\n{-} Doors are locked. A hero can interact with the green terminal ({I}) to open the doors leading into the ship.\r\n",
+              "buttonList": []
+            },
+            {
+              "entityName": "Bridge Door 2",
+              "GUID": "75f3e0f0-1a75-4d88-849a-7802968426da",
+              "theText": "This door leads deeper into the Star Destroyer.\r\n\r\n{-} Doors are locked. A hero can interact with the green terminal ({I}) to open the doors leading into the ship.\r\n",
+              "buttonList": []
+            },
+            {
+              "entityName": "Green Terminal",
+              "GUID": "3378f333-7f5d-4ab1-a78a-580608ff0182",
+              "theText": "A wall-mounted terminal in the corner controls the door locks.\r\n\r\n{-} A hero can interact with the green terminal ({I}) to try and open the doors leading into the ship.",
+              "buttonList": [
+                {
+                  "GUID": "5c3828d9-d72c-4d5f-97f5-d4ff17f00dbf",
+                  "theText": "{A} Slice"
+                }
+              ]
+            }
+          ],
+          "GUID": "c33ccbb4-dc8b-4be7-a258-4801f2f0b7a2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "c3553617-4f6d-440b-9c0b-1417e7443469",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "a71c6899-c9c8-4d22-a37e-f9ac3ee173b1",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG076/Boba Fett"
+        }
+      ]
+    },
+    {
+      "eventName": "Blow this Thing and Go Home",
+      "GUID": "71750480-de81-4152-b0da-f1f0033e0b5a",
+      "eventText": "The security terminal collapses in a shower of sparks, and immediately the door shielding the weapons console slides open. With the console you could turn the ship's turbolasers against itself.\r\n\r\n{-} The red Imperial mission token represents the weapons console. A hero can interact with the weapons console ({I} or {J}) to slice it.\r\n{-} The blue Rebel mission token represents the Exit.\r\n{-} After the weapons console has been sliced, if all heroes are on or adjacent to the Exit, the heroes depart.\r\n{-} The Rebels win when the heroes depart.",
+      "eventActions": [
+        {
+          "shortText": "Slice the weapons console.",
+          "longText": null,
+          "GUID": "f867205c-6a5a-478b-aaf1-3be6fde80bf7",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move.\r\n{-} The red Imperial mission token represents the weapons console. A hero can interact with the weapons console ({I} or {J}) to slice it.\r\n{-} The blue Rebel mission token represents the Exit.\r\n{-} After the weapons console has been sliced, if all heroes are on or adjacent to the Exit, the heroes depart.\r\n{-} The Rebels win when the heroes depart.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "57714259-4d93-4af2-ab10-e0327211555b",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Weapons Door",
+              "GUID": "eb303811-30a0-414d-9eb1-e7eb83164e3f",
+              "theText": "The door to the weapons console is controlled by the security terminal on the bridge.\r\n\r\n{-} When the blue terminal is destroyed, the door to the weapons console opens.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Exit",
+              "GUID": "d6652de1-0f86-4d16-8f34-d1c467204ff9",
+              "theText": "Your shuttle waits just at the edge of the hangar.\r\n\r\n{-} After the weapons console has been sliced, if all heroes are on or adjacent to the exit, click \"Depart\", ending the mission.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Blue Terminal",
+              "GUID": "25e68136-61d2-4336-90fc-9f48f8fafc65",
+              "theText": "The security terminal on the bridge has locked down the weapons console.\r\n\r\n{-} The blue terminal can be destroyed (Health: *2*, Defense: 2 {G}). When it is, the door to the weapons console opens.",
+              "buttonList": [
+                {
+                  "GUID": "baaf0335-2a4c-4074-8eb2-445d09c209a2",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "Weapons Console",
+              "GUID": "befd0dcb-28aa-46ee-8749-472ce0248f35",
+              "theText": "The weapons console controls the Star Destroyer's turbolasers.\r\n\r\n{-} A hero can interact with the weapons console ({I} or {J}) to slice it.",
+              "buttonList": [
+                {
+                  "GUID": "5d61efc7-9e1b-4d87-b982-582726499e9a",
+                  "theText": "{A} Slice"
+                }
+              ]
+            }
+          ],
+          "GUID": "2c3e4a44-d445-45b7-92ac-ed53a82b5fa9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block access to the weapons console.",
+          "GUID": "a6157ca4-d990-414d-8f8b-c2a3a7951e2c",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "7ac4e89c-e7b4-460b-88a8-2eb63730537e",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG075/Kayn Somos"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "e0860f92-8aac-41c0-99ba-fd8ee91ac32e",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        }
+      ]
+    },
+    {
+      "eventName": "Weapons Console Sliced",
+      "GUID": "d8b0d789-16d7-47d1-b76c-31c1b0eee922",
+      "eventText": "Mechanical whirring can be heard as alarms ring out louder than ever before. \"Evacuate\", an automated voice calls over the intercom. \"Catastrophic hull failure imminent. Evacuate the ship immediately. Evacuate the ship immediately.\" You'd better follow the advice.\r\n\r\n{-} The blue Rebel mission token represents the Exit. If all heroes are on or adjacent to the Exit, the heroes depart.\r\n{-} The Rebels win when the heroes depart.",
+      "eventActions": [
+        {
+          "shortText": "Escape!",
+          "longText": null,
+          "GUID": "8dc7fb62-f6df-40b0-9a95-90834c3d0338",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating, he receives only 1 action and can only use that action to perform a move.\r\n{-} The blue Rebel mission token represents the Exit. If all heroes are on or adjacent to the Exit, the heroes depart.\r\n{-} The Rebels win when the heroes depart.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "6a7996c0-29d9-4b73-bf2d-670328f06a32",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Exit",
+              "GUID": "834fc02b-d959-49f5-bb39-5e6fb562f886",
+              "theText": "Your shuttle waits just at the edge of the hangar.\r\n\r\n{-} If all heroes are on or adjacent to the exit, click \"Depart\", ending the mission.",
+              "buttonList": [
+                {
+                  "GUID": "3577c95d-b5f4-4fcd-b8f4-67ce921605de",
+                  "theText": "Depart"
+                }
+              ]
+            },
+            {
+              "entityName": "Weapons Console",
+              "GUID": "3ff76d7d-d508-44e2-b916-016ba31fe856",
+              "theText": "The weapons console controls the Star Destroyer's turbolasers.\r\n\r\n{-} A hero can interact with the weapons console ({I} or {J}) to slice it.",
+              "buttonList": [
+                {
+                  "GUID": "ba41b752-2b4f-41ee-a155-df7a2c20b84c",
+                  "theText": "{A} Slice"
+                }
+              ]
+            }
+          ],
+          "GUID": "f6353b60-a1a4-41f9-b7f8-9e5577ed9fc3",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block access to the exit.",
+          "GUID": "32f32849-60d5-4e73-9aec-539720c2ab31",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "Green Slice Attempt",
+      "GUID": "a58aaa0b-889c-4f0d-a670-47c07812a51e",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You try to decrypt the codes to open the door.\r\n\r\n{-} Test {I}. Apply +1 {B} for each strain token on the terminal, then discard all strain tokens on the terminal. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "e79238ff-2f65-4071-86ff-5758bce66371",
+              "theText": "You make some progress, but you haven't found the code yet. You need to keep trying.\r\n\r\n{-} Place 1 strain token on the terminal for each {B} result gained."
+            }
+          ],
+          "GUID": "19731c6f-05e2-4a38-9587-53b019bb31f4",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Weapon Slice Attempt",
+      "GUID": "629570dc-6490-4e5e-aafc-f7ff11077940",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You quickly reconnect wires and start typing in commands to take over the weapons console.\r\n\r\n{-} Test {J} or {I}. Apply +1 {B} for each strain token on the weapons console, then discard all strain tokens on the weapons console. Enter the number of successes below.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "4da88fa5-4429-4e94-a0db-50a9a8a0890b",
+              "theText": "You make some progress, but the weapons console still resists. You need to keep trying.\r\n\r\n{-} Place 1 strain token on the weapons console for each {B} result gained."
+            }
+          ],
+          "GUID": "8a2ab172-b834-4606-be1b-796b23f8fc91",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "6cb590f1-0142-4577-b79a-589e2959367e",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "a1dc2995-229e-4555-85e1-a4fc1675b99e",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EHTrooper 1",
+      "GUID": "563c9200-70f7-455f-833e-037b6805229f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EHTrooper 2",
+      "GUID": "a5e819d7-914b-4d7f-83ca-e226ed21b987",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "05247326-52e0-4317-94d3-0461d53c46dd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Bridge Door 1",
+      "GUID": "6dab0c48-22dd-48a8-be4d-5c3242e3bbff",
+      "mainText": "This door leads deeper into the Star Destroyer.\r\n\r\n{-} Doors are locked. A hero can interact with the green terminal ({I}) to open the doors leading into the ship.\r\n",
+      "buttonList": []
+    },
+    {
+      "entityName": "Bridge Door 2",
+      "GUID": "4165f0fd-4530-473d-88ac-f861a0bee4a0",
+      "mainText": "This door leads deeper into the Star Destroyer.\r\n\r\n{-} Doors are locked. A hero can interact with the green terminal ({I}) to open the doors leading into the ship.\r\n",
+      "buttonList": []
+    },
+    {
+      "entityName": "Green Terminal",
+      "GUID": "fb96923a-22d2-43d3-b3c1-2632fcaaf6c3",
+      "mainText": "A wall-mounted terminal in the corner controls the door locks.\r\n\r\n{-} A hero can interact with the green terminal ({I}) to try and open the doors leading into the ship.",
+      "buttonList": [
+        {
+          "GUID": "06b2634a-a7bc-4c73-90ab-9ea2e1b17526",
+          "theText": "{A} Slice"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "d99f4dd1-0f1c-4eb5-abdf-2c21a12daea2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Boba",
+      "GUID": "2addc31d-6c65-45f8-9477-6e47bad72807",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Blue Terminal",
+      "GUID": "81f210c2-4012-4c05-b224-3aabf3d023b0",
+      "mainText": "The security terminal on the bridge has locked down the weapons console.\r\n\r\n{-} The blue terminal can be destroyed (Health: *2*, Defense: 2 {G}). When it is, the door to the weapons console opens.",
+      "buttonList": [
+        {
+          "GUID": "1a713766-b0a0-49fa-a94b-d7f41010d709",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Weapons Door",
+      "GUID": "8da12f6f-093f-47db-9d73-0e4e968ead40",
+      "mainText": "The door to the weapons console is controlled by the security terminal on the bridge.\r\n\r\n{-} When the blue terminal is destroyed, the door to the weapons console opens.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Entrance",
+      "GUID": "26db3570-c014-40d4-8538-848857bb80cd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Exit",
+      "GUID": "699d2b0c-270d-450e-a121-3bccb218e97e",
+      "mainText": "Your shuttle waits just at the edge of the hangar.\r\n\r\n{-} After the weapons console has been sliced, if all heroes are on or adjacent to the exit, click \"Depart\", ending the mission.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Weapons Console",
+      "GUID": "5b09665f-6279-47a0-98f5-20b88630f713",
+      "mainText": "The weapons console controls the Star Destroyer's turbolasers.\r\n\r\n{-} A hero can interact with the weapons console ({I} or {J}) to slice it.",
+      "buttonList": [
+        {
+          "GUID": "e8b3483e-f1bf-4642-888a-e3f7fa4bd883",
+          "theText": "{A} Slice"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Heavy Stormtrooper (Elite)",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    }
+  ]
+}

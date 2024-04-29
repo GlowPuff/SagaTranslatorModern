@@ -1,0 +1,915 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Intimidation Factor",
+    "missionDescription": "Heroes must bring a Spectre ally to this mission. If the heroes have not earned a Spectre ally, they earn one Spectre ally of their choice for this mission only. ==== The Empire has imprisoned several Wookiees who rose up against their overseers. The Empire is threatening to harm these captives' families if they do not turn in the other Wookiees and Rebel agents who helped them. A member of the Spectres is on the way to help you get those families out of danger and deprive the Empire of this leverage.",
+    "missionInfo": "",
+    "campaignName": "Sabine Wren & Zeb Orrelios Ally Pack",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the rope ladders.",
+    "additionalMissionInfo": "Heroes must bring a Spectre ally to this mission. If they have not earned one, they earn one Spectre ally of their choice for this mission only."
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "0370478a-df6a-4366-b897-1c15a92c6ff6",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "09abbb7f-6e33-4894-aa61-3d4349e8ff7f",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "a3357678-76b7-44a6-8bf6-e927e0221c39",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "5f482960-7d18-4190-8671-10db918a0353",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "You wade through the damp jungle around you, looking up in awe at the treetop constructions that serve as the Wookiees’ homes. As you approach the coordinates of the Imperial outpost threatening the captive Wookiees’ families, a shout and a blaster bolt breaks your reverie, and you turn to face your attackers.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} When a hero withdraws, he is incapacitated instead. When activating he receives only 1 action and can only use that action to perform a move.",
+      "eventActions": [
+        {
+          "tbText": "Rope ladders connect the Wookiee tree dwellings to the ground.",
+          "GUID": "e4a8b72e-bbd8-425a-b84d-51f40a3f413f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Ladder South 1",
+              "GUID": "c5c951c9-2e5e-4c37-bf18-1178c70cc48d",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+              "buttonList": [
+                {
+                  "GUID": "0f535132-7609-4859-b23a-99d951397594",
+                  "theText": "Climb up"
+                }
+              ]
+            },
+            {
+              "entityName": "Ladder South 2",
+              "GUID": "c5faa889-dd31-4c72-9293-f28265774a3b",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+              "buttonList": [
+                {
+                  "GUID": "4ff90045-3f8d-45d3-a065-07ebbdd6a983",
+                  "theText": "Climb up"
+                }
+              ]
+            },
+            {
+              "entityName": "Ladder North 1",
+              "GUID": "eead3b0d-1424-4b37-bbd1-ae0da2691fb7",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+              "buttonList": [
+                {
+                  "GUID": "cf7a5420-5c83-46ce-b674-a87595d0413f",
+                  "theText": "Climb up"
+                }
+              ]
+            },
+            {
+              "entityName": "Ladder North 2",
+              "GUID": "1d9e4ba0-f195-48f4-8549-b015321987ad",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+              "buttonList": [
+                {
+                  "GUID": "ca7331a6-6824-4d3b-a520-5b34b0d54d18",
+                  "theText": "Climb up"
+                }
+              ]
+            }
+          ],
+          "GUID": "d495b189-902f-491c-a10b-d23ddf0de1f5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Neutral mission tokens represent rope ladders. Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+          "GUID": "8417923f-0ca4-4a09-bf42-51e2bd57f3ce",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You start to make your way towards the Wookiees' homes.\r\n\r\n{-} The mission will progress when the Rebels enter the tree dwellings.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "a1261529-368c-45ed-bdef-f7033ed471b2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Enter the tree dwellings.",
+          "longText": null,
+          "GUID": "1298bc36-501e-47d7-9b1c-c1b938f24292",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating he receives only 1 action and can only use that action to perform a move.\r\n{-} Neutral mission tokens represent rope ladders. Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".\r\n{-} The mission will progress when the Rebels enter the tree dwellings.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "d3d8fb37-7722-4fe0-8dc6-b12da73b67be",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "With the Empire repulsed, the Wookiee families lead you in a traditional local celebration ritual. You hasten to signal that the prisoners’ families are safe.\r\n\r\n{-} The Rebels win the mission!\r\n{-} If playing asa side mission, heroes receive 1 Spectre ally of their choice as an ally.",
+      "eventActions": [
+        {
+          "mainText": "Are you playing this mission as part of the \"Tyrants of Lothal\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "f50f4780-f10b-4ba3-b33a-3d86cd41f272",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "5331303e-78b4-4911-aca0-9064c9489673",
+              "theText": "No"
+            }
+          ],
+          "GUID": "fa160c96-ff1c-4306-ad5f-f40d51ef9331",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "With blaster bolts whizzing past you and the Imperial numbers continuing to swell, you are forced to abandon your mission. The prisoners, and their families, remain in jeopardy.\r\n\r\n{-} The Rebels lose the mission.",
+      "eventActions": [
+        {
+          "mainText": "Are you playing this mission as part of the \"Tyrants of Lothal\" mini campaign?",
+          "buttonList": [
+            {
+              "GUID": "57ff4014-a79a-438e-883e-3080f2af6b7d",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "0deecd02-11a8-441a-9122-2b2384031816",
+              "theText": "No"
+            }
+          ],
+          "GUID": "922d0b18-3b9c-4426-b8b1-9d79afd7d873",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Mini campaign Win",
+      "GUID": "1fb0c0b1-7388-42f6-9c4c-801de27f03a5",
+      "eventText": "\"Our agents have signaled to the captured Wookiees that their families are safe,\" Hera says upon your return from Kashyyyk. \"They won't be providing any useful information to the Empire now.\"\n\nShe lets her gaze wander to you, eyeing you intently. \"No one suffers as much from the Empire as the Wookiees. That's another reason why we fight.\"\r\n\r\n{-} Each hero receives 1 XP.\r\n{-} Heroes receive 200 credits per hero.",
+      "eventActions": [
+        {
+          "tbText": "Aboard the Ghost, you find Hera and Sabine scrutinizing the remains of an E-XD infiltrator droid. “We've found more than one of these things trying to follow us lately,’\" Hera says. “And Thrawn isn't letting up. We need to even the odds.”\r\n\r\n“So we give them something else to worry about,” suggests Sabine. “Even if it only ties up some stormtroopers. We didn't get to stay on Geonosis long enough for me to check, but I think we might be able to get some of those old battle droids working.”\r\n\r\n“Or,” Hera puts in, “we can try to help the Twi'lek rebels on Ryloth. The Empire’s been intercepting their supplies for a while now. If we can help them put up more of a fight, that will be one more thing for Thrawn to worry about.”\r\n\r\n{-} The heroes collectively choose whether to check out the droid factory or assist the Twi'lek rebels.\r\n{-} If the heroes choose to check out the droid factory, the next active mission is “Siege on Geonosis”.\r\n{-} If the heroes choose to assist the Twi'lek rebels, the next active mission is “Race on Ryloth”.",
+          "GUID": "b059bf49-c22c-44ea-b57e-682c2582028a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Mini campaign Defeat",
+      "GUID": "ee9e6f21-9b9f-47ca-b982-44b59453a837",
+      "eventText": "Hera looks tense as you return to the Ghost. \"We have ordered all agents on Kashyyyk to go into hiding immediately. This will set our plans back several months, but at least they'll be safe in case the Wookiees talk.\"\n\nDespite her silence, you sense how concerned Hera is about the agents. \"You can't always win,\" she finally says. \"The main thing is to win the battles that matter.\"\r\n\r\n{-} Each hero receives 1 XP.\r\n{-} Heroes receive 100 credits per hero.",
+      "eventActions": [
+        {
+          "tbText": "Aboard the Ghost, you find Hera and Sabine scrutinizing the remains of an E-XD infiltrator droid. “We've found more than one of these things trying to follow us lately,’\" Hera says. “And Thrawn isn't letting up. We need to even the odds.”\r\n\r\n“So we give them something else to worry about,” suggests Sabine. “Even if it only ties up some stormtroopers. We didn't get to stay on Geonosis long enough for me to check, but I think we might be able to get some of those old battle droids working.”\r\n\r\n“Or,” Hera puts in, “we can try to help the Twi'lek rebels on Ryloth. The Empire’s been intercepting their supplies for a while now. If we can help them put up more of a fight, that will be one more thing for Thrawn to worry about.”\r\n\r\n{-} The heroes collectively choose whether to check out the droid factory or assist the Twi'lek rebels.\r\n{-} If the heroes choose to check out the droid factory, the next active mission is “Siege on Geonosis”.\r\n{-} If the heroes choose to assist the Twi'lek rebels, the next active mission is “Race on Ryloth”.",
+          "GUID": "ffc0d2ea-bfbd-4848-9656-da7215375277",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "No campaign",
+      "GUID": "8fe1b24a-487b-46a0-9e81-94329508e0dc",
+      "eventText": "{-} Each hero receives 1 XP.\r\n{-} Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Reveal Tree Houses",
+      "GUID": "23fc276a-82f6-4de8-a83d-a3cb970b0293",
+      "eventText": "You climb up into the heights of Kashyyyk's gigantic trees. From here, you can see both tree dwellings well.",
+      "eventActions": [
+        {
+          "tbText": "Old supply crates contain some of the Wookiee's belongings that might be useful.",
+          "GUID": "f9ec079f-36a9-4654-a8de-4dbf1b1be3bb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Ladder South 1",
+              "GUID": "bb9d8a30-0eaf-473c-896b-a7468ceff315",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Ladder South 2",
+              "GUID": "80e6f3a2-284a-4e3e-a82d-7a36a5d3f849",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Crate3",
+              "GUID": "ea953b9b-307a-4e43-b61d-d0e8320abdc1",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "258062c6-4356-40fa-a478-2cd5f0cf598b",
+                  "theText": "{A} Open"
+                }
+              ]
+            },
+            {
+              "entityName": "Crate2",
+              "GUID": "a3aefe12-3262-42d8-9d9a-31f20d77beae",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "0f54d031-5b0a-4731-ba76-fa5e773baa85",
+                  "theText": "{A} Open"
+                }
+              ]
+            },
+            {
+              "entityName": "Ladder North 1",
+              "GUID": "c47e0f47-a159-40eb-a017-c1a2e4cfcfe9",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Ladder North 2",
+              "GUID": "59ae996b-aaf9-4278-a5d2-8657a446cddc",
+              "theText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8dff7793-6730-42f3-a8df-7f01975a2061",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "As you hoped, the family members of the captive Wookiees can be found in the dwellings.",
+          "GUID": "15fc7425-00c6-40b2-a004-8849805f1f19",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Wookiee South 1",
+              "GUID": "312f7c34-4321-4fed-bdd7-606e65935074",
+              "theText": "Ifruhrr, the young cousin of one of the captive Wookiees, is hiding in the corner here.\r\n\r\n{-} A Rebel figure adjacent to a Ifruhrr can spend 2 movement points to claim him.",
+              "buttonList": [
+                {
+                  "GUID": "9f5e9f24-6cea-46d0-a056-19983fd566f8",
+                  "theText": "Claim"
+                }
+              ]
+            },
+            {
+              "entityName": "Wookiee South 2",
+              "GUID": "4d565cff-364b-4146-9050-949da17a7967",
+              "theText": "Trraschirr, a Wookiee craftsman, is helplessly clenching his fists and roaring at the Imperials.\r\n\r\n{-} A Rebel figure adjacent to a Trraschirr can spend 2 movement points to claim him.",
+              "buttonList": [
+                {
+                  "GUID": "6c0d56b2-c6fb-4e5b-94d4-9d9ad08de0d0",
+                  "theText": "Claim"
+                }
+              ]
+            },
+            {
+              "entityName": "Wookiee North 1",
+              "GUID": "dfb268df-8e2c-400f-9ff0-3a7cc712893e",
+              "theText": "Rerrrercu, the old, grey-furred grandmother of one of the captive Wookiees, blinks with old eyes.\r\n\r\n{-} A Rebel figure adjacent to a Rerrrercu can spend 2 movement points to claim her.",
+              "buttonList": [
+                {
+                  "GUID": "cc1ba4f6-57a5-418b-b140-def83699e5b7",
+                  "theText": "Claim"
+                }
+              ]
+            },
+            {
+              "entityName": "Wookiee North 2",
+              "GUID": "0139dd07-cc5d-46b8-944c-c29e05324a00",
+              "theText": "Morrsoobhe, a fierce Wookiee warrior, growls at the Imperials, unable to break the binders that tie her.\r\n\r\n{-} A Rebel figure adjacent to a Morrsoobhe can spend 2 movement points to claim her.",
+              "buttonList": [
+                {
+                  "GUID": "5325d0b2-3d54-4cb8-b2b2-11b728a2aab3",
+                  "theText": "Claim"
+                }
+              ]
+            }
+          ],
+          "GUID": "8663d2cf-060d-48fc-aa9a-8c14696113fe",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Rebel mission tokens represent Wookiees. A Rebel figure adjacent to a Wookiee can spend 2 movement points to claim it.\r\n{-} When all 4 Wookiees have been claimed and all heroes are on the extraction zone (green highlight), the heroes are extracted.\r\n{-} The Rebels win when the heroes are extracted.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "918ca051-c1c6-4952-b976-402ca360fd29",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Extraction Zone",
+              "GUID": "6a485aa3-2379-4569-9e29-66eced3d7a77",
+              "theText": "These are the coordinates your pilot gave you for your extraction.\r\n\r\n{-} When all 4 Wookiees have been claimed and all heroes are on the extraction zone (green highlight), the heroes are extracted.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "436185df-cafc-455c-81e7-f534de7d30fc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block access to the Wookiees.",
+          "GUID": "798379f3-2dd1-42e7-a8b9-4b02143cb839",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Rescue the Wookiees (&Wookiees claimed&/4).",
+          "longText": null,
+          "GUID": "c4db58c6-dc42-4496-9ab3-f76b9ce26d5f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating he receives only 1 action and can only use that action to perform a move.\r\n{-} Neutral mission tokens represent rope ladders. Spaces with rope ladders are difficult terrain.\r\n{-} Rebel mission tokens represent Wookiees. A Rebel figure adjacent to a Wookiee can spend 2 movement points to claim it.\r\n{-} When all 4 Wookiees have been claimed and all heroes are on the extraction zone (green highlight), the heroes are extracted. \r\n{-} The Rebels win when the heroes are extracted.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "4d8dd785-3ec4-4ef3-913c-df800961c9c9",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Reveal North",
+      "GUID": "1196b071-44f9-4870-90a7-7570be825ed0",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Overkill South E-Web",
+      "GUID": "528f72af-9966-4d91-a412-752e5ad7b303",
+      "eventText": "The Empire has erected a terrifying gunnery station in the tree house, the barrel aimed at you.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "7d7f3298-a0a0-4c9c-8a9b-eb602db435b8",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG008/E-Web Engineer (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Overkill North E-Web",
+      "GUID": "8ee7735b-27ef-4fc9-a1ae-24fbbdc6958a",
+      "eventText": "The Empire has erected a terrifying gunnery station in the tree house, the barrel aimed at you.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "3e133f45-a35b-4af2-bb9a-487eee264ce2",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG008/E-Web Engineer (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Claim Wookiee North 1",
+      "GUID": "0a9f4864-0b7d-410f-8bed-5d18d7aca56e",
+      "eventText": "You help Rerrrercu up and hurry the old Wookiee lady towards the exit.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Wookiee North 1",
+              "GUID": "bcd7b5c7-a392-4aef-816f-fccbd5d992df",
+              "theText": "Rerrrercu, the old, grey-furred grandmother of one of the captive Wookiees, blinks with old eyes.\r\n\r\n{-} A Rebel figure adjacent to a Rerrrercu can spend 2 movement points to claim her.",
+              "buttonList": [
+                {
+                  "GUID": "84b947c3-36aa-47dc-95f7-80a54c9b2c9f",
+                  "theText": "Claim"
+                }
+              ]
+            }
+          ],
+          "GUID": "a799ff14-d3df-4b03-8771-adb3df088f62",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Claim Wookiee North 2",
+      "GUID": "47037d67-9dc4-4210-a191-adf2920f9a6c",
+      "eventText": "You quickly pick the lock on Morrsoobhe's binders. The warrior growls and rushes out.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Wookiee North 2",
+              "GUID": "c41ada5d-760e-40fc-b191-df26713c9f1b",
+              "theText": "Morrsoobhe, a fierce Wookiee warrior, growls at the Imperials, unable to break the binders that tie her.\r\n\r\n{-} A Rebel figure adjacent to a Morrsoobhe can spend 2 movement points to claim her.",
+              "buttonList": [
+                {
+                  "GUID": "dd992961-1519-485e-aa8a-6d3154b485e5",
+                  "theText": "Claim"
+                }
+              ]
+            }
+          ],
+          "GUID": "ed76f507-d5a6-48c5-9533-95dfcec99e2c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Claim Wookiee South 1",
+      "GUID": "44e9c544-11b5-44f0-9635-6efd0b5476cc",
+      "eventText": "You quickly talk to Ifruhrr, who nods and hurries towards the door.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Wookiee South 1",
+              "GUID": "8518d6b9-7e0c-437e-ae6f-b6847cf10c07",
+              "theText": "Ifruhrr, the young cousin of one of the captive Wookiees, is hiding in the corner here.\r\n\r\n{-} A Rebel figure adjacent to a Ifruhrr can spend 2 movement points to claim him.",
+              "buttonList": [
+                {
+                  "GUID": "6b694f6c-4de9-483e-9cf4-da389c5f1053",
+                  "theText": "Claim"
+                }
+              ]
+            }
+          ],
+          "GUID": "2be5a1f6-a953-48ba-840b-c95a480b5378",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Claim Wookiee South 2",
+      "GUID": "a68b8d28-d2f5-4ad2-9c23-8995330f17a1",
+      "eventText": "You grab Trraschirr at the elbow and hustle him towards the exit.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Wookiee South 2",
+              "GUID": "f5bc8a96-4f35-48b2-a6bd-286f467c8d4f",
+              "theText": "Trraschirr, a Wookiee craftsman, is helplessly clenching his fists and roaring at the Imperials.\r\n\r\n{-} A Rebel figure adjacent to a Trraschirr can spend 2 movement points to claim him.",
+              "buttonList": [
+                {
+                  "GUID": "6f836d09-107a-4154-8335-e1fab2b204cd",
+                  "theText": "Claim"
+                }
+              ]
+            }
+          ],
+          "GUID": "ae48f191-c80c-4f5c-b641-3cdf705525e3",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Reveal South",
+      "GUID": "13829cd4-6250-48ad-9f1b-feb3b7885249",
+      "eventText": "Reveal South",
+      "eventActions": []
+    },
+    {
+      "eventName": "Escape Route",
+      "GUID": "86f70f8d-cf11-4fee-9524-4fbb44161a29",
+      "eventText": "The Wookiee roars in appreciation and relief, then directs you to a series of ropes cleverly hidden in the trees.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Bridge Blue 1",
+              "GUID": "3b15f487-9b20-4f61-924b-59867d032d02",
+              "theText": "A rope bridge connects the tree house to the ground.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Bridge Blue 2",
+              "GUID": "a7447f41-1b1c-4db6-a142-e8dfd13be34e",
+              "theText": "A rope bridge connects the tree house to the ground.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Bridge Red 1",
+              "GUID": "6961c7b6-0aca-46c4-a2bd-781ce1ae0519",
+              "theText": "A rope bridge connects the two tree houses.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Bridge Red 2",
+              "GUID": "7fc495fe-1e58-46ef-9b66-4e1a8c9b2535",
+              "theText": "A rope bridge connects the two tree houses.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "0a9fe7c1-fd48-4ba2-b5be-76e3088979e1",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+          "GUID": "c830c30c-7907-4dfa-9dbc-f1f10e931de2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating he receives only 1 action and can only use that action to perform a move.\r\n{-} Neutral mission tokens represent rope ladders. Spaces with rope ladders are difficult terrain.\r\n{-} Rebel mission tokens represent Wookiees. A Rebel figure adjacent to a Wookiee can spend 2 movement points to claim it.\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.\r\n{-} When all 4 Wookiees have been claimed and all heroes are on the extraction zone (green highlight), the heroes are extracted.\r\n{-} The Rebels win when the heroes are extracted.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "9183a71f-f140-41bc-be5a-13aeae76f25e",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Thugs",
+      "GUID": "0ee8c595-6caf-46a5-b872-487193a41256",
+      "eventText": "More Imperial forces rush in to stop you from rescuing the Wookiees.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Cut off",
+      "GUID": "08c7c4d8-0c72-4881-929e-ed1bfd9d150d",
+      "eventText": "As you start to make your way to the extraction zone, you spot a tall trooper in black armor guarding it.",
+      "eventActions": [
+        {
+          "enemyName": "Sentry Trooper (Death Trooper)",
+          "customText": "",
+          "modification": "+*1* Health",
+          "repositionInstructions": "",
+          "GUID": "3ed41b6f-1f3c-431b-97fc-bfafe35f4966",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG056/Death Trooper"
+        },
+        {
+          "tbText": "{-} The Rebels cannot be extracted as long as the Sentry Trooper is on the map.",
+          "GUID": "630414a3-971f-48e7-b363-92e5cf57306b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": "Block access to the extraction zone (green highlight).",
+          "GUID": "a9ab9e2f-49de-4762-ac79-a759c2d442d9",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Defeat the Sentry Trooper.",
+          "longText": null,
+          "GUID": "790b0adf-fd54-4b42-aa70-c1d659236636",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating he receives only 1 action and can only use that action to perform a move.\r\n{-} Neutral mission tokens represent rope ladders. Spaces with rope ladders are difficult terrain.\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.\r\n{-} The Rebels cannot be extracted as long as the Sentry Trooper is on the map.\r\n{-} The Rebels win when the heroes are extracted.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "245fc87e-6a09-4c09-a5e5-b9c9c399c7c4",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Sentry Trooper defeated",
+      "GUID": "c885df4e-7164-47b6-9595-12034df92723",
+      "eventText": "With the sentry gone, the way to escape is open.\r\n\r\n{-} When all heroes are on the extraction zone (green highlight), the heroes are extracted. Click the extraction zone and select \"Extract\".",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Extraction Zone",
+              "GUID": "ff8983d8-48f1-4ed1-99b2-c27bbf819d23",
+              "theText": "These are the coordinates your pilot gave you for your extraction.\r\n\r\n{-} When all heroes are on the extraction zone (green highlight), the heroes are extracted. Click the extraction zone and select \"Extract\".",
+              "buttonList": [
+                {
+                  "GUID": "50c18999-d911-4d36-a0fc-5b8c4a89c3de",
+                  "theText": "Extract"
+                }
+              ]
+            }
+          ],
+          "GUID": "df565c4b-8aa2-4c89-8211-3be5e3ce1ce0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Get out!",
+          "longText": null,
+          "GUID": "79e3e99e-0b68-4c7d-a41f-65fc6b014fc2",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} When a hero withdraws, he is incapacitated instead. When activating he receives only 1 action and can only use that action to perform a move.\r\n{-} Neutral mission tokens represent rope ladders. Spaces with rope ladders are difficult terrain.\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.\r\n{-} When all heroes are on the extraction zone (green highlight), the heroes are extracted. Click the extraction zone and select \"Extract\".\r\n{-} The Rebels win when the heroes are extracted.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "6bd0e362-de43-49c6-8a28-b32f1892c700",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "daabbb8c-0035-4102-8dd1-ab49e4e3d0eb",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "2e97db7b-1bee-494e-91ca-23ccbdf5e6bd",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "342fa7c3-22d5-4e7f-8fcc-4d206cccba1b",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "7155c3c3-4465-4e5f-a72d-ee4971e3a5b2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "4560aaac-d27c-42a4-a51e-283becd1630f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder South 1",
+      "GUID": "5faabef8-0da3-458e-983a-ddbc6daaddd3",
+      "mainText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+      "buttonList": [
+        {
+          "GUID": "d7a8b60d-4a9e-4020-ad93-61ce18a89706",
+          "theText": "Climb up"
+        }
+      ]
+    },
+    {
+      "entityName": "Ladder South 2",
+      "GUID": "bafbbfa5-eac1-4762-8b55-8bda3dafdc35",
+      "mainText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+      "buttonList": [
+        {
+          "GUID": "de1319ef-768a-480d-bb55-da17ce3d4b4d",
+          "theText": "Climb up"
+        }
+      ]
+    },
+    {
+      "entityName": "Ladder North 1",
+      "GUID": "92e7cace-b8d0-4f12-9da5-52f3776a129d",
+      "mainText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+      "buttonList": [
+        {
+          "GUID": "6c754b85-46f6-4464-a504-9ac1c4734dce",
+          "theText": "Climb up"
+        }
+      ]
+    },
+    {
+      "entityName": "Ladder North 2",
+      "GUID": "fa4c6131-1559-4078-823a-af25044dfa18",
+      "mainText": "A rope ladder leads up into one of the Wookiee homes.\r\n\r\n{-} Spaces with rope ladders are difficult terrain.\r\n{-} When a Rebel figure enters a space with a rope ladder, click the rope ladder and select \"Climb up\".",
+      "buttonList": [
+        {
+          "GUID": "ced600e7-2764-4a26-80aa-8497af4b6502",
+          "theText": "Climb up"
+        }
+      ]
+    },
+    {
+      "entityName": "Bridge Blue 1",
+      "GUID": "b9d8d137-1932-4480-beb8-9845973375ab",
+      "mainText": "A rope bridge connects the tree house to the ground.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Bridge Blue 2",
+      "GUID": "3538b0cc-78d7-4fa5-80c9-6def76660184",
+      "mainText": "A rope bridge connects the tree house to the ground.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Bridge Red 1",
+      "GUID": "7be4d93b-a9a0-4fca-9528-34e2e910f086",
+      "mainText": "A rope bridge connects the two tree houses.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Bridge Red 2",
+      "GUID": "164e4bd2-40a2-49cb-b196-634535ca4a3f",
+      "mainText": "A rope bridge connects the two tree houses.\r\n\r\n{-} Imperial mission tokens represent rope bridges. Figures can move between spaces with rope bridges of the same color as though the spaces were adjacent.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Black",
+      "GUID": "20a7ea13-14f6-4fba-92ab-c6ba61284f23",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Extraction Zone",
+      "GUID": "b05235ca-c3f2-468e-baaa-c1ecfa979230",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow North",
+      "GUID": "6f131639-c6d3-469e-8198-709982331435",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow South",
+      "GUID": "dccb7f65-3535-4f8f-b535-8f6e7a24ae13",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Wookiee North 1",
+      "GUID": "4c9b1c41-da69-4b68-8179-7334d2cac326",
+      "mainText": "Rerrrercu, the old, grey-furred grandmother of one of the captive Wookiees, blinks with old eyes.\r\n\r\n{-} A Rebel figure adjacent to a Rerrrercu can spend 2 movement points to claim her.",
+      "buttonList": [
+        {
+          "GUID": "4c7e759c-3e8f-4eb9-9b89-802913de19c4",
+          "theText": "Claim"
+        }
+      ]
+    },
+    {
+      "entityName": "Wookiee North 2",
+      "GUID": "f57879be-f8a9-45b8-a75f-68e60108fab5",
+      "mainText": "Morrsoobhe, a fierce Wookiee warrior, growls at the Imperials, unable to break the binders that tie her.\r\n\r\n{-} A Rebel figure adjacent to a Morrsoobhe can spend 2 movement points to claim her.",
+      "buttonList": [
+        {
+          "GUID": "f84bc2e0-98ee-459f-8eed-d7cc13e45050",
+          "theText": "Claim"
+        }
+      ]
+    },
+    {
+      "entityName": "Wookiee South 1",
+      "GUID": "a94a0f9d-94ed-4660-af6f-4e202ea75205",
+      "mainText": "Ifruhrr, the young cousin of one of the captive Wookiees, is hiding in the corner here.\r\n\r\n{-} A Rebel figure adjacent to a Ifruhrr can spend 2 movement points to claim him.",
+      "buttonList": [
+        {
+          "GUID": "b2054f53-6cf8-4801-b048-0497b28fa661",
+          "theText": "Claim"
+        }
+      ]
+    },
+    {
+      "entityName": "Wookiee South 2",
+      "GUID": "eea33645-d858-4a70-a6d5-f2176cf0c74c",
+      "mainText": "Trraschirr, a Wookiee craftsman, is helplessly clenching his fists and roaring at the Imperials.\r\n\r\n{-} A Rebel figure adjacent to a Trraschirr can spend 2 movement points to claim him.",
+      "buttonList": [
+        {
+          "GUID": "c7d86061-0f2a-40a8-b8ce-ac5e3d2b499e",
+          "theText": "Claim"
+        }
+      ]
+    },
+    {
+      "entityName": "Extraction Zone",
+      "GUID": "86cd8f66-45c8-45d9-9aa0-10b6b38538a6",
+      "mainText": "These are the coordinates your pilot gave you for your extraction.\r\n\r\n{-} When all 4 Wookiees have been claimed and all heroes are on the extraction zone (green highlight), the heroes are extracted.",
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Trandoshan Hunter",
+      "customInstructions": ""
+    }
+  ]
+}

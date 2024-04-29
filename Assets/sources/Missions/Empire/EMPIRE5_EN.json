@@ -1,0 +1,795 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Enemies Closer",
+    "missionDescription": "",
+    "missionInfo": "{-} Doors are locked to Imperials.\r\n{-} Neutral mission tokens represent hiding places. A hero can interact with a hiding place to investigate it, discarding it. After he does, he may test {J}. If he succeeds, he gains 2 movement points.\r\n{-} The mission will progress when all hiding places have been investigated.\r\n{-} The Rebels lose when all heroes are wounded.",
+    "campaignName": "",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the hiding places.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "7f61ca9b-240d-4600-8029-cc1aa1b85fba",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "75894695-4d9b-412a-8060-d06cc4ce9240",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "36230cf3-4dc7-4db6-bbcb-9d74d7950617",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "14b2b6e4-d2ce-4a7a-b14b-3ce20d744695",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "ea16fae8-eab3-461d-8084-816602987843",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "f1b9318c-c613-4552-aa80-49883c97351e",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "You approach the abandoned Jedi Temple under the cover of night. As you enter the building, you can instantly feel the power of the Force inside it.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} Doors are locked to Imperials.",
+      "eventActions": [
+        {
+          "tbText": "In the dim twilight of the temple, you realize that there are lots of places where the shard could be hidden.",
+          "GUID": "cf2f5204-d390-4442-996b-699151e1576d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 1",
+              "GUID": "e4ea4c76-fb76-4c34-ad10-9ada590bb083",
+              "theText": "Near the fountain, a dark corner looks like the shard could be hidden there.",
+              "buttonList": [
+                {
+                  "GUID": "33d99a41-ae0e-447e-8eeb-7aec67ffeea7",
+                  "theText": "{A} Investigate"
+                }
+              ]
+            },
+            {
+              "entityName": "Hiding Place 2",
+              "GUID": "78934a4d-0e95-484a-8901-519b1c2f6dfa",
+              "theText": "A part of the wall has collapsed under blaster fire here, possibly burying something under it.",
+              "buttonList": [
+                {
+                  "GUID": "fc448921-252c-4beb-9f7c-65d61777d9f3",
+                  "theText": "{A} Investigate"
+                }
+              ]
+            },
+            {
+              "entityName": "Hiding Place 3",
+              "GUID": "7279645a-b816-40b9-8c0e-37f579576255",
+              "theText": "Near the crossway, old furniture has collapsed into a pile.",
+              "buttonList": [
+                {
+                  "GUID": "97f8c9c2-00b7-4c96-86cc-d765a6ff8b2d",
+                  "theText": "{A} Investigate"
+                }
+              ]
+            }
+          ],
+          "GUID": "bf6840d3-04b1-45d0-91cd-e7a164c23e1a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Neutral mission tokens represent hiding places. A hero can interact with a hiding place to investigate it, discarding it. After he does, he may test {J}. If he succeeds, he gains 2 movement points.",
+          "GUID": "bc338798-5610-4700-82e9-262bd3655223",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Suddenly, lights fill the room, and an Imperial officer points to you, directing troops.\r\n\r\n“They're here! Lord Vader was correct. Stop them; seize them now!”",
+          "GUID": "2fcd2b9c-9252-4134-b2d1-cf381c4faebc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "89e49596-06f1-489b-a245-ba1489ecbed4",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "8d00407c-3704-4fe4-8b78-2a609fffaf74",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG049/Riot Trooper (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "9fa10d26-6ede-451d-bba1-b41ce94faf46",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG009/Royal Guard"
+        },
+        {
+          "tbText": "You draw your weapons to face the Imperials. If Vader knew you would be here, you need to find the shard and get away as soon as possible.\r\n\r\n{-} The mission will progress when all hiding places have been investigated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "3f8a9c19-3d13-45ca-a768-9ec5fc6e24a2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Investigate the hiding places (&Hiding places&/4).",
+          "longText": null,
+          "GUID": "8b805042-1937-411b-bc63-d226b6ca0b3a",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "You drive back the Sith Lord Vader and are able to escape the temple with the shard. You sprint to a hidden location where you can regroup. You feel the Force energy emanating from the glowing fragment, sending tingles through your arm, A sense of power and terror overcomes you from simply holding it.\r\n\r\nYou must get the shard off the planet and out of the Emperor’s reach.\r\n\r\n{-} The Rebels win the mission!\r\n{-} The heroes receive the “Bardottan Shard” Reward card. (This Reward card works differently when playing with <b>Imperial Commander</b>. Refer to the <b>Rules Change</b> section of the wiki documentation for details.)\r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.\r\n{-} Place Story Mission card “Capital Escape” into play.",
+      "eventActions": [
+        {
+          "mainText": "Is there only 1 healthy hero?",
+          "buttonList": [
+            {
+              "GUID": "59507f2c-aa1f-405c-b8e6-dad87d1df208",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "359f4d42-3ab2-44fd-8a7b-643e7d91e1b7",
+              "theText": "No"
+            }
+          ],
+          "GUID": "66fee1da-6226-4914-8d54-037b7de580ea",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose Wounded",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Vader, shard in hand, motions at you. You feel your throat begin to close and you are no longer able to breathe. Using the Force, he lifts you up and slams your body against the wall as you continue to struggle for air.\r\n\r\nVader strides toward you. “This is the true power of the Force and it will destroy you.” He releases you and you crumple to the ground. You look up to see the towering Sith standing above you, the shard pulsating with Force energy in his hand, before you lose consciousness.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this. \r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.\r\n{-} Place Story Mission card “The Realm of the Dark Side” into play.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose Round Limit",
+      "GUID": "3146a0c9-479e-48ea-b610-ea9052fcf47d",
+      "eventText": "Vader, shard in hand, motions at you. You feel your throat begin to close and you are no longer able to breathe. Using the Force, he lifts you up and slams your body against the wall as you continue to struggle for air.\r\n\r\nVader strides toward you. “This is the true power of the Force and it will destroy you.” He releases you and you crumple to the ground. You look up to see the towering Sith standing above you, the shard pulsating with Force energy in his hand, before you lose consciousness.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this. \r\n{-} Each hero receives 2 XP. Heroes receive 100 credits per hero.\r\n{-} Place Story Mission card “The Realm of the Dark Side” into play.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Door 1 Opens",
+      "GUID": "baaa9ca4-a8fc-4041-9796-f6bb68ed6546",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "c10a3a5f-aab6-4c49-a3fa-c7643e78008e",
+              "theText": "A door leads into an ancient part of the Jedi temple.\r\n\r\n{-} The door is locked to Imperials.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "33eece0c-4577-4b62-a686-ebffe7d44bbc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Door 2 Opens",
+      "GUID": "bd6a906f-4d3e-4778-a614-823a50b4fb1d",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 2",
+              "GUID": "726ed04c-b762-4f99-8af5-d6fb8989f366",
+              "theText": "A door leads into an ancient part of the Jedi temple.\r\n\r\n{-} The door is locked to Imperials.",
+              "buttonList": [
+                {
+                  "GUID": "7ff46c25-d19a-4901-b3cd-5060a764a854",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "75b81b3e-b945-4641-bf63-e07ecf42c660",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Back Guards",
+      "GUID": "b8b89ad5-79fc-4faa-9b8d-f4589c247a3c",
+      "eventText": "The door opens into an ancient, crumbling part of the temple. The Imperials have stationed guards here, too.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader retrieves shard",
+      "GUID": "cd5b8098-54f9-4d1d-ac01-6246ccd296da",
+      "eventText": "Vader stops at the rubble pile and raises his hand. The shard flies out of it and into his outstretched hand. Immediately, Vader turns back towards the exit.\r\n\r\n{-} Darth Vader can escape through the Entrance, ending the mission. If he does, click  the blue highlight and select \"Vader escapes\".",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Bardottan Shard",
+              "GUID": "15eabf32-1061-4107-8813-9c5b7ed7a48f",
+              "theText": "The Bardottan Shard is buried in the rubble of an ancient pedestal where it was once kept.\r\n\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to the shard, he interrupts to retrieve it.",
+              "buttonList": [
+                {
+                  "GUID": "e45cd0fd-0418-4163-ab29-c676b3f62041",
+                  "theText": "Vader retrieves shard"
+                }
+              ]
+            },
+            {
+              "entityName": "Entrance",
+              "GUID": "bdb2e304-3c3d-415e-aa24-14812b61f366",
+              "theText": "Deploy the heroes here.\r\n\r\n{-} Darth Vader can escape through this space, ending the mission. If he does, click \"Vader escapes\".",
+              "buttonList": [
+                {
+                  "GUID": "5bed8677-dc96-492d-b6c8-54e1eac08fd6",
+                  "theText": "Vader escapes"
+                }
+              ]
+            }
+          ],
+          "GUID": "cb77073f-14d0-4b7f-a1a7-4cfe0c4fe829",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "newInstructions": "{Q} Move 2 to become <color=\"red\">Focused</color> and attack {rebel}.\r\n{-} FORCE CHOKE: The closest Rebel figure suffers 2 {H} and 1 {C}.\r\n{A} Move 6 toward the entrance.\r\n{-} SINISTER RESURGENCE: Recover 1 {H}.\r\n{-} If adjacent to entrance: Escape. (Click the highlight and select \"Vader escapes\".)",
+          "GUID": "8ccb3624-ba08-4a19-9324-09cc0260b23e",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "Hiding Place 1 investigated",
+      "GUID": "b02e3c99-0da8-4482-8511-b968fa8705e0",
+      "eventText": "You find nothing of value, but at least you can rule out this part of the temple.\r\n\r\n{-} You may test {J}. If you succeed, you gain 2 movement points.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 1",
+              "GUID": "dfb6bd1a-6d5f-46cb-8d89-7e4f5ddf702f",
+              "theText": "Near the fountain, a dark corner looks like the shard could be hidden there.",
+              "buttonList": [
+                {
+                  "GUID": "1492aedb-0199-4a1b-a219-19d494de1243",
+                  "theText": "{-} Investigate"
+                }
+              ]
+            }
+          ],
+          "GUID": "366975dd-e77a-47d0-84a2-6a0c1532d1ff",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Hiding Place 2 investigated",
+      "GUID": "3c0c2923-113f-4231-80a9-c1b0aca83055",
+      "eventText": "You find nothing of value, but at least you can rule out this part of the temple.\r\n\r\n{-} You may test {J}. If you succeed, you gain 2 movement points.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 2",
+              "GUID": "7a0d3c8d-97dd-49b4-bcfb-acca53ec57b5",
+              "theText": "A part of the wall has collapsed under blaster fire here, possibly burying something under it.",
+              "buttonList": [
+                {
+                  "GUID": "b6fdb185-ce5f-46f3-8fac-74626b3409ba",
+                  "theText": "{-} Investigate"
+                }
+              ]
+            }
+          ],
+          "GUID": "9e774f03-69cc-42d9-9072-4d494499a8b5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Hiding Place 3 investigated",
+      "GUID": "ad8e25ec-028a-449c-bf98-1b44ee899fdd",
+      "eventText": "You find nothing of value, but at least you can rule out this part of the temple.\r\n\r\n{-} You may test {J}. If you succeed, you gain 2 movement points.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 3",
+              "GUID": "6eeac0e7-2f75-435c-b671-8a149c3a4a41",
+              "theText": "Near the crossway, old furniture has collapsed into a pile.",
+              "buttonList": [
+                {
+                  "GUID": "5750ac2f-c71c-4374-ab0d-dd86b90a50ff",
+                  "theText": "{-} Investigate"
+                }
+              ]
+            }
+          ],
+          "GUID": "530af691-613f-4aba-9f0a-be5b043036fe",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Hiding Place 4 investigated",
+      "GUID": "d62109c2-26e0-48dd-9c9d-f7b80105c3c6",
+      "eventText": "You find nothing of value, but at least you can rule out this part of the temple.\r\n\r\n{-} You may test {J}. If you succeed, you gain 2 movement points.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 4",
+              "GUID": "5470398a-3740-458b-ac99-bcdbfc4589ae",
+              "theText": "The ancient chamber is old and dilapidated, but a pile of rubble looks promising.",
+              "buttonList": [
+                {
+                  "GUID": "49c98013-eb9a-44e1-8500-0fc5ccf480f9",
+                  "theText": "{-} Investigate"
+                }
+              ]
+            }
+          ],
+          "GUID": "d481ea86-6966-47fd-b5b4-d4cdd0a556aa",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader's Fist",
+      "GUID": "ec53b74e-59c1-4239-9483-6849b5e8e14f",
+      "eventText": "A blast echoes in the temple chamber as a particularly well-armed squad of stormtroopers kicks in the door and floods into the room, fully ready to fight.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "c08b2605-25ad-4911-895d-fe5e99a12aef",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Booby Trap",
+      "GUID": "2b3f7910-2b5c-48b3-8683-f40c1ad69dd7",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "An old trap springs, sending an electrical shock through your body.\r\n\r\n{-} The hero who investigated the hiding place may test {K} or {I}. Enter the number of successes below. (If he chooses not to test, enter 0.)",
+          "failText": "You manage to shake off the shock.",
+          "inputList": [
+            {
+              "GUID": "7c14598d-e3bc-4330-ad43-d369304da95f",
+              "theText": "The shock floods through your body.\r\n\r\n{-} The hero who investigated the hiding place suffers 3 {C}."
+            },
+            {
+              "GUID": "9317f3f9-6468-4b91-9fe7-64641746abcb",
+              "theText": "The shock floods through your body.\r\n\r\n{-} The hero who investigated the hiding place suffers 2 {C}."
+            },
+            {
+              "GUID": "35ab5973-57f4-4484-8943-2f22b743fd6f",
+              "theText": "The shock floods through your body.\r\n\r\n{-} The hero who investigated the hiding place suffers 1 {C}."
+            }
+          ],
+          "GUID": "7b0b5bdf-a5b9-487d-994f-c71ce04159f5",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "The Dark Lord",
+      "GUID": "899bb497-c9b5-409e-9a5c-b9e86fed268b",
+      "eventText": "After weeks of intense and dangerous work, you see your reward: a small, glowing fragment of the Bardottan sphere, pulsating with Force energy.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Bardottan Shard",
+              "GUID": "db088b95-2416-4df4-932c-c522bc18bcf4",
+              "theText": "The Bardottan Shard is buried in the rubble of an ancient pedestal where it was once kept.\r\n\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to the shard, he interrupts to retrieve it.",
+              "buttonList": [
+                {
+                  "GUID": "5bffee6e-b435-47ac-a9b7-4cf922548850",
+                  "theText": "Vader retrieves shard"
+                }
+              ]
+            }
+          ],
+          "GUID": "6a70d937-b02c-4007-88ba-9a1779ccbf47",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} The Rebel mission token represents the shard.",
+          "GUID": "3ff66ba8-94b5-48f2-ba23-186feb8cc0d9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Your excitement is short lived, however. As you reach down to claim the shard, you hear the terrifying sound of a mechanized breathing apparatus as the menacing Darth Vader steps into the room. You find yourself unable to grab the artifact as something holds you back. He ignites his red lightsaber and moves toward you, ready to claim the shard for himself and for his Emperor.",
+          "GUID": "92b43867-4515-4773-b818-a3f553d68928",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Move 2 to become <color=\"red\">Focused</color> and attack {rebel}.\r\n{-} FORCE CHOKE: The closest Rebel figure suffers 2 {H} and 1 {C}.\r\n{A} Move 6 toward the shard.\r\n{-} SINISTER RESURGENCE: Recover 1 {H}.\r\n{-} If adjacent to the shard: Retrieve the shard. (Click the shard and select \"Vader retrieves shard\".)",
+          "modification": "+1 {G}",
+          "repositionInstructions": "",
+          "GUID": "7718da24-751c-4c7e-91ed-ace233ba27fe",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG072/Darth Vader"
+        },
+        {
+          "tbText": "{-} Apply +1 {G} to <color=\"red\">Darth Vader</color>.\r\n{-} <color=\"red\">Darth Vader</color> cannot receive conditions, cannot be pushed, and cannot gain movement points outside of his activation.\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to a door, that door is destroyed.\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to the shard, he interrupts to retrieve it.\r\n{-} The Rebels win when <color=\"red\">Darth Vader</color> is defeated.\r\n{-} The Rebels lose when <color=\"red\">Darth Vader</color> escapes or when all heroes are wounded.",
+          "GUID": "1ce96392-73fd-48f2-8010-37728a4b48f3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">Darth Vader</color>.",
+          "longText": null,
+          "GUID": "f80b07b9-0b60-425d-b05b-9f6effc95c23",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Apply +1 {G} to <color=\"red\">Darth Vader</color>.\r\n{-} <color=\"red\">Darth Vader</color> cannot receive conditions, cannot be pushed, and cannot gain movement points outside of his activation.\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to a door, that door is destroyed.\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to the shard, he interrupts to retrieve it.\r\n{-} The Rebels win when <color=\"red\">Darth Vader</color> is defeated.\r\n{-} The Rebels lose when <color=\"red\">Darth Vader</color> escapes or when all heroes are wounded.",
+          "GUID": "586e9d07-9df2-471a-851f-7a30f05653c0",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Check Query",
+      "GUID": "22d1e40f-4546-465d-8351-a6ccdde03f35",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Did <color=\"red\">Darth Vader</color> suffer more than 9 {H}?",
+          "buttonList": [
+            {
+              "GUID": "0bacb1c1-3951-45da-919b-eee1eb4afdce",
+              "theText": "Yes"
+            },
+            {
+              "GUID": "721bbcff-7beb-4d16-bc35-bb3fc3059338",
+              "theText": "No"
+            }
+          ],
+          "GUID": "3e772a4d-e005-4a69-b553-9c59a051a188",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Check Yes",
+      "GUID": "6b773eb8-e98a-4eaa-a7e4-9023df1855ed",
+      "eventText": "Because <color=\"red\">Darth Vader</color> has suffered 9 or more {H}, heroes gain 25 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader Check No",
+      "GUID": "83995958-e60c-414f-bffe-c1b41c81e7b9",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader Not Deployed",
+      "GUID": "c93e5bc2-0961-4d4d-bb51-3dc881fb2072",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Healthy Hero Yes",
+      "GUID": "6a33976f-0ec9-4fd3-9ba3-56b01f50035b",
+      "eventText": "The threat level of the next mission (and only the next mission) increases by 1. During the Rebel Upgrade stage, the Rebel players can decide to spend 50 credits per hero to prevent this.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Healthy Hero No",
+      "GUID": "81afe5d0-78ce-4569-a8a8-165f0721b80b",
+      "eventText": "",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "c3af2a67-6411-4eff-a188-47e66539ed05",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "04abc4a3-49e6-42ab-9dbd-424f2c6bb2ad",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "caee824b-eb37-48d3-a3e2-708606f9695e",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "db7e2998-b87c-498e-b4fa-e7bc7c887927",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Royal Guard 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Royal Guard 2",
+      "GUID": "d8422b78-613f-4590-a5f5-bda9f11326bc",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Vader",
+      "GUID": "a12694de-e535-42b2-968b-87de9b9077c7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ERTrooper 1",
+      "GUID": "7cd83023-78cf-4882-acaf-db24a7a75679",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ERTrooper 2",
+      "GUID": "0c555ff8-9f5d-4431-a752-38d7d28e262a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 1",
+      "GUID": "c41a8bee-7837-4ddd-9d69-7ba67e601c34",
+      "mainText": "A door leads into an ancient part of the Jedi Temple.\r\n\r\n{-} The door is locked to Imperials.",
+      "buttonList": [
+        {
+          "GUID": "e5db8ec8-6f07-44d1-9b82-06d4320fc67b",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "1a3750c5-c941-44a6-83c7-25e15840d5a1",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 2",
+      "GUID": "fb4ceba3-e55e-4014-95c3-df6720f3246b",
+      "mainText": "A door leads into an ancient part of the Jedi Temple.\r\n\r\n{-} The door is locked to Imperials.",
+      "buttonList": [
+        {
+          "GUID": "60089c00-8fb8-4302-9d4e-06bd2d5a0b08",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Bardottan Shard",
+      "GUID": "44386d9c-d8f2-45ea-8fa8-e0e092400a7d",
+      "mainText": "The Bardottan Shard is buried in the rubble of an ancient pedestal where it was once kept.\r\n\r\n{-} When <color=\"red\">Darth Vader</color> enters a space adjacent to the shard, he interrupts to retrieve it.",
+      "buttonList": [
+        {
+          "GUID": "64a6267c-2cd0-4bb8-b6fa-b120bcaaab35",
+          "theText": "Vader retrieves shard"
+        }
+      ]
+    },
+    {
+      "entityName": "New Highlight",
+      "GUID": "ad04db16-f681-4fb7-a6bb-eafce6174475",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Hiding Place 1",
+      "GUID": "b5b5a973-b473-455f-8bd9-5e3d7fbcb7ac",
+      "mainText": "Near the fountain, a dark corner looks like the shard could be hidden there.",
+      "buttonList": [
+        {
+          "GUID": "de3f3e13-1032-49a7-b451-341c6c150e15",
+          "theText": "{A} Investigate"
+        }
+      ]
+    },
+    {
+      "entityName": "Hiding Place 2",
+      "GUID": "473895fd-9d1b-4fba-ab3e-85f06d8eaf67",
+      "mainText": "A part of the wall has collapsed under blaster fire here, possibly burying something under it.",
+      "buttonList": [
+        {
+          "GUID": "498a958a-0d6a-44cc-a188-06da41487cab",
+          "theText": "{A} Investigate"
+        }
+      ]
+    },
+    {
+      "entityName": "Hiding Place 3",
+      "GUID": "343683ad-6253-401f-bc1c-627b6f60372c",
+      "mainText": "Near the crossway, old furniture has collapsed into a pile.",
+      "buttonList": [
+        {
+          "GUID": "1932f70d-dab1-4025-8749-e819c5ae5f18",
+          "theText": "{A} Investigate"
+        }
+      ]
+    },
+    {
+      "entityName": "Hiding Place 4",
+      "GUID": "b55fe172-4d75-406f-998d-a5c7ba13f5d4",
+      "mainText": "The ancient chamber is old and dilapidated, but a pile of rubble looks promising.",
+      "buttonList": [
+        {
+          "GUID": "01daa9a2-a44f-4878-8177-3aff9f99400e",
+          "theText": "{A} Investigate"
+        }
+      ]
+    },
+    {
+      "entityName": "DP EOfficer",
+      "GUID": "6f953905-0dcb-4b07-a101-5091116176e3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Back Hall",
+      "GUID": "b1be3dae-2925-4009-bbb0-f05067b21385",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": []
+}

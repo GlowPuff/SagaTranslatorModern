@@ -1,0 +1,738 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "Our Last Hope",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "Return to Hoth",
+    "startingObjective": "",
+    "repositionOverride": "Block access to the terminals.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "bb5dcfff-c080-4603-870a-9cb99684bdc0",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "63baeeda-2952-4c6a-b4cc-2bb5a29e381f",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "1504a663-ae3b-4d05-9b28-0990a6423ecc",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "When you bring word of Benex’s treachery to your pilot, he spins in his chair and grabs the controls. “One of you should go through the hold and gather up all the supplies you can find,” he says. “The rest of you, get out and push.” Before you can respond, the ship lurches into the sky, accelerating harder and faster than you can remember. It seems you're hardly clear of Ison’s atmosphere before the hyperdrive screams to life and you jump to lightspeed.",
+      "eventActions": [
+        {
+          "tbText": "Going through the hold as suggested, you gather up ammunition, medical supplies, and harsh environment gear — everything you can think of that might be useful in the struggle to follow. You have a substantial stock, but it’s clear that you wont be able to rely on any resupply.\r\n\r\n{-} The Rebels claim 12 neutral mission tokens.\r\n{-} Discard 1 neutral mission token for each Bane in the Empire's play area.",
+          "GUID": "6196d06e-8f21-4214-a53d-6d7740433c49",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "You are going to need to be careful with how to use your supplies.\r\n\r\n{-} Each time a hero performs a rest, the heroes discard 1 neutral mission token. If the heroes have no neutral mission tokens remaining, they cannot rest. \r\n{-} At the start of a hero's activation, that hero may discard 1 neutral mission token to recover 2 {C} or discard 1 condition.\r\n{-} During a wounded hero's activation, if he has suffered no {H}, the heroes may discard 2 neutral mission tokens (3 if he has 2 activation tokens), to flip that hero's sheet to the healthy side. Then, that hero suffers {H} equal to his Health minus 5.\r\n{-} When a hero is wounded, do not mark him as wounded in the app until the heroes no longer have enough neutral mission tokens to un-wound him. When an unmarked wounded hero becomes the target of an attack, the attack instead targets the closest healthy Rebel.",
+          "GUID": "a8db80d8-d852-4be9-8437-6c08ee777318",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "When you reach your destination, your pilot’s voice sounds over the ship’s speakers. “Buckle up, everyone. Sorin's ship is already in the atmosphere, and I'm about to do something stupid.” No sooner have you buckled your crash webbing than the ship accelerates fiercely and then crashes to a shocking halt. You rush to the airlock and find your ship clamped to the hull of Sorin’s Star Destroyer. Recklessly, you jump down and cut your way inside.",
+          "GUID": "8f6b24ed-4fb0-4d10-963b-f951478bfc54",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Soon, you find yourself on the bridge of Sorin's Star Destroyer. The General is standing next to one of the ship's control systems. If you manage to destroy the control systems, you should be able to bring the ship down.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.",
+          "GUID": "11b4bce2-c658-4641-8d8b-a17c782f9eac",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "7b75a789-1946-43d5-92d8-be5f8dc88654",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG078/General Sorin"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Control System 1",
+              "GUID": "70cced5e-cde5-4d59-9621-7b79950ae914",
+              "theText": "The Star Destroyer's flight control system is displaying the positional data of the capital ship.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "4b749235-4609-40d1-8ae3-999bcba61471",
+                  "theText": "Destroy"
+                }
+              ]
+            },
+            {
+              "entityName": "Control System 2",
+              "GUID": "ab5779b1-5969-4df1-b0cf-bcca124ce2aa",
+              "theText": "The Star Destroyer's thrust control system is displaying the acceleration data of the capital ship.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "f7336219-1440-416b-aba8-fbaf5c5e657f",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "c91a2cb9-be46-4199-8833-821f6ed32bfa",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).\r\n{-} The mission will progress when all terminals are destroyed and <color=\"red\">General Sorin</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "1ce63096-4672-42b5-9b55-a4bf16039761",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "The General turns toward you, his face twisted with rage. \"Seize them!\", he snarls, and more troops rush forward to stop you.",
+          "GUID": "9bc6a96f-9ef7-4268-8bff-03d2dfb998df",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "89733fda-be9d-4001-9bc0-aec0234c81fe",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG011/Probe Droid"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b9d3dd86-f339-4870-88ac-2c017a52764b",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "3b0a6b88-a472-42ad-a3b5-d874152f42b0",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG015/Trandoshan Hunter"
+        },
+        {
+          "shortText": "Destroy the Star Destroyer's control systems (&Stations Destroyed&/2).",
+          "longText": null,
+          "GUID": "64a86b2f-8004-47ec-aa76-35f90f8ecf09",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The Rebels claim 12 neutral mission tokens.\r\n{-} Each time a hero performs a rest, the heroes discard 1 neutral mission token. If the heroes have no neutral mission tokens remaining, they cannot rest.\r\n{-} At the start of a hero's activation, that hero may discard 1 neutral mission token to recover 2 {C} or discard 1 condition.\r\n{-} During a wounded hero's activation, if he has suffered no {H}, the heroes may discard 2 neutral mission tokens (3 if he has 2 activation tokens), to flip that hero's sheet to the healthy side. Then, that hero suffers {H} equal to his Health minus 5.\r\n{-} When a hero is wounded, do not mark him as wounded in the app until the heroes no longer have enough neutral mission tokens to un-wound him. When an unmarked wounded hero becomes the target of an attack, the attack instead targets the closest healthy Rebel.\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).\r\n{-} The mission will progress when all terminals are destroyed and <color=\"red\">General Sorin</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "291cb32c-69d5-4e7f-88d7-648b6581b424",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Sorin is down, and his prototype tank is a smoking ruin! The remaining imperials retreat as Rebel reinforcements emerge from the base.\r\n\r\nYou then turn to Sorin, crawling along the ground, trying to find a blaster. “I don't think they're going to make you a Moff” you say to him as you place him in binders. He surrenders without further complaint, a coward to the end.\r\n\r\nYou find your pilot, repairing his shuttle, and prepare to return Sorin as a prisoner to High Command. ‘There is still much work to be done to bring down the Empire, but, for now, the Rebellion remains safe.\r\n\r\n{-} The Rebels win the campaign!",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Sorin and his tank lumber toward your wounded forms as Imperial troops sprint past you into the base. As they place you in binders, you see snowtroopers escorting Rebel prisoners out of the base, carrying out stolen supplies, and relaying classified data.\r\n\r\nYou are brought to an Imperial labor camp, set for execution. Working alongside you, you see several of the original Hoth evacuees from Haven, the very people you were working to save from the beginning. It all has been for naught.\r\n\r\nYou hope the Alliance will recover from this loss and regain some strength to continue to combat the brutal Empire, but, somehow, your hopes seem dimmer now than ever before.\r\n\r\n{-} The Rebels lose the campaign.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Control Station 1 Destroyed",
+      "GUID": "284f9447-1a47-41f3-a82a-ce420691bef4",
+      "eventText": "The flight control system explodes in a shower of sparks. Immediately, the trajectory of the Star Destroyer changes, and warning sirens begin to blare.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Control System 1",
+              "GUID": "f0516b49-19ed-4de2-88e1-794cd8660d0c",
+              "theText": "The star destroyer's flight control system is displaying the positional data of the capital ship.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "3afa1f98-5f7c-4e3e-a84c-88d601b73625",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "61cd20d7-8190-47a8-9f62-1d220c1ca2fb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Control Station 2 Destroyed",
+      "GUID": "e3434aac-7a1c-4bf1-87ba-bdf935a8242a",
+      "eventText": "With a bang and a flash, the thrust control collapses. The Star Destroyer's engines sputter and roar, and the bridge is bathed in red emergency light.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Control System 2",
+              "GUID": "f79ecaf2-e0b4-4f6d-ac49-67f72104edca",
+              "theText": "The star destroyer's thrust control system is displaying the acceleration data of the capital ship.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "fdb89678-834d-4564-9c3f-49f51c0e7df3",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "dc2e3026-9233-4052-8670-c1630dec14d2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Sorin Defeated",
+      "GUID": "47fc5916-63a9-4990-ad65-b9356d84b664",
+      "eventText": "One of your attacks finally clips him, and Sorin staggers back, surprised. “You simpletons,” he sputters. “Do you truly think you can stop me? My Sorin-class tanks will win this war for the Empire, and I will prove it by destroying you and destroying your pathetic rebel base!”\r\n\r\nAnother blaster bolt passes by his head, and he turns to run. “Troopers! Destroy them while I see to the invasion!” The blast door closes behind him and Sorin is gone. You'll have to catch up to him, and his “Sorin-class tanks”, later.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Crash Landing",
+      "GUID": "7ff2b909-29d0-430b-afb0-ff42270edf98",
+      "eventText": "Control panels spark, warning lights flash, and alarms blare as the ship goes into a dive. For the second time today, you find yourself on a ship about to crash.\r\n\r\nYou try to brace yourself against whatever you can find while the Imperials do the same. The alarms seem to be getting louder and louder, the ship shaking and shuddering as it falls, until, with a bone-crushing crunch, you hit the planet's surface. You're hurled about as the ship pitches and spins, the hull screeching and tearing as your velocity bleeds into the ice and snow. \r\n\r\nWhen the ship finally comes to rest, daylight streams in through a gaping hole in the hull. Ahead, you see the Rebel base, its shields already down — Sorin must have transmitted the access codes Benex gave him before the crash.",
+      "eventActions": [
+        {
+          "tbText": "{-} Walls between Snow tiles and tiles  of another tile type do not block movement, line of sight, adjacency, or counting spaces.",
+          "GUID": "6a4ce041-eee3-4549-a5e0-61dae327700b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Imperial troops are already moving to attack the base.",
+          "GUID": "f9308b8c-4546-416b-9e12-e6e3fe4f5d9f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4c2113dc-d23a-4d8e-afac-9b931b6f8438",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG024/Snowtrooper (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "64ea3826-e6d8-4b96-9b48-7f42f927ff52",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG013/Probe Droid (Elite)"
+        },
+        {
+          "tbText": "As you pull yourselves to your feet, you  see the shield controls not far from the ship. If you can reach them and reactivate the shields, the base can be saved.\r\n\r\n{-} Heroes claim 1 neutral mission token.\r\n{-} The mission will progress when a Rebel figure enters the Command Center (red highlight). When this happens, click the red highlight and select \"Enter Command Center\".",
+          "GUID": "a7570a85-50e0-4d36-bf85-4dc25db05149",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 2",
+              "GUID": "047a3722-ac1e-49ca-8d89-5c3a593fc7ca",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "bd3ae21f-c53f-4ad7-90b6-8d9dfe966f3d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block access to the Command Center.",
+          "GUID": "ca5e82c8-5fe8-41f8-b285-0f89ab936f68",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Enter the Command Center.",
+          "longText": null,
+          "GUID": "a8c196e8-d780-4af3-bad8-ec1b97a7b52c",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Walls between Snow tiles and tiles  of another tile type do not block movement, line of sight, adjacency, or counting spaces.\r\n{-} Each time a hero performs a rest, the heroes discard 1 neutral mission token. If the heroes have no neutral mission tokens remaining, they cannot rest.\r\n{-} At the start of a hero's activation, that hero may discard 1 neutral mission token to recover 2 {C} or discard 1 condition.\r\n{-} During a wounded hero's activation, if he has suffered no {H}, the heroes may discard 2 neutral mission tokens (3 if he has 2 activation tokens), to flip that hero's sheet to the healthy side. Then, that hero suffers {H} equal to his Health minus 5.\r\n{-} When a hero is wounded, do not mark him as wounded in the app until the heroes no longer have enough neutral mission tokens to un-wound him. When an unmarked wounded hero becomes the target of an attack, the attack instead targets the closest healthy Rebel.\r\n{-} The mission will progress when a Rebel figure enters the Command Center (red highlight). When this happens, click the red highlight and select \"Enter Command Center\".\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "11f23b79-f4e5-4792-bfd5-35bfa25396a9",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "A Trap is Sprung",
+      "GUID": "7678eaea-7c9f-4b44-b702-c697cc9a312b",
+      "eventText": "Just as it looked from the outside, the command center has been hastily abandoned. There are still traces from Rebel personnel that have recently been here. Near to one wall, you see the shield controls - inactive, but operational.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Command Center",
+              "GUID": "dcb36244-2de3-4ab3-81dd-98c5fdce7e99",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Shield Terminal",
+              "GUID": "e4e4a6e3-f4d4-4e26-a7b1-7fd213832133",
+              "theText": "The base's shield control system is dark. Once it is activated, an energy shield will protect the Rebel base from the worst.\r\n\r\n{-} A hero can interact with the red terminal to activate the shields.",
+              "buttonList": [
+                {
+                  "GUID": "351e27c3-9bff-4474-8b04-dc8b5c7551f9",
+                  "theText": "{A} Activate Shields"
+                }
+              ]
+            }
+          ],
+          "GUID": "f8c74d20-722b-436e-8849-876243146bf5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} A hero can interact with the red terminal to activate the shields.\r\n{-} The mission will progress when the shields are activated.",
+          "GUID": "c48a633b-0773-449e-923e-d7d2ff374564",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Activate the shields.",
+          "longText": null,
+          "GUID": "99086aa1-2fcd-414f-939e-a5739d66504e",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Walls between Snow tiles and tiles  of another tile type do not block movement, line of sight, adjacency, or counting spaces.\r\n{-} Each time a hero performs a rest, the heroes discard 1 neutral mission token. If the heroes have no neutral mission tokens remaining, they cannot rest.\r\n{-} At the start of a hero's activation, that hero may discard 1 neutral mission token to recover 2 {C} or discard 1 condition.\r\n{-} During a wounded hero's activation, if he has suffered no {H}, the heroes may discard 2 neutral mission tokens (3 if he has 2 activation tokens), to flip that hero's sheet to the healthy side. Then, that hero suffers {H} equal to his Health minus 5.\r\n{-} When a hero is wounded, do not mark him as wounded in the app until the heroes no longer have enough neutral mission tokens to un-wound him. When an unmarked wounded hero becomes the target of an attack, the attack instead targets the closest healthy Rebel.\r\n{-} A hero can interact with the red terminal to activate the shields.\r\n{-} The mission will progress when the shields are activated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "69401d8e-858b-4bd2-9d5e-160cd6f923fa",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "tbText": "As you approach the shield control, you notice blaster scorches on the wall. Apparently, there has been some fighting here - and not long ago. You raise your weapons, and sure enough, a figure moves in the twilight of the back corridors. You see a familiar scarred face over metal armor, and a grim expression. Dengar has come to finish this once and for all.",
+          "GUID": "aad9b82a-af6c-4f7c-8e21-aea8b4097229",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "“Dengar!” you shout. “Whatever Sorin is paying you, it’s not worth it. We've taken everything the Empire can throw at us, and were still here. Be smart; join the winning side!”\r\n\r\nDengar pauses, considering his options.",
+          "GUID": "b02844aa-f999-41b5-a1ea-aed6fdafc442",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": "Block access to the terminal.",
+          "GUID": "a2aa5cb2-3f6b-4d8b-8cae-2ce86074f74f",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "mainText": "How many Boon Reward cards are there in the heroes' play area?",
+          "buttonList": [
+            {
+              "GUID": "c30c8bca-8f73-4b03-a4f1-2f77aa54be6b",
+              "theText": "0"
+            },
+            {
+              "GUID": "14582c2b-7021-478e-8e3d-54dbae8d98ba",
+              "theText": "1"
+            },
+            {
+              "GUID": "2f6ccd63-0db8-481e-9791-40668239a967",
+              "theText": "2"
+            }
+          ],
+          "GUID": "eb0d411e-ea0b-469c-ac2c-f7d28bb931ac",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "A Trap is Sprung - 0",
+      "GUID": "4f8febbd-6829-4d23-af2e-c4cfe657b134",
+      "eventText": "Dengar simply glares at you and raises his blaster to confront you.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "6e0bba92-58a2-49b8-a782-bdb1be232f41",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG077/Dengar"
+        }
+      ]
+    },
+    {
+      "eventName": "A Trap is Sprung - 1",
+      "GUID": "07a6b7f3-044b-4491-8d0b-3dcbbc6efac9",
+      "eventText": "Dengar shrugs before turning and walking away. Now you just have Sorin and his legion to deal with.",
+      "eventActions": []
+    },
+    {
+      "eventName": "A Trap is Sprung - 2",
+      "GUID": "e6796060-0d5c-4b78-a75c-7feeb0521f6a",
+      "eventText": "Dengar looks at the determination in your face and nods. He shifts to cover you with his rifle.\r\n\r\n{-} Heroes control <color=\"red\">Dengar</color> as an ally.",
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 {H}",
+          "bonuses": "",
+          "keywords": "+2 Accuracy",
+          "abilities": "Contempt: While attacking, if the target does not have a HARMFUL condition, Dengar applies +1 {B} to the attack results.\r\n{B} Punishment: After the attack resolves, if the target suffered 1 or more {H}, choose 1 HARMFUL condition. The target gains that condition. This ability can be triggered multiple times in the same attack.",
+          "customText": "",
+          "cardName": "Dengar (Ruthless Killer)",
+          "GUID": "a8929b96-4536-4761-b699-7487d0a71fbf",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Dengar (Ruthless Killer)"
+        }
+      ]
+    },
+    {
+      "eventName": "The Final Confrontation",
+      "GUID": "4ab49e0b-b119-44c0-8a81-aaa4342014c8",
+      "eventText": "As the final terrifying wave of Imperials lumbers toward the base, you see Sorin overseeing a heavily-armed tank. “Thanks to your meddling, I only have one Sorin-class prototype left!” Sorin screams. “But it doesn't matter! I'll use it to destroy you, then destroy the Rebels, then they'll make me a Moff!”",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": "+2 Health, +1 {B}",
+          "repositionInstructions": "",
+          "GUID": "b065f2a3-c269-49af-b908-847ebac8bfa8",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG078/General Sorin"
+        },
+        {
+          "enemyName": "Sorin-class Tank (<color=\"red\">SC2-M Repulsor Tank</color>)",
+          "customText": "{-} Each attack of this figure gains +1 {B}. If adjacent to <color=\"red\">General Sorin</color>, the attack also gains {B}: Stun.",
+          "modification": "+8 Health, +1 {G}",
+          "repositionInstructions": "",
+          "GUID": "b5c1e3a0-87ce-4999-abfb-4b8bdc449113",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG025/SC2-M Repulsor Tank"
+        },
+        {
+          "tbText": "Even with the shields back online, Sorin and his strange new tank remain a threat to the base and the survivors of Hoth. You'll have to eliminate them and end this once and for all.\r\n\r\n{-} The Rebels win when <color=\"red\">General Sorin</color> and the Sorin-class Tank are defeated.",
+          "GUID": "52b52392-13c0-4a16-8e53-86bc82b1a300",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": null,
+          "GUID": "46799aff-5d54-452e-bb14-1fb763d2aa23",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Defeat <color=\"red\">General Sorin</color> and the Sorin-class tank.",
+          "longText": null,
+          "GUID": "43c27f8d-99e5-4bc7-99a4-ae90f13f3571",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Walls between Snow tiles and tiles  of another tile type do not block movement, line of sight, adjacency, or counting spaces.\r\n{-} Each time a hero performs a rest, the heroes discard 1 neutral mission token. If the heroes have no neutral mission tokens remaining, they cannot rest.\r\n{-} At the start of a hero's activation, that hero may discard 1 neutral mission token to recover 2 {C} or discard 1 condition.\r\n{-} During a wounded hero's activation, if he has suffered no {H}, the heroes may discard 2 neutral mission tokens (3 if he has 2 activation tokens), to flip that hero's sheet to the healthy side. Then, that hero suffers {H} equal to his Health minus 5.\r\n{-} When a hero is wounded, do not mark him as wounded in the app until the heroes no longer have enough neutral mission tokens to un-wound him. When an unmarked wounded hero becomes the target of an attack, the attack instead targets the closest healthy Rebel.\r\n{-} The Rebels win when <color=\"red\">Sorin</color> and the Sorin-class Tank are defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "51cfe800-f4f8-4539-9ed9-6ba011c73a4d",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green Base 4",
+              "GUID": "95b637a1-e30d-4a63-85bd-a9657a86f1fe",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "af66f982-cda2-4089-85f7-1cd022a321d9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Sorin defeated 2",
+      "GUID": "66400084-8a6f-446e-847d-ef633f3928b1",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Defeat the Sorin-class Tank.",
+          "longText": null,
+          "GUID": "99f8b9eb-ce65-4371-9a97-dbf1c718283b",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Tank defeated",
+      "GUID": "acc10977-bd47-471d-be26-ce18ae17e730",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Defeat <color=\"red\">General Sorin</color>.",
+          "longText": null,
+          "GUID": "9bd87b2b-562e-4bec-bfe4-f480e5e3469e",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "569b2aff-55aa-4494-b051-bf9de346fd82",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "4f15f090-a0c7-49b8-b366-bba7d669ac4a",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Sorin",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "494b1c57-306d-4f3d-bfcb-c2419ceacac6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "e504c575-b6ab-45fe-a33a-e1d0800b99c6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "908745d1-ad68-4b66-a85c-b8ff8d0c70b9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "ce936a0b-67aa-4c53-a817-a215bbda5949",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "b21dcd93-f3fc-440d-882b-a24504a82bd6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "e8b1a8e1-a8ab-4801-9409-914ad04a7afa",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Control System 1",
+      "GUID": "f15d54d3-008a-41aa-bc09-3c191d959f56",
+      "mainText": "The Star Destroyer's flight control system is displaying the positional data of the capital ship.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).",
+      "buttonList": [
+        {
+          "GUID": "b3219e87-507b-4682-8e58-488041cc3a62",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Control System 2",
+      "GUID": "9b7e7a58-c51f-4f11-b9ce-2f8cfa6102e0",
+      "mainText": "The Star Destroyer's thrust control system is displaying the acceleration data of the capital ship.\r\n\r\n{-} A Rebel figure can attack a terminal (Health: 6, Defense: 2 {G}).",
+      "buttonList": [
+        {
+          "GUID": "a490a842-2025-45bf-9ad6-2732705bfe29",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "DP ESTrooper 1",
+      "GUID": "7725075e-faf7-406f-b6e0-0ec9223e2207",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ESTrooper 2",
+      "GUID": "6ad8403f-3e0c-4721-b698-c0e6c0dd2a92",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ESTrooper 3",
+      "GUID": "99d2b4c4-5254-49d9-b478-c4fd2ea13b1e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EProbe Droid",
+      "GUID": "e854773c-397d-44ed-9a34-8f8b5f44a086",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green Base 1",
+      "GUID": "72ca9fff-8d7e-4ab1-8823-3dce66f69cc4",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green Base 2",
+      "GUID": "db7db6d3-6570-4217-8d79-14df6bb465c2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green Base 3",
+      "GUID": "1f62a62f-511e-4289-b414-f5e5aeca49a9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green Base 4",
+      "GUID": "5980b10f-357d-4f4f-aeab-16f689f71de5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Command Center",
+      "GUID": "b1bbfbd6-0866-4218-9379-a11a3f660f36",
+      "mainText": "The command center of the Rebel base looks abandonend. Apparently, the personnel evacuated when they saw the Star Destroyer coming down through the atmosphere.\r\n\r\n{-} When a Rebel figure enters the Command Center for the first time, click \"Enter Command Center\".",
+      "buttonList": [
+        {
+          "GUID": "f534f6e3-b0a1-4658-ab19-2c571a67d498",
+          "theText": "Enter Command Center"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "28968543-57f8-44fc-8511-7a1fac6e7f13",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Shield Terminal",
+      "GUID": "ba8809fd-ddca-4a27-9546-5bdf8c3ee97e",
+      "mainText": "The base's shield control system is dark. Once it is activated, an energy shield will protect the Rebel base from the worst.\r\n\r\n{-} A hero can interact with the red terminal to activate the shields.",
+      "buttonList": [
+        {
+          "GUID": "ab56e70c-e47c-407d-9170-7ab233e56f8f",
+          "theText": "{A} Activate Shields"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "e0d55fc0-2bce-4d74-a5a2-f0429c5fe941",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": []
+}

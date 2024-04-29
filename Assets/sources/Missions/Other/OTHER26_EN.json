@@ -1,0 +1,433 @@
+{
+  "languageID": "English (EN)",
+  "missionProperties": {
+    "missionName": "One Fat Slug",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "Jabba the Hutt (Vile Gangster) Villain Pack",
+    "startingObjective": "",
+    "repositionOverride": "Block line of sight to <color=\"red\">Jabba the Hutt</color>.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "c797fb23-3ab2-4636-a0cd-de237368cb94",
+              "theText": "An old supply crate.",
+              "buttonList": [
+                {
+                  "GUID": "64fceb32-fa30-4f72-bf46-d9f51f33653e",
+                  "theText": "{A} Open"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "You rummage through the supplies and take whatever seems useful.\r\n\r\nDraw a supply card. You gain 1 medpac. Claim this token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "43d6283e-4051-45b6-b798-7aee24eb5fde",
+              "theText": "An old supply crate.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Allowing yourself to be \"captured,\" you are taken to Jabba's lair to satisfy his appetites. As you approach, hearty laughter rumbles out of the cave-like dwelling. Entering, the humidity hits you like warm mud.\r\n\r\n{-} Deploy the heroes to the blue highlighted space.\r\n{-} Doors are locked.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Jabba Highlight",
+              "GUID": "0e7f1463-d652-4334-98e9-b5b7e852da7e",
+              "theText": "{-} After an attack targeting <color=\"red\">Jabba the Hutt</color> resolves, click \"OH HO HO\".",
+              "buttonList": [
+                {
+                  "GUID": "6ce05f81-0517-4524-b66b-d6f8fc719841",
+                  "theText": "OH HO HO"
+                }
+              ]
+            }
+          ],
+          "GUID": "c76a8a4d-ac7e-4546-a936-5b05cd7f5f74",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Welcome, new slaves,\" the laughter speaks. Jabba is eager to meet you.\r\n\r\n{-} Place <color=\"red\">Jabba the Hutt</color> in the red highlighted spaces.\r\n{-} <color=\"red\">Jabba the Hutt</color> cannot be defeated. When <color=\"red\">Jabba the Hutt</color> has suffered {H} equal to his Health, instead of being defeated, he recovers 1 {H}.",
+          "GUID": "b3239c3f-ba04-41de-b31c-27caf368503d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "a0f673e4-458f-4a76-9195-3e7c1cee1c37",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG081/Jabba the Hutt"
+        },
+        {
+          "tbText": "Readying blasters and blades, eager to assert yourselves as free — slaves to no human or Hutt — you press forward into Jabba's home.\r\n\r\n{-} The mission will progress after an attack targeting <color=\"red\">Jabba the Hutt</color> resolves. When that happens, click the red highlight and select \"OH HO HO\".\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "ed615c73-9cae-48f2-89b9-0f263700e3a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Attack <color=\"red\">Jabba the Hutt</color>.",
+          "longText": null,
+          "GUID": "5f140bf0-dd68-4c06-866d-0b6954411afb",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Doors are locked.\r\n{-} <color=\"red\">Jabba the Hutt</color> cannot be defeated. When <color=\"red\">Jabba the Hutt</color> has suffered {H} equal to his Health, instead of being defeated, he recovers 1 {H}.\r\n{-} The mission will progress after an attack targeting <color=\"red\">Jabba the Hutt</color> resolves. When that happens, click the red highlight and select \"OH HO HO\".\r\n{-} The Rebels lose when all heroes are wounded.",
+          "GUID": "be60648c-db16-48d3-9f5e-c9506eec0ee7",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "The fat Hutt slug cries higher than you thought possible, fleeing his lair. It's clear that he's been allying with Imperial forces, but perhaps this will dissuade any further engagement.\r\n\r\n{-} The Rebels win the mission!\r\n{-} Each hero receives 1 XP. Heroes receive 200 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "The Hutt’s thugs thrash you, and you are forced to run, guards and pirates at your heels, laughter filling your fleeing ears. Still, long after you've reached safety, it’s this thought that follows you: Jabba and the Empire: such a dangerous pair.\r\n\r\n{-} The Rebels lose the mission.\r\n{-} The Empire receives <color=\"red\">Jabba the Hutt</color> (Vile Gangster) as a villain.\r\n{-} Each hero receives 1 XP. Heroes receive 100 credits per hero.",
+      "eventActions": []
+    },
+    {
+      "eventName": "No Longer Amused",
+      "GUID": "66424f13-81aa-4af2-bbfc-1787f47cb7f4",
+      "eventText": "Jabba shouts more orders, now sounding angrier than ever before.\r\n\r\n{-} The Empire receives additional {D} at the end of each Round.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 1",
+              "GUID": "6ffc7e62-96f6-4a23-9273-51cfacf6920e",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 2",
+              "GUID": "d91df819-c409-4500-8c74-3f716a8032b4",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd1f1c52-3902-4dc9-8785-34565e72c430",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "No Longer Amused Repeat",
+      "GUID": "5f722de3-43d0-468a-97a1-2d79902eb858",
+      "eventText": "Jabba's shouts keep inciting his minions.",
+      "eventActions": []
+    },
+    {
+      "eventName": "OH HO HO",
+      "GUID": "12911ec1-0f70-4c87-8379-b007c76815fa",
+      "eventText": "Jabba laughs as you press in to your attack. He slithers back behind a door. Cacking madly, Salacious B. Crump jumps down on you from the ceiling.\r\n\r\n{-} Apply +*2* Health to <color=\"red\">Jabba the Hutt</color>. <color=\"red\">Jabba the Hutt</color> recovers *2* {H}.\r\n{-} Remove <color=\"red\">Jabba the Hutt</color>'s figure from the map. He is still deployed.\r\n{-} <color=\"red\">Jabba the Hutt</color> can now be defeated.\r\n{-} Place the Salacious B. Crumb companion in {rebel}'s space.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 2",
+              "GUID": "3b97d68e-403f-45c7-8e9b-710980767a50",
+              "theText": "A sturdy door leads into a corridor.\r\n\r\n{-} The door is locked to Imperial figures.",
+              "buttonList": [
+                {
+                  "GUID": "efe7ff19-86d4-4856-9f92-5af8b0df7901",
+                  "theText": "{A} Open"
+                }
+              ]
+            },
+            {
+              "entityName": "Salacious Highlight",
+              "GUID": "b8913892-9337-4f04-800c-3bd080b070c3",
+              "theText": "If the Salacious B. Crumb companion enters play, place his figure in this space.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Jabba Highlight",
+              "GUID": "48579e77-8591-46a8-ab6f-383ad255a686",
+              "theText": "{-} After an attack targeting <color=\"red\">Jabba the Hutt</color> resolves, click \"OH HO HO\".",
+              "buttonList": [
+                {
+                  "GUID": "1fd202af-d0da-4783-bef7-41e84ff53286",
+                  "theText": "OH HO HO"
+                }
+              ]
+            }
+          ],
+          "GUID": "53245a08-9787-4ce4-9404-3198aa65d8cf",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "{-} When the Salacious B. Crumb companion enters play through the effect INTENTURED JESTER, place it in the green highlighted space.\r\n{-} OH HO HO: {rebel} suffers 1 {C} and becomes <color=\"red\">Weakened</color>.\r\n{A} HONOR GUARD: The two other Imperial figures with the highest figure cost both gain 1 {g}.\r\n{A} EXECUTION ORDER: The other Imperial figure with the highest figure cost that can attack attacks {rebel}.\r\n{-} If Salacious B. Crumb is in play, he moves 4 through as many spaces containing Rebels as possible (minimum 1). If he cannot enter any Rebel space, he moves 4 toward {rebel} instead.",
+          "modification": "+*2* Health",
+          "repositionInstructions": "",
+          "GUID": "9faf90c4-5990-4e83-8c59-e9cda5c865bd",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG081/Jabba the Hutt"
+        },
+        {
+          "repositionText": "Block access to the door.",
+          "GUID": "350345d2-94bd-4001-9010-c998681573b0",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "Jabba's guards rush out to cover his retreat.",
+          "GUID": "fcb9c692-270a-472f-98c8-3a859ba36286",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "128ae296-d062-4e52-8bcf-c1e99550d1e7",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG041/Gamorrean Guard (Elite)"
+        },
+        {
+          "tbText": "{-} The door to the Corridor is unlocked to Rebel figures.\r\n{-} The Rebels win when <color=\"red\">Jabba the Hutt</color> is defeated.",
+          "GUID": "22cf4e6d-5456-4b73-95c3-9a8c570495b6",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Find and defeat <color=\"red\">Jabba the Hutt</color>.",
+          "longText": null,
+          "GUID": "cd772ec8-c1e3-472e-84c0-fbabc69f0ab1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} The door behind Jabba's seat is locked.\r\n{-} The door to the Corridor is locked to Imperial figures.\r\n{-} The Rebels win when <color=\"red\">Jabba the Hutt</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.\r\n",
+          "GUID": "42b96268-c3d6-46fb-b1b8-6918ff1b706b",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Deeper",
+      "GUID": "d4a5fb7a-17a1-4b7d-b7c4-ce74c07fee21",
+      "eventText": "You burst through the door and into the corridor behind.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 2",
+              "GUID": "91d2ee26-3526-4822-a87e-138b9add0f48",
+              "theText": "A sturdy door leads deeper into Jabba's palace.\r\n\r\n{-} The door is locked.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "164e8b56-969d-4392-a1ac-022780d4a483",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": " At the far end, you can see Jabba hiding behind his guards.\r\n\r\n{-} Place <color=\"red\">Jabba the Hutt</color>'s figure on the red highlighted spaces.",
+          "GUID": "6cd8d5be-2eb6-4b35-a3d4-4cddbf9366b2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Jabba Highlight 2",
+              "GUID": "2534f9f5-28a8-4689-a2d3-650d138aa48a",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "7315c1b6-e54d-4b50-b4ba-57fe85b478cf",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Block line of sight to <color=\"red\">Jabba the Hutt</color>.",
+          "GUID": "b6216981-0124-4894-9b9f-b84d8849188d",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "newInstructions": "{-} BULLY: A Rebel within 3 spaces suffers 3 {C}.\r\n{A} EXECUTION ORDER: The other Imperial figure with the highest figure cost that can attack attacks {R1}.\r\n{Q} Attack {R1}.\r\n{A} If there is a Rebel within 3 spaces of this figure, move 2 to reposition 5.\r\n{-} If Salacious B. Crumb is in play, he moves 4 through as many spaces containing Rebels as possible (minimum 1). If he cannot enter any Rebel space, he moves 4 toward {R1} instead.",
+          "GUID": "506e4986-be37-4c62-a1c0-cb18d0abb726",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "436fedc7-5853-464c-96b9-9cb934dc9362",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "An old supply crate.",
+      "buttonList": [
+        {
+          "GUID": "f6732689-5661-4f42-a14b-b4ac7a9fb709",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Deploy the heroes here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Gammo 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Gammo 2",
+      "GUID": "6f1b1dfd-43b2-4291-b72f-c67c166a4062",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 1",
+      "GUID": "a6778d39-a27f-423d-846b-3107ae4b26af",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 2",
+      "GUID": "5810a641-7b06-4308-b992-61db34b4506a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "114be456-88e4-4bb8-81b4-c3ca3186bd90",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 1",
+      "GUID": "6b9d154a-2290-49bd-9b04-d7dc67df25ad",
+      "mainText": "A sturdy door leads deeper into Jabba's palace.\r\n\r\n{-} The door is locked.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 2",
+      "GUID": "f5cb4852-1ab0-4b20-a1fe-b8ce2e83d6ed",
+      "mainText": "A sturdy door leads into a corridor.\r\n\r\n{-} The door is locked.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Salacious Highlight",
+      "GUID": "cf640a52-a747-4825-ab77-b2589c6e001f",
+      "mainText": "If the Salacious B. Crumb companion enters play, place his figure in this space.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Jabba Highlight",
+      "GUID": "93d6e532-dda5-4b1a-94d1-6b7d1b1cd1d6",
+      "mainText": "{-} After an attack targeting <color=\"red\">Jabba the Hutt</color> resolves, click \"OH HO HO\".",
+      "buttonList": [
+        {
+          "GUID": "2138f338-5bf6-44e1-a73d-d352c7626502",
+          "theText": "OH HO HO"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "fe0c8fd5-a5a2-4cb7-a189-5742bcda79ba",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "e860c1bf-09ed-437e-ac3d-626a804dfc08",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Jabba Highlight 2",
+      "GUID": "5b2d42f0-9dbc-4e0a-9022-c8dd4f149e06",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Gamorrean Guard",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Weequay Pirate",
+      "customInstructions": ""
+    }
+  ]
+}
