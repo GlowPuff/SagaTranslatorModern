@@ -129,7 +129,7 @@ namespace Saga_Translator_V2
 			for ( int inputIdx = 0; inputIdx < ea.inputList.Count; inputIdx++ )
 			{
 				stackPanel.Children.Add( UIFactory.TBlock( $"Input Text [{inputIdx + 1}]" ) );
-				stackPanel.Children.Add( UIFactory.TBox( ea.inputList[inputIdx].theText, ea.inputList[inputIdx], false, isEnabled, ( a, b ) =>
+				stackPanel.Children.Add( UIFactory.TBox( ea.inputList[inputIdx].theText, ea.inputList[inputIdx], true, isEnabled, ( a, b ) =>
 				{
 					if ( useContext )
 					{
