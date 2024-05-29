@@ -245,6 +245,18 @@
           "eaName": "Modify Map Entity"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: Blast 2{H}\n{B}: Pierce 2",
+          "bonuses": "",
+          "keywords": "Massive\r\n+3 Accuracy",
+          "abilities": "Targeting Computer: While attacking, you may reroll 1 attack die.\r\nEpic Arsenal: Your attack pool consists of any combination of 3 attack dice. You may not roll more than 2 dice of a single color.\r\nAwkward: You cannot attack adjacent figures.",
+          "customText": "",
+          "cardName": "Hijacked AT-ST",
+          "GUID": "90f056ce-4227-4853-afc4-18cadf5dab9f",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Hijacked AT-ST"
+        },
+        {
           "tbText": "{-} The <color=\"red\">Hijacked AT-ST</color> is a Rebel figure. Heroes control it as an ally.\r\n{-} The <color=\"red\">AT-ST</color> gains the following ability: <i><b>Epic Arsenal:</b> Your attack pool consists of any combination of 3 attack dice. You may not roll more than 2 dice of a single color.</i>\r\n{-} Instead of activating as normal, the <color=\"red\">AT-ST</color> performs one action after each hero's activation.\r\n{-} The mission will progress when a Rebel figure enters the Clearing.",
           "GUID": "dba1eefa-8488-413e-bae3-a5a52ee5dd12",
           "eventActionType": 16,

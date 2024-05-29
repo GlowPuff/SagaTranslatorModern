@@ -363,6 +363,18 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 Accuracy\r\n{B} +2 {H}\n{B}: Focus",
+          "bonuses": "INSPIRE THE TROOPS: At the start of this activation, each Imperial figure within 3 spaces of this figure discards 1 Harmful condition. Each of those figures that did not discard a condition recovers 1 {H}.\r\nSUPPORT THE CAPTAIN: At the start of this activation, this figure recovers 1 {H} for each Imperial figure within 3 spaces of it.",
+          "keywords": "+1 {F}",
+          "abilities": "",
+          "customText": "{-} SQUAD COMMAND: The closest other Imperial figure that isn’t <color=\"red\">Focused</color> becomes <color=\"red\">Focused</color>.\r\n{A} FIRE AT WILL: The closest other Imperial figure that can perform an attack attacks {rebel}.\r\n{Q} Move 4 to attack {rebel}.\r\n{A} Move 2 to reposition 5.\r\n{A} Move 6 to reposition 5.",
+          "cardName": "Terro (Stormtrooper)",
+          "GUID": "560d29b4-d93c-40da-9de8-c6b168ff986e",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Terro (Stormtrooper)"
+        },
+        {
           "tbText": "{-} The door is locked.\r\n{-} A Rebel figure can interact with the terminal to discard it. When the terminal is discarded and Terro is defeated, the door unlocks.\r\n{-} The mission will progress when the door opens.",
           "GUID": "2773d961-c409-4388-af2a-4c0920e344d5",
           "eventActionType": 16,

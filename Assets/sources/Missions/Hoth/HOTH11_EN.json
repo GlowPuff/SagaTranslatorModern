@@ -168,6 +168,18 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: +3 Accuracy\r\n{B}: Stun\r\n{B}: Focus\r\n{B}: +2 {H}",
+          "bonuses": "DEFENSE STUDY: Discard 1 Imperial mission token from the sheet / card of the closest Rebel figure with an Imperial mission token on it. Ivan Talos gains +2 {g}.\r\nIMPROVISATION: During this activation, this figure can use IMPROVED CLOSE QUARTERS on Rebel figures without Imperial mission tokens on their sheets.\r\nATTACK STUDY: Distribute X {h} as evenly as possible between Imperial figures within 3 spaces of this figure, where X is the number of Imperial mission tokens on hero sheets.",
+          "keywords": "+1 {G}\r\n+*1* Health",
+          "abilities": "Know Your Enemy:If a Rebel figure with an Imperial mission token on its hero sheet / deployment card is attacking Ivan Talos, apply an additional +1 {G} to the defense results.",
+          "customText": "{Q} IMPROVED CLOSE QUARTERS: Move 2 to interact with a Rebel and discard 1 Imperial mission token from that Rebel's sheet / card. Choose the best weapon that Rebel is carrying and perform 2 attacks using that weapon. \r\n{-} If this figure did not perform IMPROVED CLOSE QUARTERS, discard 1 Imperial mission token from the closest Rebel with an Imperial token on its sheet / card. That hero suffers 2 {C}.\r\n{A} ORDER: Another Imperial figure with a figure cost of 6 or less that can perform an attack attacks {rebel}.\r\n{Q} If this figure did not use ORDER, move 3 to attack {rebel}.\r\n{Q} Move 1 to attack {rebel}.\r\n{A} Move 3 to engage the other Imperial figure with the most Health remaining.\r\n{A} If this figure is not adjacent to another Imperial figure, move 4 to reposition 5.\r\n{-} COWER: If adjacent to another Imperial figure, recover 2 {H}. The adjacent non-<color=\"red\">Focused</color> Imperial figure with the highest figure cost becomes <color=\"red\">Focused</color>.",
+          "cardName": "Ivan Talos",
+          "GUID": "1615cd73-6182-43f9-b953-c1fa138e0060",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Ivan Talos"
+        },
+        {
           "tbText": "Two bodyguards take their positions in front of Verana's brother.",
           "GUID": "aa8a3c81-928c-4268-8089-3f99fadceab5",
           "eventActionType": 16,

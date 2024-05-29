@@ -130,6 +130,18 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: +3 Accuracy\n{B}: Blast 2 {H}\n{B}: +2 {H}",
+          "bonuses": "SQUAD TRAINING: While attacking, each figure in this group gains Pierce 1. If the target has already been attacked during this group's activation, they gain Pierce 2 instead.\r\nSCORCHED EARTH: After this activation, place another fire in an empty space adjacent to you.",
+          "keywords": "",
+          "abilities": "COMPOSITE PLATING:While defending, if the attacker is 4 or more spaces away, apply +1 {G} to the defense roll.\r\nFIREPROOF: This figure does not suffer {H} from entering spaces containing a fire. It can voluntarily end its movement in a space containing a fire.",
+          "customText": "{-} LAST STAND: If there are fewer than 3 figures in this group, become <color=\"red\">Focused</color>. Limit once per group activation.\r\n{-} FIREPROOF: This figure does not suffer {H} from entering spaces containing a fire. It can voluntarily end its movement in a space containing a fire.\r\n{Q} Move 1 to attack {rebel}.\r\n{A} Move 2 toward the closest Homestead Tile without a fire.\r\n{A} Move 4 toward the closest Homestead Tile without a fire.\r\n{-} Place 1 fire in an empty space adjacent to you. If possible, target a space on a Homestead Tile without a fire.",
+          "cardName": "Incinerator Troopers",
+          "GUID": "a8f36c26-b825-48c8-94fb-bd5126dfe023",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Incinerator Troopers"
+        },
+        {
           "translatedEntityProperties": [
             {
               "entityName": "Incinerator 1",

@@ -100,6 +100,18 @@
           "eaName": "Modify Map Entity"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 2",
+          "bonuses": "CHARGE GENERATORS: This figure gains 1 {h}.\nAUTOMATED REPAIRS: This figure recovers 2 {H}.",
+          "keywords": "+5 Health\r\n+4 Accuracy",
+          "abilities": "None:None",
+          "customText": "{Q} Move 2 to attack {rebel}.\r\n{A} Move 2 away from the Rebels.\r\n{A} Move 4 away from the Rebels.\r\n{-} This figure gains 1 {g}.",
+          "cardName": "E-XD Infiltrator Droid",
+          "GUID": "ae59cebd-1c6b-4a4d-8338-88fe0c34020b",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: E-XD Infiltrator Droid"
+        },
+        {
           "tbText": "{-} The Imperial mission token represents the E-XD Infiltrator Droid.\r\n{-} If the E-XD has been defeated, a figure can interact with the door ({K} or {I}) to try and open it. That figure may suffer 1 {C} during that test to reroll any number of dice.\r\n{-} The mission will progress when the door opens.\r\n{-} The Rebels lose when all heroes are wounded.",
           "GUID": "323e6074-8a06-4b69-99f2-40751a8b4757",
           "eventActionType": 16,
@@ -344,6 +356,18 @@
           "GUID": "4e89238c-20e4-454e-bcc5-905755bc1541",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 2",
+          "bonuses": "CHARGE GENERATORS: This figure gains 1 {h}.\r\nAUTOMATED REPAIRS: This figure recovers 2 {H}.",
+          "keywords": "+5 Health\r\n+4 Accuracy\r\n+1 {G}",
+          "abilities": "None:None",
+          "customText": "{Q} Move 2 to attack {rebel}.\r\n{A} Move 2 away from the Rebels.\r\n{A} Move 4 away from the Rebels.\r\n{-} This figure gains 1 {g}.",
+          "cardName": "E-XD Infiltrator Droid",
+          "GUID": "47e01a30-efc4-40ab-85e1-638a0acdf7d5",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: E-XD Infiltrator Droid"
         },
         {
           "tbText": "{-} When the E-XD would be defeated, it is incapacitated instead. \r\n{-} The mission will progress when the E-XD is incapacitated.",

@@ -540,7 +540,7 @@
     {
       "eventName": "Commandeered",
       "GUID": "879d40c3-00b8-4e8c-9322-29c6f4cea4a4",
-      "eventText": "You wrestle control from the Imperials and take the seat of the pilot yourself. \"Well done!\", shouts Wolffe over com. \"Now let's bring the fight to them, eh?\" Outside, you can see Wolffe's AT-AT slowly turning towards his former pursuers. The hunt is on.\r\n\r\n{-} The mission no longer ends at the end of Round 5.\r\n{-} Flip one Imperial AT-AT to the Rebel side. This is the captured AT-AT. \r\n{-} Rebel AT-ATs can now attack.",
+      "eventText": "You wrestle control from the Imperials and take the seat of the pilot yourself. \"Well done!\", shouts Wolffe over com. \"Now let's bring the fight to them, eh?\" Outside, you can see Wolffe's AT-AT slowly turning towards his former pursuers. The hunt is on.\r\n\r\n{-} Flip one Imperial AT-AT to the Rebel side. This is the captured AT-AT. \r\n{-} Rebel AT-ATs can now attack.",
       "eventActions": [
         {
           "tbText": "{-} At the start of the captured AT-AT's activation, a hero on or adjacent to the steering (blue terminal) may test {I} or {J}. If successful, the captured AT-AT gains 1 movement point.\r\n{-} At the start of the captured AT-AT's activation, a hero on or adjacent to the fire control (red terminal) may test {I} or {K}. If successful, the captured AT-AT gains 1 {h}.\r\n{-} When a Rebel AT-AT is defeated, click the highlight on the Seelos map and select \"Rebel AT-AT defeated\". When an Imperial AT-AT is defeated, click the highlight on the Seelos map and select \"Imperial AT-AT defeated\".\r\n{-} The Rebels win when the Imperial AT-AT is defeated.",
