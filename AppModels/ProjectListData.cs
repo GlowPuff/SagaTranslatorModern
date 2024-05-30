@@ -1,12 +1,12 @@
 ﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
+using Imperial_Commander_Editor;
 
 namespace Saga_Translator_V2
 {
 	public class ProjectListData : ObservableObject
 	{
-		private string _version = "Version: 3.0";
-		public string version { get => _version; set => SetProperty( ref _version, value ); }
+		public string version { get => Utils.appVersionString; }
 
 		public ObservableCollection<ProjectListItem> projectListItems { get; set; }
 
