@@ -456,7 +456,7 @@ namespace Saga_Translator_V2
 
 	public class UIMainApp : ObservableObject
 	{
-		private string _eliteUpgradeMsgUC, _eliteDowngradeMsgUC, _restoredMsgUC, _restoreErrorMsgUC, _pauseDepMsgUC, _unPauseDepMsgUC, _pauseThreatMsgUC, _UnPauseThreatMsgUC, _deploymentHeading, _reservedBtn, _allyBtn, _enemyBtn, _randomBtn, _modThreatHeading, _applyBtn, _roundHeading, _depTypeHeading, _eventHeading, _randomHeading, _maxThreatHeading, _endRoundBtn, _fameHeading, _awardsHeading, _fame1UC, _fameItem1UC, _fameItem2UC, _fame2UC, _continueBtn, _debugThreatUC, _debugDepModUC, _debugDepHandUC, _tooltipRulesUC, _tooltipInfoUC, _tooltipPauseDepUC, _tooltipPauseThreatUC, _tooltipOpDepUC, _tooltipSettingsUC, _tooltipImpHandUC, _tooltipActivateUC, _tooltipFameUC, _tooltipDashboardUC, _confirm, _cancel, _deploy, _threatIncreasedUC, _reinforceWarningUC, _deploymentWarningUC, _calmMessageUC, _close, _deployModeCalm, _deployModeReinforcements, _deployModeLanding, _deployModeOnslaught, _fameIncreasedUC, _noRandomMatchesUC, _depCostUC, _noAbilitiesUC, _ignoredAbilitiesUC, _noKeywordsUC, _noneUC, _rewardUC, _pageUC, _optionalDeployment;
+		private string _eliteUpgradeMsgUC, _eliteDowngradeMsgUC, _restoredMsgUC, _restoreErrorMsgUC, _pauseDepMsgUC, _unPauseDepMsgUC, _pauseThreatMsgUC, _UnPauseThreatMsgUC, _deploymentHeading, _reservedBtn, _allyBtn, _enemyBtn, _randomBtn, _modThreatHeading, _applyBtn, _roundHeading, _depTypeHeading, _eventHeading, _randomHeading, _maxThreatHeading, _endRoundBtn, _fameHeading, _awardsHeading, _fame1UC, _fameItem1UC, _fameItem2UC, _fame2UC, _continueBtn, _debugThreatUC, _debugDepModUC, _debugDepHandUC, _tooltipRulesUC, _tooltipInfoUC, _tooltipPauseDepUC, _tooltipPauseThreatUC, _tooltipOpDepUC, _tooltipSettingsUC, _tooltipImpHandUC, _tooltipActivateUC, _tooltipFameUC, _tooltipDashboardUC, _confirm, _cancel, _deploy, _threatIncreasedUC, _reinforceWarningUC, _deploymentWarningUC, _calmMessageUC, _close, _deployModeCalm, _deployModeReinforcements, _deployModeLanding, _deployModeOnslaught, _fameIncreasedUC, _noRandomMatchesUC, _depCostUC, _noAbilitiesUC, _ignoredAbilitiesUC, _noKeywordsUC, _noneUC, _rewardUC, _pageUC, _optionalDeployment, _tooltipMedPacUC;
 
 		public string eliteUpgradeMsgUC
 		{
@@ -621,6 +621,10 @@ namespace Saga_Translator_V2
 		public string tooltipDashboardUC
 		{
 			get => _tooltipDashboardUC; set => SetProperty( ref _tooltipDashboardUC, value );
+		}
+		public string tooltipMedPacUC
+		{
+			get => _tooltipMedPacUC; set => SetProperty( ref _tooltipMedPacUC, value );
 		}
 		public string confirm
 		{
