@@ -114,6 +114,18 @@
           "eaName": "Modify Map Entity"
         },
         {
+          "repositionInstructions": "",
+          "surges": "",
+          "bonuses": "",
+          "keywords": "",
+          "abilities": "",
+          "customText": "",
+          "cardName": "Leia Organa",
+          "GUID": "47097c07-5055-4fac-9d76-c9a7229e3e74",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Leia Organa"
+        },
+        {
           "tbText": "<color=\"yellow\">When an Ally or an Enemy is deployed, you search the Deployment cards for their respective card and place it somewhere in your play area. Then you deploy their figure.\r\n\r\nSome allies or enemies are customized by the app, though, and don't correspond to a printed deployment card or a miniature. In this case, the Rebel mission token represents Leia. You can right-click or double-click / tap an ally or enemy portrait to display their deployment card, whether custom or not. (Select the {J} icon, then try it out - however, there's not much to see on Leia's card yet.) \r\n\r\nEach ally group gets 1 activation. The Rebel players usually decide when to activate an ally, but for the purpose of this tutorial, let's activate Leia first. In a regular mission, players have full control over an ally's actions, but Leia has always been headstrong.</color>",
           "GUID": "60fa60fc-585c-4c5c-8154-a13160ebcc10",
           "eventActionType": 16,

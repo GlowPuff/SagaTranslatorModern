@@ -311,6 +311,18 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: +1 {H}\n{B}: +1 Accuracy",
+          "bonuses": "",
+          "keywords": "+1 Accuracy",
+          "abilities": "Raider: While attacking, you may choose 1 die. The player that rolled that die must reroll that die.",
+          "customText": "",
+          "cardName": "Jabba's Weequay Mercenaries",
+          "GUID": "170ad533-9213-4ee5-974f-0570812afacb",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Jabba's Weequay Mercenaries"
+        },
+        {
           "repositionText": "Block access to the door.",
           "GUID": "0eb26a29-fc79-4401-99c2-68b566e55d03",
           "eventActionType": 17,

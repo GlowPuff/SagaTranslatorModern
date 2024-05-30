@@ -633,7 +633,20 @@
       "eventName": "The General",
       "GUID": "cce142e4-d999-4fb6-9cb5-78a1aa3a783f",
       "eventText": "Booms and crashes rattle the air as buildings continue to fall in ruin under the onslaught of the Imperial force. Then, added to the noise are large thuds that begin to shake the ground as a massive machine of war lumbers toward your skirmish.\r\n\r\nYou hear the amplified voice of General Sorin emanating from this AT-ST, shouting orders to his troops with terrifying ferocity. With flame and destruction in his wake, he aims the large blasters of his vehicle in your direction.",
-      "eventActions": []
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Blast 2 {H}\r\n{B} Stun\r\n{B} Focus\n{B}: Pierce 2",
+          "bonuses": "MORTAR: At the start of this activation, each hero may test {K}. If a hero is in an exterior space, it may test {J} instead. Each hero that does not pass becomes <color=\"red\">Weakened</color>.\r\nFOCUS: At the start of this activation, this figure becomes <color=\"red\">Focused</color>.\r\nGRENADE LAUNCHER: After this figure resolves an attack, roll 1 yellow die. Each Rebel within X spaces of the target suffers 1 {H} for each activation token. X is the Accuracy result.",
+          "keywords": "Massive\r\n+5 Accuracy\r\n+1 {H}",
+          "abilities": "Awkward: Sorin's AT-ST cannot attack adjacent figures.",
+          "customText": "{-} BOMBARDMENT: This figure’s attacks do not require line of sight or Accuracy, and each gains Blast 1 {H}.\r\n{Q} Attack {rebel}.\r\n{A} Move 5 to reposition 2.\r\n{Q} Attack {rebel}.\r\n{A} Recover 2 {H}.\r\n{-} ADVANCED FIREPOWER: Each adjacent Imperial figure becomes <color=\"red\">Focused</color>.",
+          "cardName": "Sorin's AT-ST",
+          "GUID": "6b70c8ad-8edb-43b6-90e2-501a0b7ef5f5",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Sorin's AT-ST"
+        }
+      ]
     },
     {
       "eventName": "Target change",

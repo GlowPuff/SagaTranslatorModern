@@ -106,6 +106,18 @@
       "eventText": "Jabba’s convoy arrives with a squad of Gamorreans and Weequay. The civilians look frightened at the arrival of the motley and intimidating assortment of mercenaries, but you assure them that they are here to help. Finally, Bib Fortuna emerges from the shuttle and begins to set up a plan with you.\r\n\r\n“We have coordinates for a small base not far from here where we believe Terro is preparing his ambush,” he informs you. “We'll leave a smalll garrison here for protection in your absence, and then you can storm their base and take them by surprise. If you can slice their system, you should be able to override their energy controls and trigger a  self-destruct of the base.”\r\n\r\nYou gather your gear and kiss your family goodbye before trudging through the forest with a pair of Gamorreans Bib Fortuna identified as the captains.",
       "eventActions": [
         {
+          "repositionInstructions": "",
+          "surges": "{B}: Cleave 2 {H}",
+          "bonuses": "",
+          "keywords": "Reach",
+          "abilities": "Gamorrean Honor Guard:While defending during a {O} attack, apply +1 {G} to the defense results.\nProfessional:While attacking, you may reroll 1 attack die.",
+          "customText": "",
+          "cardName": "Gamorrean Guards",
+          "GUID": "3d9f4367-3ac4-4ba0-8324-96dd66ac5b1a",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Gamorrean Guards"
+        },
+        {
           "tbText": "{-} Deploy the heroes to the blue highlighted space.\r\n{-} The door is locked.\r\n{-} When a hero withdraws, he is incapacitated instead, When activating, he receives only 1 action and can only use that action to perform a move.",
           "GUID": "1181a458-600d-4a86-9e12-786009ec3f77",
           "eventActionType": 16,

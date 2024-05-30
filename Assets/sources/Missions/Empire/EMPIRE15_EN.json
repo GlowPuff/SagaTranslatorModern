@@ -136,6 +136,42 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X-8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (1)",
+          "GUID": "a7b11f76-753b-4bd2-965c-230e7b7ef71b",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (1)"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X-8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (2)",
+          "GUID": "ae80271c-5911-4927-9690-945b6a755f1a",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (2)"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X-8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (3)",
+          "GUID": "0b8cb811-0b15-4f13-b697-087d7232c4a7",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (3)"
+        },
+        {
           "translatedEntityProperties": [
             {
               "entityName": "X8 Green 1",
@@ -247,6 +283,18 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (4)",
+          "GUID": "aa4d9ac7-b2af-469c-8905-0c3992c45780",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (4)"
+        },
+        {
           "shortText": "Download the schematics.",
           "longText": null,
           "GUID": "7736a90e-7eb1-4460-92dc-26e5caca51f5",
@@ -271,37 +319,114 @@
       "eventName": "EoR Deployment 1",
       "GUID": "9edbcf57-212b-4e81-8cba-4aeee15b6c31",
       "eventText": "Countless conveyor belts and heavy machinery are churning out more X-8 blaster droids.",
-      "eventActions": []
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (6)",
+          "GUID": "1fb4a79b-44c4-4187-8c4c-d5e404b0beb0",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (6)"
+        }
+      ]
     },
     {
       "eventName": "EoR Deployment 2",
       "GUID": "8528ea51-2b60-44c5-9990-378d47fe7508",
       "eventText": "Countless conveyor belts and heavy machinery are churning out more X-8 blaster droids.",
-      "eventActions": []
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (7)",
+          "GUID": "51945b84-80d9-443b-adcb-9ef0f4dc6a2c",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (7)"
+        }
+      ]
     },
     {
       "eventName": "EoR Deployment 3",
       "GUID": "886fb4e6-e10c-46bb-aa53-8ebfa852ed82",
       "eventText": "Countless conveyor belts and heavy machinery are churning out more X-8 blaster droids.",
-      "eventActions": []
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (8)",
+          "GUID": "3d86c5cc-1f31-4808-b80c-2c52f67d6bff",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (8)"
+        }
+      ]
     },
     {
       "eventName": "EoR Deployment 4",
       "GUID": "48f129b1-8ed9-4e87-acbe-936b5ed6915d",
       "eventText": "Countless conveyor belts and heavy machinery are churning out more X-8 blaster droids.",
-      "eventActions": []
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (9)",
+          "GUID": "46ef5254-fdd5-4367-b997-92a105a90d15",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (9)"
+        }
+      ]
     },
     {
       "eventName": "EoR Deployment 5",
       "GUID": "3e1a02e8-146f-489a-b2a5-1af788acb41f",
       "eventText": "Countless conveyor belts and heavy machinery are churning out more X-8 blaster droids.",
-      "eventActions": []
+      "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (10)",
+          "GUID": "84fc6168-cd6b-4a66-a234-0c171fe52e43",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (10)"
+        }
+      ]
     },
     {
       "eventName": "Rightful Owner",
       "GUID": "259dc60e-234b-4db0-8490-f3fc6f69224d",
       "eventText": "Finally! Your datapad chimes to signal that the download has finished. The schematics are yours. Now to stop the factory from producing a droid ever again.",
       "eventActions": [
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: Pierce 1",
+          "bonuses": "ELECTRIC SHOCK: After this figure attacks, each Rebel figure adjacent to an X-8 blaster droid suffers 1 {C}.\r\nFIND WEAKNESS: The attack of this figure gains Pierce 1.",
+          "keywords": "+1 {H}\r\n+1 {G}",
+          "abilities": "HEALTH: The X8 blaster droid has *1* Health.",
+          "customText": "{-} The attack gains +1 {H}.\r\n{Q} Move 3 to attack the Rebel adjacent to the most X8 blaster droids. Apply +1 {H} for each X8 blaster droid adjacent to the defender except for the attacker.\r\n{A} Move 2 toward the Rebel adjacent to the most X8 blaster droids.\r\n{A} Move 4 toward the Rebel adjacent to the most X8 blaster droids.",
+          "cardName": "X-8 blaster droid (5)",
+          "GUID": "fbcbaaf7-8091-4e13-a39f-0984faa5ceb8",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: X-8 blaster droid (5)"
+        },
         {
           "tbText": "Now that you have downloaded the schematics, you turn your attention towards the terminals.\r\n\r\n{-} Rebel figures can attack a terminal (Health: *1*, Defense: 1 {G}) or interact with a terminal ({K} or {I}) to destroy it.\r\n{-} After the red terminals are destroyed, no more blaster droids are being produced.\r\n{-} The Rebels win when all terminals and all X-8 blaster droids are destroyed.",
           "GUID": "f6f7e2a1-a5fe-45b4-8f75-bb5dbf8a8a30",

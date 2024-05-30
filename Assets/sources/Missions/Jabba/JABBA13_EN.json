@@ -130,6 +130,42 @@
           "eaName": "Text Box"
         },
         {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 Accuracy",
+          "bonuses": "OLD RIVALRY: If Vinto Hreeda can be attacked, he becomes the target of all attacks during this activation. In this case, add 1 green die to the first attack.\r\nSHOT ON THE RUN: After the first Move instruction during this activation is carried out, 1 Rebel figure within 3 spaces and line of sight of the Rodian pirate suffers 1 {C}.\r\nLONG-RANGE SHOT: The Rodian pirates gain +3 Accuracy.",
+          "keywords": "+1 {G}",
+          "abilities": "",
+          "customText": "{Q} Move 3 to attack {rebel}. Apply +1 {H} to the attack results.\r\n{A} Move 1 to reposition 3.\r\n{A} Move 5 to reposition 3.",
+          "cardName": "Rodian Pirates",
+          "GUID": "b9966670-7ccb-4d24-9941-a906d65f344e",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Rodian Pirates"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 Accuracy",
+          "bonuses": "OLD RIVALRY: If Vinto Hreeda can be attacked, he becomes the target of all attacks during this activation. In this case, add 1 green die to the first attack.\r\nSHOT ON THE RUN: After the first Move instruction during this activation is carried out, 1 Rebel figure within 3 spaces and line of sight of the Rodian pirate suffers 1 {C}.\r\nLONG-RANGE SHOT: The Rodian pirates gain +3 Accuracy.",
+          "keywords": "+1 {G}",
+          "abilities": "",
+          "customText": "{Q} Move 3 to attack {rebel}. Apply +1 {H} to the attack results.\r\n{A} Move 1 to reposition 3.\r\n{A} Move 5 to reposition 3.",
+          "cardName": "Rodian Pirates",
+          "GUID": "be7475ad-7259-4917-9407-f572aa34af29",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Rodian Pirates"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 Accuracy",
+          "bonuses": "OLD RIVALRY: If Vinto Hreeda can be attacked, he becomes the target of all attacks during this activation. In this case, add 1 green die to the first attack.\r\nSHOT ON THE RUN: After the first Move instruction during this activation is carried out, 1 Rebel figure within 3 spaces and line of sight of the Rodian pirate suffers 1 {C}.\r\nLONG-RANGE SHOT: The Rodian pirates gain +3 Accuracy.",
+          "keywords": "+1 {G}",
+          "abilities": "",
+          "customText": "{Q} Move 3 to attack {rebel}. Apply +1 {H} to the attack results.\r\n{A} Move 1 to reposition 3.\r\n{A} Move 5 to reposition 3.",
+          "cardName": "Rodian Pirates",
+          "GUID": "183c341d-6ef2-477c-8100-cf81f2c370ed",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Rodian Pirates"
+        },
+        {
           "tbText": "Vinto remains impassive, hand on his blaster. \"This is no longer my home, and you are no longer my friend.\" The pirates move to protect the stolen supplies.",
           "GUID": "6a079214-0c17-409d-afd7-8dd65c47d6f3",
           "eventActionType": 16,
@@ -601,6 +637,30 @@
           "GUID": "4675b444-7c5e-4a29-9239-628dcbd98a46",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 Accuracy",
+          "bonuses": "OLD RIVALRY: If Vinto Hreeda can be attacked, he becomes the target of all attacks during this activation. In this case, add 1 green die to the first attack.\r\nSHOT ON THE RUN: After the first Move instruction during this activation is carried out, 1 Rebel figure within 3 spaces and line of sight of the Rodian pirate suffers 1 {C}.\r\nLONG-RANGE SHOT: The Rodian pirates gain +3 Accuracy.",
+          "keywords": "+1 {G}",
+          "abilities": "",
+          "customText": "{Q} Move 3 to attack {rebel}. Apply +1 {H} to the attack results.\r\n{A} Move 1 to reposition 3.\r\n{A} Move 5 to reposition 3.",
+          "cardName": "Rodian Pirates",
+          "GUID": "64bae351-2e25-4017-945e-fc695d23036a",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Rodian Pirates"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "{B}: +2 Accuracy",
+          "bonuses": "OLD RIVALRY: If Vinto Hreeda can be attacked, he becomes the target of all attacks during this activation. In this case, add 1 green die to the first attack.\r\nSHOT ON THE RUN: After the first Move instruction during this activation is carried out, 1 Rebel figure within 3 spaces and line of sight of the Rodian pirate suffers 1 {C}.\r\nLONG-RANGE SHOT: The Rodian pirates gain +3 Accuracy.",
+          "keywords": "+1 {G}",
+          "abilities": "",
+          "customText": "{Q} Move 3 to attack {rebel}. Apply +1 {H} to the attack results.\r\n{A} Move 1 to reposition 3.\r\n{A} Move 5 to reposition 3.",
+          "cardName": "Rodian Pirates",
+          "GUID": "b594acda-e6f3-4dec-bed2-a465924cf2dc",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Rodian Pirates"
         },
         {
           "tbText": "{-} The Rebels win when all Rodian pirates have been defeated.",
