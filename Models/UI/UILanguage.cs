@@ -760,7 +760,7 @@ namespace Saga_Translator_V2
 
 	public class UICampaign : ObservableObject
 	{
-		private string _threatInfoUC, _modeIntroductionUC, _modeStoryUC, _modeSideUC, _forcedUC, _modeInterludeUC, _modeFinaleUC, _campaignNameUC, _customCampaign, _addForcedMissionUC, _tierUC, _selectMissionUC, _customUC, _creditsUC, _fameUC, _awardsUC, _campaignSetup, _itemsUC, _rewardsUC, _villainsUC, _alliesUC, _threat, _agendaUC, _modifyUC, _removeUC, _otherUC, _campaignUC, _generalUC, _heroUC, _personalUC, _campaignSetupUC, _campaignDescriptionUC, _sagaDescriptionUC, _classicDescriptionUC, _agendaMission, _agendaImperialUC, _agendaRebelUC, _xpUC, _costUC;
+		private string _threatInfoUC, _modeIntroductionUC, _modeStoryUC, _modeSideUC, _forcedUC, _modeInterludeUC, _modeFinaleUC, _campaignNameUC, _customCampaign, _addForcedMissionUC, _tierUC, _selectMissionUC, _customUC, _creditsUC, _fameUC, _awardsUC, _campaignSetup, _itemsUC, _rewardsUC, _villainsUC, _alliesUC, _threat, _agendaUC, _modifyUC, _removeUC, _otherUC, _campaignUC, _generalUC, _heroUC, _personalUC, _campaignSetupUC, _campaignDescriptionUC, _sagaDescriptionUC, _classicDescriptionUC, _agendaMission, _agendaImperialUC, _agendaRebelUC, _xpUC, _costUC, _missionTypeMockupUC, _missionNameMockupUC, _itemMockupUC;
 
 		public string threatInfoUC
 		{
@@ -917,6 +917,18 @@ namespace Saga_Translator_V2
 		public string costUC
 		{
 			get => _costUC; set => SetProperty( ref _costUC, value );
+		}
+		public string missionTypeMockupUC
+		{
+			get => _missionTypeMockupUC; set => SetProperty( ref _missionTypeMockupUC, value );
+		}
+		public string missionNameMockupUC
+		{
+			get => _missionNameMockupUC; set => SetProperty( ref _missionNameMockupUC, value );
+		}
+		public string itemMockupUC
+		{
+			get => _itemMockupUC; set => SetProperty( ref _itemMockupUC, value );
 		}
 	}
 
