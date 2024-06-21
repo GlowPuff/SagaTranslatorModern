@@ -241,6 +241,9 @@ namespace Saga_Translator_V2
 					case EventActionType.D6:
 						MissionPanelUIHelper.CreateD6( eaIdx, dataSource, panel, isEnabled, useContext );
 						break;
+					case EventActionType.GM2:
+						MissionPanelUIHelper.CreateGM2(eaIdx, dataSource, panel, isEnabled, useContext);
+						break;
 				}
 			}
 		}

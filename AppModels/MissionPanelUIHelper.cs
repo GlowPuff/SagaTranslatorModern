@@ -376,5 +376,26 @@ namespace Saga_Translator_V2
 
 			panel.Children.Add( UIFactory.Border( stackPanel ) );
 		}
+
+		public static void CreateGM2(int eaIdx, TranslatedEvent dataSource, StackPanel panel, bool isEnabled, bool useContext)
+		{
+			var ea = dataSource.eventActions[eaIdx] as TranslatedChangeTarget;
+			if (ea.otherTarget != null)
+			{
+				StackPanel stackPanel = new StackPanel();
+				stackPanel.Children.Add(UIFactory.SubHeading($"{ea.eaName}", Utils.missingTranslations.Contains(ea.GUID)));
+
+				stackPanel.Children.Add(UIFactory.TBlock("otherTarget"));
+				stackPanel.Children.Add(UIFactory.TBox(ea.otherTarget, null, true, isEnabled, (a, b) =>
+				{
+					if (useContext)
+					{
+						ea.otherTarget = (a as TextBox).Text.Trim();
+					}
+				}));
+
+				panel.Children.Add(UIFactory.Border(stackPanel));
+			}
+		}
 	}
 }
