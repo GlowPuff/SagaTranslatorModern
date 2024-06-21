@@ -654,6 +654,12 @@
       "eventText": "Now that you can see better how much people there are still left, you realize you won't be able to save everyone. You hurry forward, dedicated to rescue as many as possible.\r\n\r\n{-} Heroes gain {A}: Push an adjacent evacuee up to 4 spaces.\r\n{-} At the start of each Round, the Rebels rescue a liberated evacuee. Then, they may move each additional liberated evacuee up to 4 spaces. Evacuees cannot end their movement in a space containing another evacuee.\r\n{-} An Imperial figure can attack an evacuee (Health: 5, Defense: None). While an evacuee adjacent to a healthy hero is defending, it adds 1 white die to its defense pool. When an evacuee is defeated, the Empire claims that evacuee. Click the red highlight and select \"Evacuee defeated\".\r\n{-} The Rebels win when the Rebel players have rescued 6 evacuees.",
       "eventActions": [
         {
+          "otherTarget": "the closest evacuee",
+          "GUID": "3ab08684-de77-43ea-ae8c-70a85da46bb4",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "translatedEntityProperties": [
             {
               "entityName": "Empire Highlight",

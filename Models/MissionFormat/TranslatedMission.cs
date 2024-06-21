@@ -506,6 +506,32 @@ namespace Imperial_Commander_Editor
 		}
 	}
 
+	public class TranslatedChangeTarget : ITranslatedEventAction//GM2
+	{
+		public string otherTarget { get; set; }
+		public Guid GUID { get; set; }
+		public EventActionType eventActionType { get; set; }
+		public string eaName { get; set; }
+
+		public TranslatedChangeTarget()
+		{
+
+		}
+
+		public List<string> Validate(ITranslatedEventAction loadedEA, bool useLooseValidation = false)
+		{
+			var problems = new List<string>();
+
+			//check if value is translated
+			if (!string.IsNullOrEmpty(otherTarget) && otherTarget == (loadedEA as TranslatedChangeTarget).otherTarget)
+				Utils.missingTranslations.Add(loadedEA.GUID);
+
+			otherTarget = (loadedEA as TranslatedChangeTarget).otherTarget;
+
+			return problems;
+		}
+	}
+
 	public class TranslatedCustomEnemyDeployment : ITranslatedEventAction//D6
 	{
 		public Guid GUID { get; set; }

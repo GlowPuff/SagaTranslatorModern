@@ -176,6 +176,12 @@
           "eaName": "Text Box"
         },
         {
+          "otherTarget": null,
+          "GUID": "07f06828-5979-448b-a1f0-0892cc892004",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "newInstructions": "{-} If the target of an attack is <color=\"red\">Leia Organa</color>, but she cannot be attacked, the attack instead targets the healthy hero closest to <color=\"red\">Leia Organa</color>.",
           "GUID": "17e6113a-6e54-48ac-8c27-77750598b11c",
           "eventActionType": 11,

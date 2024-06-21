@@ -347,6 +347,12 @@
           "eaName": "Change Reposition Instructions"
         },
         {
+          "otherTarget": "the Rebel figure closest to Agent Blaise",
+          "GUID": "d58dfec3-6537-43fa-a5cd-586b8d347326",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "tbText": "Agent Blaise, who has been busy checking data on a terminal, looks up in surprise as you barge into the command center. He draws his weapon, a move quickly mirrored by his aide. ",
           "GUID": "4e0945ac-4637-4d06-8259-c0343b70833b",
           "eventActionType": 16,
