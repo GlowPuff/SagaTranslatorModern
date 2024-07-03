@@ -358,7 +358,7 @@ namespace Saga_Translator_V2
 
 	public class SagaMainApp : ObservableObject
 	{
-		private string _tooltipHideUIUC, _roundIncreasedUC, _endOfMissionUC, _deployMessageUC, _noDPWarningUC, _mmAddTilesUC, _mmRemoveTilesUC, _mmAddEntitiesUC, _groupsReadyUC, _groupsExhaustUC, _repositionTargetUC, _doorsUC, _cratesUC, _terminalsUC, _tokensUC, _woundUC, _withdrawUC, _exhaustUC, _defeatUC, _imperialMenu, _medpacInfoUC, _cannotDefeatUC, _missionLogTitle;
+		private string _tooltipHideUIUC, _roundIncreasedUC, _endOfMissionUC, _deployMessageUC, _noDPWarningUC, _mmAddTilesUC, _mmRemoveTilesUC, _mmCoreTileNameUC, _mmTwinTileNameUC, _mmHothTileNameUC, _mmBespinTileNameUC, _mmJabbaTileNameUC, _mmEmpireTileNameUC, _mmLothalTileNameUC, _mmAddEntitiesUC, _groupsReadyUC, _groupsExhaustUC, _repositionTargetUC, _doorsUC, _cratesUC, _terminalsUC, _tokensUC, _woundUC, _withdrawUC, _exhaustUC, _defeatUC, _imperialMenu, _medpacInfoUC, _cannotDefeatUC, _missionLogTitle;
 
 		public string tooltipHideUIUC
 		{
@@ -395,6 +395,34 @@ namespace Saga_Translator_V2
 		public string mmRemoveTilesUC
 		{
 			get => _mmRemoveTilesUC; set => SetProperty( ref _mmRemoveTilesUC, value );
+		}
+		public string mmCoreTileNameUC
+		{
+			get => _mmCoreTileNameUC; set => SetProperty(ref _mmCoreTileNameUC, value);
+		}
+		public string mmTwinTileNameUC
+		{
+			get => _mmTwinTileNameUC; set => SetProperty(ref _mmTwinTileNameUC, value);
+		}
+		public string mmHothTileNameUC
+		{
+			get => _mmHothTileNameUC; set => SetProperty(ref _mmHothTileNameUC, value);
+		}
+		public string mmBespinTileNameUC
+		{
+			get => _mmBespinTileNameUC; set => SetProperty(ref _mmBespinTileNameUC, value);
+		}
+		public string mmJabbaTileNameUC
+		{
+			get => _mmJabbaTileNameUC; set => SetProperty(ref _mmJabbaTileNameUC, value);
+		}
+		public string mmEmpireTileNameUC
+		{
+			get => _mmEmpireTileNameUC; set => SetProperty(ref _mmEmpireTileNameUC, value);
+		}
+		public string mmLothalTileNameUC
+		{
+			get => _mmLothalTileNameUC; set => SetProperty(ref _mmLothalTileNameUC, value);
 		}
 		public string mmAddEntitiesUC
 		{
