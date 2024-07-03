@@ -465,6 +465,12 @@
           "eaName": "Deploy: DG004/Imperial Officer"
         },
         {
+          "otherTarget": "the closest refugee",
+          "GUID": "068bca4a-baa3-486d-b916-a28d87047712",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "newInstructions": "{-} Imperial figures will attack a door if it is the shortest direct way to their target.",
           "GUID": "16dce7d9-9440-432a-b77c-b16af74ee74c",
           "eventActionType": 11,

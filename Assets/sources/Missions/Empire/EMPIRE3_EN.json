@@ -106,6 +106,12 @@
       "eventText": "“Your reputation precedes you, Maul,” Zaaryn says in the transmission you intercepted. “I am willing to deal, but you must do something for me first to prove your good faith. Help me quash this unrest, and then we'll talk.\"\r\n\r\nYou arrive at the meeting coordinates provided in the transmission to find civilians gathered for a protest in the streets.",
       "eventActions": [
         {
+          "otherTarget": "the closest protester",
+          "GUID": "d53c4103-7ecc-48fe-92b8-835d41cbcc1d",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "translatedEntityProperties": [
             {
               "entityName": "Protester 1",
@@ -1823,6 +1829,12 @@
           "GUID": "9d00693d-e7e0-4467-bc3f-119688843f6a",
           "eventActionType": 2,
           "eaName": "Change Objective"
+        },
+        {
+          "otherTarget": null,
+          "GUID": "a921c557-f8b3-47c1-b409-1c00ebc1aa75",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
         }
       ]
     },

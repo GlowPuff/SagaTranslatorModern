@@ -81,6 +81,12 @@
       "eventText": "By the time you reach the scene, chaos has already engulfed the streets. Civilians cower behind what cover they can find, desperate to escape the Empire's towering war machines.\r\n\r\n{-} Deploy the heroes to the Rebel mission token.",
       "eventActions": [
         {
+          "otherTarget": "the closest civilian",
+          "GUID": "13df9421-7be5-4584-a465-b28dbe6f0a1d",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "tbText": "Former protesters cower in fear or sprint for cover.\r\n\r\n{-} Place 1 neutral mission token on each red highlighted space.\r\n{-} Neutral mission tokens represent civilians. Civilians are neutral figures. Imperial figures can attack civilians (Health: 4).\r\n{-} The Rebel mission token represents an escape route. When a civilian enters a space on or adjacent to the escape route, click the escape route and select \"Civilian escapes\".\r\n{-} When a civilian is defeated, click the escape route and select \"Civilian defeated\".\r\n{-} At the end of a hero's activation, that hero may move a civilian within 2 spaces up to 2 spaces.",
           "GUID": "561387f9-553b-46ec-a660-6061017be9d0",
           "eventActionType": 16,
@@ -150,6 +156,12 @@
       "GUID": "0bb9fb9f-d9a4-489f-a1c7-0ea302f87cfe",
       "eventText": "As reinforcements close in, remaining protesters attempt to huddle in safety. Your pilot zooms overhead, launching an EMP blast targeting the AT-DP's shield generators.\r\n\r\nWith its weaknesses now revealed, you aim your weapons and prepare to take down the less-intimidating walker.\r\n\r\n{-} The <color=\"red\">AT-DP</color> can now suffer {H}.\r\n{-} The Rebels win when the <color=\"red\">AT-DP</color> is defeated.",
       "eventActions": [
+        {
+          "otherTarget": null,
+          "GUID": "983c4f28-68df-42d9-a8e7-cff7cbc9ced2",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
         {
           "shortText": "Take down the <color=\"red\">AT-DP</color>.",
           "longText": null,

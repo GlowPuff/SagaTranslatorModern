@@ -112,6 +112,12 @@
           "eaName": "Change Group Instructions"
         },
         {
+          "otherTarget": "the closest defense checkpoint",
+          "GUID": "ca525fcf-8102-4ca5-a1d9-8835fa830428",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "enemyName": null,
           "customText": "",
           "modification": null,
@@ -466,6 +472,12 @@
           "GUID": "985d8664-0483-4c86-9f9e-7c5f6506f22c",
           "eventActionType": 11,
           "eaName": "Change Group Instructions"
+        },
+        {
+          "otherTarget": "the siege wall",
+          "GUID": "bbb4da19-20f0-4f57-bef8-281d8adab839",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
         },
         {
           "newInstructions": "{-} When a healthy Rebel figure is adjacent to the siege wall that is the target of an attack, that Rebel figure becomes the target of the attack.\r\n{-} When BOMBARD is not the bonus effect, this figure gains \"BOMBARD: This figure's attacks do not require line of sight or Accuracy.\" When BOMBARD is the bonus effect, this figure gains 1 {g}.\r\n{-} DEFENSIBLE: Recover 3 {H}.\r\n{Q}{A} Attack the siege wall. Then, attack the healthy Rebel closest to the siege wall.\r\n{Q} Attack the siege wall.\r\n{A} If this figure has suffered {H}, it recovers 3 {H}.\r\n{A} If this figure has suffered {H}, it recovers 3 {H}.",

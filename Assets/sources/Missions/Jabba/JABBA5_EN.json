@@ -106,6 +106,12 @@
       "eventText": "You depart the skiff at a warehouse on the outskirts of Mos Eisley. You meet a hooded Gotal, who ignores your introduction and hands you a barrel. When you try to peek inside the package he slaps your hand. “No questions,” he bleats. “Just work.” He points to a stack of similar barrels, then to his YV-666 outside. Before long, the crates are loaded and you depart.\r\n\r\nAs you approach a ruined temple you note several mercenaries stationed throughout the Dosha jungle.",
       "eventActions": [
         {
+          "otherTarget": "a Rebel figure carrying a spice barrel",
+          "GUID": "2d38f322-40a2-40b8-add9-63358d5a3d00",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
           "enemyName": null,
           "customText": "",
           "modification": null,
