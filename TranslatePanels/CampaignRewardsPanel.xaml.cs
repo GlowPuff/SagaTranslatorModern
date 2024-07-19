@@ -43,6 +43,11 @@ namespace Saga_Translator_V2
 			{
 				source[index].name = (a as TextBox).Text.Trim();
 			} ) );
+			panel.Children.Add(UIFactory.TBlock("Extra"));
+			panel.Children.Add(UIFactory.TBox(source[index].extra, "", false, isEnabled, (a, b) =>
+			{
+				source[index].extra = (a as TextBox).Text.Trim();
+			}));
 		}
 
 		public override void PopulateUIMainTree()
