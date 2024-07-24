@@ -198,7 +198,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} Neutral mission tokens represent fires.\r\n{-} When a figure enters a space containing a fire, that figure suffers 2 {H}. Figures cannot voluntarily end their movement in a space containing a fire.\r\n{-} All tiles with at least 12 spaces are Homestead tiles (Core: 2B, 3B, 4B, 6B, 8B; Hoth: 2B, 4B).\r\n{-} At the end of each Round, the Imperial player gains {D} for each Homestead tile containing 1 or more fires.",
+          "tbText": "{-} Neutral mission tokens represent fires.\r\n{-} When a figure enters a space containing a fire, that figure suffers 2 {H}. Figures cannot voluntarily end their movement in a space containing a fire.\r\n{-} All tiles with at least 12 spaces are Homestead tiles ({0}2B, {0}3B, {0}4B, {0}6B, {0}8B, {2}2B, {2}4B).\r\n{-} At the end of each Round, the Imperial player gains {D} for each Homestead tile containing 1 or more fires.",
           "GUID": "d9d8e315-5cf3-4139-955c-cbdf14c37743",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -242,7 +242,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutral mission tokens represent fires.\r\n{-} When a figure enters a space containing a fire, that figure suffers 2 {H}. Figures cannot voluntarily end their movement in a space containing a fire.\r\n{-} All tiles with at least 12 spaces are Homestead tiles (Core: 2B, 3B, 4B, 6B, 8B; Hoth: 2B, 4B).\r\n{-} At the end of each Round, the Imperial player gains {D} for each Homestead tile containing 1 or more fires.\r\n{-} Healthy Rebel figures gain {A}: Choose 1 fire within 2 spaces of you and discard it. Then, if you are a hero, you may test {J}. If the test is passed, you may choose 1 additional fire within 2 spaces of you and discard it.\r\n{-} The Rebels win when the Incinerator Troopers are defeated and there are no fires on the map.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "theText": "{-} Neutral mission tokens represent fires.\r\n{-} When a figure enters a space containing a fire, that figure suffers 2 {H}. Figures cannot voluntarily end their movement in a space containing a fire.\r\n{-} All tiles with at least 12 spaces are Homestead tiles ({0}2B, {0}3B, {0}4B, {0}6B, {0}8B, {2}2B, {2}4B).\r\n{-} At the end of each Round, the Imperial player gains {D} for each Homestead tile containing 1 or more fires.\r\n{-} Healthy Rebel figures gain {A}: Choose 1 fire within 2 spaces of you and discard it. Then, if you are a hero, you may test {J}. If the test is passed, you may choose 1 additional fire within 2 spaces of you and discard it.\r\n{-} The Rebels win when the Incinerator Troopers are defeated and there are no fires on the map.\r\n{-} The Rebels lose when all heroes are wounded.",
           "GUID": "1d983c10-a8df-4ca2-b62f-52e501e67bc4",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -276,43 +276,43 @@
     {
       "eventName": "Fires Spread C2B",
       "GUID": "bdf0e82c-95b1-4ecf-af76-820b64b3f1e9",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile CORE 2B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {0}2B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
       "eventName": "Fires Spread C3B",
       "GUID": "2e10a200-79bc-4fa0-96af-881cf2297786",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile CORE 3B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {0}3B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
       "eventName": "Fires Spread C4B",
       "GUID": "4ff57bea-bfc9-491a-93cb-541686c7a1ac",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile CORE 4B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {0}4B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
       "eventName": "Fires Spread C6B",
       "GUID": "1d5d901f-e55a-4d60-a156-d7457bbae069",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile CORE 6B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {0}6B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
       "eventName": "Fires Spread C8B",
       "GUID": "450d4a9a-712b-40fe-8c70-95c041f611fc",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile CORE 8B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {0}8B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
       "eventName": "Fires Spread H2B",
       "GUID": "9409bcfe-f478-4f57-abe2-6276b2b20a48",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile HOTH 2B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {2}2B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
       "eventName": "Fires Spread H4B",
       "GUID": "022fc9fa-59ea-493b-aefb-2e7862356d9c",
-      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile HOTH 4B. Place 1 fire in an empty space adjacent to it.",
+      "eventText": "Fanned on by the hot, dry desert winds of Tatooine, the fires spread.\r\n\r\n{-} Choose 1 fire on tile {2}4B. Place 1 fire in an empty space adjacent to it.",
       "eventActions": []
     },
     {
@@ -352,7 +352,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutral mission tokens represent fires.\r\n{-} When a figure enters a space containing a fire, that figure suffers 2 {H}. Figures cannot voluntarily end their movement in a space containing a fire.\r\n{-} All tiles with at least 12 spaces are Homestead tiles (Core: 2B, 3B, 4B, 6B, 8B; Hoth: 2B, 4B).\r\n{-} At the end of each Round, the Imperial player gains {D} for each Homestead tile containing 1 or more fires.\r\n{-} Healthy Rebel figures gain {A}: Choose 1 fire within 2 spaces of you and discard it. Then, if you are a hero, you may test {J}. If the test is passed, you may choose 1 additional fire within 2 spaces of you and discard it.\r\n{-} When there are no fires on the map, click the blue highlight and select \"Fires extinguished\" to end the mission.\r\n{-} The Rebels win when there are no fires on the map.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "theText": "{-} Neutral mission tokens represent fires.\r\n{-} When a figure enters a space containing a fire, that figure suffers 2 {H}. Figures cannot voluntarily end their movement in a space containing a fire.\r\n{-} All tiles with at least 12 spaces are Homestead tiles ({0}2B, {0}3B, {0}4B, {0}6B, {0}8B, {2}2B, {2}4B).\r\n{-} At the end of each Round, the Imperial player gains {D} for each Homestead tile containing 1 or more fires.\r\n{-} Healthy Rebel figures gain {A}: Choose 1 fire within 2 spaces of you and discard it. Then, if you are a hero, you may test {J}. If the test is passed, you may choose 1 additional fire within 2 spaces of you and discard it.\r\n{-} When there are no fires on the map, click the blue highlight and select \"Fires extinguished\" to end the mission.\r\n{-} The Rebels win when there are no fires on the map.\r\n{-} The Rebels lose when all heroes are wounded.",
           "GUID": "53290cdf-9360-4511-9fb3-d6ab55dd276b",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -434,7 +434,7 @@
       "eventText": "",
       "eventActions": [
         {
-          "mainText": "How many Homestead tiles are there with 1 or more fires on them?\r\n\r\nAll tiles with at least 12 spaces are Homestead tiles (Core: 2B, 3B, 4B, 6B, 8B; Hoth: 2B, 4B).",
+          "mainText": "How many Homestead tiles are there with 1 or more fires on them?\r\n\r\nAll tiles with at least 12 spaces are Homestead tiles ({0}2B, {0}3B, {0}4B, {0}6B, {0}8B, {2}2B, {2}4B).",
           "failText": "",
           "inputList": [
             {
