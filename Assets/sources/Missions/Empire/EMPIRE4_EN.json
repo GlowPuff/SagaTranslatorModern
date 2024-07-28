@@ -419,13 +419,13 @@
     {
       "eventName": "Bombardment 1",
       "GUID": "a1da5642-7efc-4dfe-872d-9c095d79e9c3",
-      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on each side of the wall between Core 28B and Empire 18B.",
+      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on each side of the wall between {0}28B and {5}18B.",
       "eventActions": []
     },
     {
       "eventName": "Bombardment 2",
       "GUID": "6beddd1a-ab84-4ca7-b0cd-f397fec871c7",
-      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on each side of the wall between Core 23B and Empire 6B (lowest possible position).",
+      "eventText": "The bomber shuttle circles around for another pass. Explosions rock the diner.\r\n\r\n{-} Place 1 rubble token on each side of the wall between {0}23B and {5}6B (lowest possible position).",
       "eventActions": []
     },
     {
