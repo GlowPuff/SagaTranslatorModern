@@ -604,7 +604,7 @@
           "eaName": "Deploy: DG003/Stormtrooper (Elite)"
         },
         {
-          "tbText": "{-} Place <color=\"red\">Thrawn</color>'s figure on tile 36B directly behind the central <color=\"red\">Stormtrooper</color>.\r\n{-} When <color=\"red\">Thrawn</color> is attacked, if there is an insight on the attacker, set that inside aside and remove 1 die from the attack pool (priority: red, yellow, green, blue).\r\n{-} The mission no longer ends at the end of Round 7.\r\n{-} The Rebels win when <color=\"red\">Thrawn</color> is defeated.",
+          "tbText": "{-} Place <color=\"red\">Thrawn</color>'s figure on tile {0}36A directly behind the central <color=\"red\">Stormtrooper</color>.\r\n{-} When <color=\"red\">Thrawn</color> is attacked, if there is an insight on the attacker, set that insight aside and remove 1 die from the attack pool (priority: red, yellow, green, blue).\r\n{-} The mission no longer ends at the end of Round 7.\r\n{-} The Rebels win when <color=\"red\">Thrawn</color> is defeated.",
           "GUID": "f4ae2939-bccb-4559-bd3a-c3ff37fa5f42",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -629,7 +629,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutral mission tokens are insights.\r\n{-} When <color=\"red\">Thrawn</color> is attacked, if there is an insight on the attacker, set that inside aside and remove 1 die from the attack pool (priority: red, yellow, green, blue).\r\n{-} The Rebels win when <color=\"red\">Thrawn</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "theText": "{-} Neutral mission tokens are insights.\r\n{-} When <color=\"red\">Thrawn</color> is attacked, if there is an insight on the attacker, set that insight aside and remove 1 die from the attack pool (priority: red, yellow, green, blue).\r\n{-} The Rebels win when <color=\"red\">Thrawn</color> is defeated.\r\n{-} The Rebels lose when all heroes are wounded.",
           "GUID": "66c6723e-6159-4d72-ab44-a690c680844a",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
