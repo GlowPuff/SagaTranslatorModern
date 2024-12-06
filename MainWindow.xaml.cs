@@ -44,7 +44,7 @@ namespace Saga_Translator_V2
 			InitializeComponent();
 			DataContext = this;
 
-			languageList = new( new[] { "English (EN)", "German (DE)", "Spanish (ES)", "French (FR)", "Polski (PL)", "Italian (IT)", "Magyar (HU)", "Norwegian (NO)", "Russian (RU)" } );
+			languageList = new( new[] { "English (EN)", "German (DE)", "Spanish (ES)", "French (FR)", "Polski (PL)", "Italian (IT)", "Magyar (HU)", "Norwegian (NO)", "Russian (RU)", "Dutch (NL)", } );
 			selectedLanguageID = "English (EN)";
 
 			InitTimer();
@@ -80,7 +80,7 @@ namespace Saga_Translator_V2
 			InitializeComponent();
 			DataContext = this;
 
-			languageList = new( new[] { "English (EN)", "German (DE)", "Spanish (ES)", "French (FR)", "Polski (PL)", "Italian (IT)", "Magyar (HU)", "Norwegian (NO)", "Russian (RU)" } );
+			languageList = new( new[] { "English (EN)", "German (DE)", "Spanish (ES)", "French (FR)", "Polski (PL)", "Italian (IT)", "Magyar (HU)", "Norwegian (NO)", "Russian (RU)", "Dutch (NL)", } );
 			selectedLanguageID = "English (EN)";
 
 			InitTimer();

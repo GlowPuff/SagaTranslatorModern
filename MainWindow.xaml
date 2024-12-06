@@ -78,7 +78,8 @@
 					VerticalAlignment="Center"
 					FontSize="14"
 					Foreground="White"
-					Text="Target Language:" />
+					Text="Target Language:" 
+					Visibility="{Binding translationPanel.commonPanelData.showLanguageSelector, Converter={StaticResource b2v}}"/>
 
 				<!--  LANGUAGE LIST  -->
 				<ComboBox
