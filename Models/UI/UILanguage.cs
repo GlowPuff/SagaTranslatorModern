@@ -18,7 +18,7 @@ namespace Saga_Translator_V2
 
 	public class UISettings : ObservableObject
 	{
-		private string _settingsHeading, _music, _sound, _bloom, _vignette, _quit, _returnBtn, _ok, _quickClose, _ambient, _zoomButtons, _topdownView, _roundLimitOn, _roundLimitOff, _roundLimitDangerous, _roundLimitLabel, _skipWarpIntroLabel;
+		private string _settingsHeading, _music, _sound, _bloom, _vignette, _quit, _returnBtn, _ok, _quickClose, _ambient, _zoomButtons, _topdownView, _roundLimitOn, _roundLimitOff, _roundLimitDangerous, _roundLimitLabel, _skipWarpIntroLabel, _enemyGroupsColor, _colorRegular, _colorElite, _colorVillain;
 
 		public string settingsHeading
 		{
@@ -87,6 +87,22 @@ namespace Saga_Translator_V2
 		public string skipWarpIntroLabel
 		{
 			get => _skipWarpIntroLabel; set => SetProperty( ref _skipWarpIntroLabel, value );
+		}
+		public string enemyGroupsColor
+		{
+			get => _enemyGroupsColor; set => SetProperty(ref _enemyGroupsColor, value);
+		}
+		public string colorRegular
+		{
+			get => _colorRegular; set => SetProperty(ref _colorRegular, value);
+		}
+		public string colorElite
+		{
+			get => _colorElite; set => SetProperty(ref _colorElite, value);
+		}
+		public string colorVillain
+		{
+			get => _colorVillain; set => SetProperty(ref _colorVillain, value);
 		}
 	}
 
