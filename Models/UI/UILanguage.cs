@@ -162,7 +162,7 @@ namespace Saga_Translator_V2
 
 	public class UISetup : ObservableObject
 	{
-		private string _settingsHeading, _chooseMission, _viewCardBtn, _missionInfoBtn, _threatLevelHeading, _addtlThreatHeading, _deploymentHeading, _yes, _no, _back, _difficulty, _easy, _normal, _hard, _imperials, _mercenaries, _adaptive, _groupsHeading, _choose, _zoom, _initialHeading, _reservedHeading, _villainsHeading, _ignoredHeading, _addHero, _addAlly, _threatCostHeading, _cancel, _continueBtn, _saved, _loaded, _selected, _enemyChooser, _missionChooser, _heroAllyChooser, _adaptiveInfoUC, _chooseHeroesHeading;
+		private string _settingsHeading, _chooseMission, _viewCardBtn, _missionInfoBtn, _threatLevelHeading, _addtlThreatHeading, _deploymentHeading, _yes, _no, _back, _difficulty, _easy, _normal, _hard, _imperials, _mercenaries, _adaptive, _groupsHeading, _choose, _zoom, _initialHeading, _reservedHeading, _villainsHeading, _ignoredHeading, _addHero, _addAlly, _threatCostHeading, _cancel, _continueBtn, _saved, _loaded, _selected, _enemyChooser, _missionChooser, _heroAllyChooser, _adaptiveInfoUC, _chooseHeroesHeading, _appMissionFormat;
 
 		public string settingsHeading
 		{
@@ -311,6 +311,10 @@ namespace Saga_Translator_V2
 		public string chooseHeroesHeading
 		{
 			get => _chooseHeroesHeading; set => SetProperty( ref _chooseHeroesHeading, value );
+		}
+		public string appMissionFormat
+		{
+			get => _appMissionFormat; set => SetProperty(ref _appMissionFormat, value);
 		}
 	}
 
